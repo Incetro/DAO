@@ -195,7 +195,7 @@ let dao = Nio.coredata(withContext: context, translator: translator)
 let dao = Nio.coredata(withContext: context, translator: translator, refresher: refresher)
 ```
 ### CRUD operations
-### Create
+#### Create
 ```swift
 let category = CategoryPlainObject(name: "Category #1", id: 1)
 let position = PositionPlainObject(name: "Position #1", price: 225.0, id: 1)
@@ -210,7 +210,7 @@ category.positions = [position]
 /// Add model to your database
 try dao.create(category)
 ```
-### Read
+#### Read
 ```swift
 /// Read all models
 let categories = try dao.read()
@@ -228,7 +228,7 @@ let categories = try dao.read(byPrimaryKey: category.nioID)
 /// Read models by filter with sorting
 let categories = try dao.read(byPredicate: "id > 5", orderedBy: "name", ascending: true)
 ```
-### Update
+#### Update
 ```swift
 /// Update your model
 try dao.persist(category)
@@ -252,7 +252,7 @@ try dao.persistAsync(categories, erase: false, success: {
     /// Error       
 })
 ```
-### Delete
+#### Delete
 ```swift
 /// Delete all models
 try dao.erase()
@@ -268,6 +268,22 @@ try dao.erase(byPrimaryKey: category.nioID)
 
 /// Delete models by primary keys
 try dao.erase(byPrimaryKeys: keys)
+```
+### Custom Translators
+If you want to use custom Translator, your PlainObject class must conform ```Plain``` protocol and your ModelObject class (CoreData, Realm objects...) must conform ```Model``` protocol
+```swift
+class CategoryTranslator: Translator {
+    
+    typealias TranslatingModel = CategoryModelObject
+    typealias TranslatingPlain = CategoryPlainObject
+    
+    func translate(model: CategoryModelObject) throws -> CategoryPlainObject {
+        /// Make plain from model here
+    }
+}
+
+/// Create DAO instance
+let dao = Nio.coredata(named: "AppModel", translator: CategoryTranslator())
 ```
 ## Requirements
 - iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+

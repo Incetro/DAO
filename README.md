@@ -155,7 +155,7 @@ class AdditivePlainObject: TransformablePlain {
 }
 ```
 ### Plain
-If you want to use custom Translator, use this protocol - just conform it and write your own Translator. [Example](#custom-translator)
+If you want to use custom Translator, use this protocol - just conform it and write your own Translator. [Example](#custom-translators)
 ### Initialization
 ```swift
 /// Standard initializer with built-in Translator and Refresher

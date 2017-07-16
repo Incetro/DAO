@@ -19,7 +19,7 @@ Now you can think less about database in your applications.
 - [Author](#author)
 - [License](#license)
 
-## Features
+# Features
 - [x] CRUD operations for your database based on [Monreau](https://github.com/incetro/Monreau)
 - [x] Universal built-in Translator based on [Transformer](https://github.com/incetro/Transformer) with nested object support
 - [x] Universal built-in Refresher with nested objects support
@@ -27,12 +27,134 @@ Now you can think less about database in your applications.
 - [x] Custom refreshers
 - [x] Abstraction of database objects (models) from application objects (plains)
 
-## Supported frameworks
+# Supported frameworks
 - [x] CoreData
 - [ ] Realm
 
-## Usage
-### Initialization
+# Usage
+The first thing you should know is that the primary key is a field named ```nioID```. And you must add this field (with String type) to your CoreData models (only in CoreData scheme). Next, I'll explain everything in the example with 3 models (```CategoryModelObject```, ```PositionModelObject``` and ```AdditiveModelObject```) and 3 plain objects (```CategoryPlainObject```, ```PositionPlainObject``` and ```AdditivePlainObject```)
+## Protocols and classes
+NIO contains several main classes and protocols:
+- ManagedModel (class)
+- TransformablePlain (protocol)
+- Plain (protocol)
+- Model (protocol)
+### ManagedModel
+All of your your CoreData models must conform this protocol.
+```swift
+// MARK: - CategoryModelObject
+class CategoryModelObject: ManagedModel {
+    
+    @NSManaged var id: Int64
+    @NSManaged var name: String
+    @NSManaged var positions: NSSet
+}
+
+// MARK: - PositionModelObject
+class PositionModelObject: ManagedModel {
+    
+    @NSManaged var id: Int64
+    @NSManaged var name: String
+    @NSManaged var price: Double
+    @NSManaged var additives: NSSet
+    @NSManaged var category: CategoryModelObject?
+}
+
+// MARK: - AdditiveModelObject
+class AdditiveModelObject: ManagedModel {
+    
+    @NSManaged var id: Int64
+    @NSManaged var name: String
+    @NSManaged var price: Double
+    @NSManaged var position: PositionModelObject?
+}
+```
+### TransformablePlain
+This protocol lets you use built-in Translator
+```swift
+// MARK: - CategoryPlainObject
+class CategoryPlainObject: TransformablePlain {
+    
+    var nioID: String
+    let name: String
+    let id: Int64
+    
+    var positions: [PositionPlainObject] = []
+    
+    init(with name: String, id: Int64) {
+        self.name  = name
+        self.id    = id
+        self.nioID = "\(id)"
+    }
+    
+    required init(with resolver: Resolver) throws {
+        self.id    = try resolver.value("id")
+        self.name  = try resolver.value("name")
+        self.nioID = "\(id)"
+        
+        self.positions = (try? resolver.value("positions")) ?? []
+    }
+}
+
+// MARK: - PositionPlainObject
+class PositionPlainObject: TransformablePlain {
+    
+    let id: Int64
+    let name: String
+    let price: Double
+    var nioID: String
+    
+    init(with name: String, price: Double, id: Int64) {
+        self.name  = name
+        self.id    = id
+        self.price = price
+        self.nioID = "\(id)"
+    }
+    
+    var category: CategoryPlainObject? = nil
+    var additives: [AdditivePlainObject] = []
+    
+    required init(with resolver: Resolver) throws {
+        
+        self.id        =  try  resolver.value("id")
+        self.name      =  try  resolver.value("name")
+        self.price     =  try  resolver.value("price")
+        self.category  =  try? resolver.value("category")
+        self.additives = (try? resolver.value("additives")) ?? []
+        
+        self.nioID = "\(id)"
+    }
+}
+
+// MARK: - AdditivePlainObject
+class AdditivePlainObject: TransformablePlain {
+
+    let id: Int64
+    let name: String
+    let price: Double    
+    var nioID: String
+    
+    init(with name: String, price: Double, id: Int64) {
+        self.name  = name
+        self.id    = id
+        self.price = price
+        self.nioID = "\(id)"
+    }
+    
+    var position: PositionPlainObject? = nil
+    
+    required init(with resolver: Resolver) throws {
+        
+        self.id       = try  resolver.value("id")
+        self.name     = try  resolver.value("name")
+        self.price    = try  resolver.value("price")
+        self.position = try? resolver.value("position")
+        
+        self.nioID = "\(id)"
+    }
+}
+```
+## Initialization
 ```swift
 /// Standard initializer with built-in Translator and Refresher
 let dao = Nio.coredata(named: "AppModel", model: UserModelObject.self, plain: UserPlainObject.self)
@@ -71,20 +193,20 @@ let dao = Nio.coredata(withContext: context, translator: translator)
 let dao = Nio.coredata(withContext: context, translator: translator, refresher: refresher)
 ```
 
-## Requirements
+# Requirements
 - iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+
 - Xcode 8.1, 8.2, 8.3, and 9.0
 - Swift 3.0, 3.1, 3.2, and 4.0
 
-## Communication
+# Communication
 
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
 - If you **want to contribute**, submit a pull request.
 
-## Installation
+# Installation
 
-### CocoaPods
+## CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
@@ -108,11 +230,11 @@ Then, run the following command:
 $ pod install
 ```
 
-### Manually
+## Manually
 
 If you prefer not to use any dependency managers, you can integrate Nio into your project manually.
 
-#### Embedded Framework
+### Embedded Framework
 
 - Open up Terminal, `cd` into your top-level project directory, and run the following command "if" your project is not initialized as a git repository:
 
@@ -146,10 +268,10 @@ If you prefer not to use any dependency managers, you can integrate Nio into you
 
   > The `Nio.framework` is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.
   
-## Author
+# Author
 
 incetro, incetro@ya.ru
 
-## License
+# License
 
 NIO is available under the MIT license. See the LICENSE file for more info.

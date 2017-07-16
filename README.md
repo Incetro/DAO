@@ -218,11 +218,39 @@ let categories = try dao.read()
 /// Read models by filter
 let categories = try dao.read(byPredicate: "id > 5")
 
+/// Read models by NSPredicate
+let predicate  = NSPredicate(format: "name = %@", name)            
+let categories = try dao.read(byPredicate: predicate, orderedBy: "name", ascending: true)
+
 /// Read model by PK
 let categories = try dao.read(byPrimaryKey: category.nioID)
 
 /// Read models by filter with sorting
 let categories = try dao.read(byPredicate: "id > 5", orderedBy: "name", ascending: true)
+```
+### Update
+```swift
+/// Update your category
+try dao.persist(category)
+
+/// Update your categories
+/// if erase == true then dao remove all categories
+/// whicn is in the given array but are not in databse (subtraction)
+/// Example:
+/// array:    [1, 2, 3, 4]
+/// database: [2, 4, 6, 7]
+/// erase == true:  db --> [1(created), 2(upd), 3(created), 4(upd)] and 6, 7, will be deleted
+/// erase == false: db --> [1(created), 2(upd), 3(created), 4(upd), 6(without changes), 7(without changes)]
+try dao.persist(categories, erase: true)
+
+/// We recommend to use it in the following cases:
+/// 1. If you have big and complex database schema (many entities, many relationships)
+/// 2. If you have thousands of objects (> 10K)
+try dao.persistAsync(categories, erase: false, success: {   
+    /// Success
+}, failure: { error in
+    /// Error       
+})
 ```
 # Requirements
 - iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+

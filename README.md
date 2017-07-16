@@ -81,7 +81,7 @@ class CategoryPlainObject: TransformablePlain {
     
     var positions: [PositionPlainObject] = []
     
-    init(with name: String, id: Int64) {
+    init(name: String, id: Int64) {
         self.name  = name
         self.id    = id
         self.nioID = "\(id)"
@@ -104,7 +104,7 @@ class PositionPlainObject: TransformablePlain {
     let price: Double
     var nioID: String
     
-    init(with name: String, price: Double, id: Int64) {
+    init(name: String, price: Double, id: Int64) {
         self.name  = name
         self.id    = id
         self.price = price
@@ -134,7 +134,7 @@ class AdditivePlainObject: TransformablePlain {
     let price: Double    
     var nioID: String
     
-    init(with name: String, price: Double, id: Int64) {
+    init(name: String, price: Double, id: Int64) {
         self.name  = name
         self.id    = id
         self.price = price
@@ -154,6 +154,8 @@ class AdditivePlainObject: TransformablePlain {
     }
 }
 ```
+### Plain
+If you want to use custom Translator, use this protocol - just conform it and write your own Translator. [Example](#custom-translator)
 ## Initialization
 ```swift
 /// Standard initializer with built-in Translator and Refresher
@@ -192,7 +194,36 @@ let dao = Nio.coredata(withContext: context, translator: translator)
 /// Standard initializer with context, custom Translator and Refresher
 let dao = Nio.coredata(withContext: context, translator: translator, refresher: refresher)
 ```
+## CRUD operations
+### Create
+```swift
+let category = CategoryPlainObject(name: "Category #1", id: 1)
+let position = PositionPlainObject(name: "Position #1", price: 225.0, id: 1)
 
+position.additives = [
+    AdditivePlainObject(name: "Additive #1", price: 20.0, id: 1),
+    AdditivePlainObject(name: "Additive #2", price: 30.0, id: 2)
+]
+
+category.positions = [position]
+
+/// Add category to your database
+try dao.create(category)
+```
+### Read
+```swift
+/// Read all models
+let categories = try dao.read()
+
+/// Read models by filter
+let categories = try dao.read(byPredicate: "id > 5")
+
+/// Read model by PK
+let categories = try dao.read(byPrimaryKey: category.nioID)
+
+/// Read models by filter with sorting
+let categories = try dao.read(byPredicate: "id > 5", orderedBy: "name", ascending: true)
+```
 # Requirements
 - iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+
 - Xcode 8.1, 8.2, 8.3, and 9.0

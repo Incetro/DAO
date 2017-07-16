@@ -21,8 +21,8 @@ Now you can think less about database in your applications.
 
 ## Features
 - [x] CRUD operations for your database based on [Monreau](https://github.com/incetro/Monreau)
-- [x] Universal built-in Translator based on [Transformer](https://github.com/incetro/Transformer)
-- [x] Universal built-in Refresher
+- [x] Universal built-in Translator based on [Transformer](https://github.com/incetro/Transformer) with nested object support
+- [x] Universal built-in Refresher with nested objects support
 - [x] Custom translators
 - [x] Custom refreshers
 - [x] Abstraction of database objects (models) from application objects (plains)
@@ -30,6 +30,46 @@ Now you can think less about database in your applications.
 ## Supported frameworks
 - [x] CoreData
 - [ ] Realm
+
+## Usage
+### Initialization
+```swift
+/// Standard initializer with built-in Translator and Refresher
+let dao = Nio.coredata(named: "AppModel", model: UserModelObject.self, plain: UserPlainObject.self)
+
+/// Initializer with with built-in Translator and custom Refresher
+let dao = Nio.coredata(named: "AppModel", refresher: refresher)
+
+/// Initializer with custom Translator and built-in Refresher
+let dao = Nio.coredata(named: "AppModel", translator: translator)
+
+/// Initializer with custom Translator and Refresher
+let dao = Nio.coredata(named: "AppModel", refresher: refresher, translator: translator)
+
+/// Standard initializer for unit testing with built-in Translator and Refresher
+let dao = Nio.coredataInMemory(named: "AppModel", model: UserModelObject.self, plain: UserPlainObject.self)
+
+/// Initializer for unit testing with with built-in Translator and custom Refresher
+let dao = Nio.coredataInMemory(named: "AppModel", refresher: refresher)
+
+/// Initializer for unit testing with custom Translator and built-in Refresher
+let dao = Nio.coredataInMemory(named: "AppModel", translator: translator)
+
+/// Initializer for unit testing with custom Translator and Refresher
+let dao = Nio.coredataInMemory(named: "AppModel", refresher: refresher, translator: translator)
+
+/// Standard initializer with context, built-in Translator and Refresher
+let dao = Nio.coredata(withContext: context, model: UserModelObject.self, plain: UserPlainObject.self)
+
+/// Standard initializer with context, built-in Translator and custom Refresher
+let dao = Nio.coredata(withContext: context, refresher: refresher)
+
+/// Standard initializer with context, custom Translator and built-in Refresher
+let dao = Nio.coredata(withContext: context, translator: translator)
+
+/// Standard initializer with context, custom Translator and Refresher
+let dao = Nio.coredata(withContext: context, translator: translator, refresher: refresher)
+```
 
 ## Requirements
 - iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+

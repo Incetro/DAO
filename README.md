@@ -285,6 +285,22 @@ class CategoryTranslator: Translator {
 /// Create DAO instance
 let dao = Nio.coredata(named: "AppModel", translator: CategoryTranslator())
 ```
+### Custom Refreshers
+If you want to use custom Refresher, your PlainObject class must conform ```Plain``` protocol and your ModelObject class (CoreData, Realm objects...) must conform ```Model``` protocol
+```swift
+class CategoryRefresher: Refresher {
+    
+    typealias RefreshingModel = CategoryModelObject
+    typealias RefreshingPlain = CategoryPlainObject
+    
+    func refresh(_ model: CategoryModelObject, withPlain plain: CategoryPlainObject) throws {
+        /// Fill model from plain here
+    }
+}
+
+/// Create DAO instance
+let dao = Nio.coredata(named: "AppModel", refresher: CategoryRefresher())
+```
 ## Requirements
 - iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+
 - Xcode 8.1, 8.2, 8.3, and 9.0

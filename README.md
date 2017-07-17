@@ -75,22 +75,23 @@ This protocol lets you use built-in Translator
 // MARK: - CategoryPlainObject
 class CategoryPlainObject: TransformablePlain {
     
-    var nioID: String
     let name: String
     let id: Int64
+    
+    var nioID: String {
+        return NioID(value: id)
+    }
     
     var positions: [PositionPlainObject] = []
     
     init(name: String, id: Int64) {
         self.name  = name
         self.id    = id
-        self.nioID = "\(id)"
     }
     
     required init(with resolver: Resolver) throws {
         self.id    = try resolver.value("id")
         self.name  = try resolver.value("name")
-        self.nioID = "\(id)"
         
         self.positions = (try? resolver.value("positions")) ?? []
     }
@@ -102,13 +103,15 @@ class PositionPlainObject: TransformablePlain {
     let id: Int64
     let name: String
     let price: Double
-    var nioID: String
+    
+    var nioID: String {
+        return NioID(value: id)
+    }
     
     init(name: String, price: Double, id: Int64) {
         self.name  = name
         self.id    = id
         self.price = price
-        self.nioID = "\(id)"
     }
     
     var category: CategoryPlainObject? = nil
@@ -121,8 +124,6 @@ class PositionPlainObject: TransformablePlain {
         self.price     =  try  resolver.value("price")
         self.category  =  try? resolver.value("category")
         self.additives = (try? resolver.value("additives")) ?? []
-        
-        self.nioID = "\(id)"
     }
 }
 
@@ -131,14 +132,16 @@ class AdditivePlainObject: TransformablePlain {
 
     let id: Int64
     let name: String
-    let price: Double    
-    var nioID: String
+    let price: Double  
+    
+    var nioID: String {
+        return NioID(value: id)
+    }
     
     init(name: String, price: Double, id: Int64) {
         self.name  = name
         self.id    = id
         self.price = price
-        self.nioID = "\(id)"
     }
     
     var position: PositionPlainObject? = nil
@@ -149,8 +152,6 @@ class AdditivePlainObject: TransformablePlain {
         self.name     = try  resolver.value("name")
         self.price    = try  resolver.value("price")
         self.position = try? resolver.value("position")
-        
-        self.nioID = "\(id)"
     }
 }
 ```
@@ -207,7 +208,7 @@ position.additives = [
 
 category.positions = [position]
 
-/// Add model to your database
+/// Add model to your database (positions and additives will be added automatically)
 try dao.create(category)
 ```
 #### Read
@@ -274,9 +275,6 @@ If you want to use custom Translator, your PlainObject class must conform ```Pla
 ```swift
 class CategoryTranslator: Translator {
     
-    typealias TranslatingModel = CategoryModelObject
-    typealias TranslatingPlain = CategoryPlainObject
-    
     func translate(model: CategoryModelObject) throws -> CategoryPlainObject {
         /// Make plain from model here
     }
@@ -289,9 +287,6 @@ let dao = Nio.coredata(named: "AppModel", translator: CategoryTranslator())
 If you want to use custom Refresher, your PlainObject class must conform ```Plain``` protocol and your ModelObject class (CoreData, Realm objects...) must conform ```Model``` protocol
 ```swift
 class CategoryRefresher: Refresher {
-    
-    typealias RefreshingModel = CategoryModelObject
-    typealias RefreshingPlain = CategoryPlainObject
     
     func refresh(_ model: CategoryModelObject, withPlain plain: CategoryPlainObject) throws {
         /// Fill model from plain here

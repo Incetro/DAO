@@ -1,0 +1,7 @@
+use_frameworks!
+
+target "NioExample-iOS" do
+
+  pod "NIO"
+
+end

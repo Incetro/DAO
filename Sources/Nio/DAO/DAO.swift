@@ -109,9 +109,9 @@ public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType
     /// - Returns: Instance of existant entity or nil
     /// - Throws: Error if entity cannot be read
     
-    public func read(byPrimaryKey primaryKey: PKType) throws -> Plain? {
+    public func read(byPrimaryKey primaryKey: NioID) throws -> Plain? {
         
-        guard let model = try self.storage.find(byPrimaryKey: primaryKey) else {
+        guard let model = try self.storage.find(byPrimaryKey: primaryKey.rawValue) else {
             
             return nil
         }

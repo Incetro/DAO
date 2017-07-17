@@ -21,7 +21,7 @@ Now you can think less about database in your applications.
 
 ## Features
 - [x] CRUD operations for your database based on [Monreau](https://github.com/incetro/Monreau)
-- [x] Universal built-in Translator based on [Transformer](https://github.com/incetro/Transformer) with nested object support
+- [x] Universal built-in Translator based on [Transformer](https://github.com/incetro/Transformer) with nested objects support
 - [x] Universal built-in Refresher with nested objects support
 - [x] Custom translators
 - [x] Custom refreshers

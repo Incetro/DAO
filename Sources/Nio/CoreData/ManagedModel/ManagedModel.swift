@@ -12,7 +12,7 @@ import CoreData
 
 /// If you use CoreData you must inherit your models from this class
 
-public class ManagedModel: NSManagedObject, Model {
+open class ManagedModel: NSManagedObject, Model {
     
     @NSManaged var nioID: String
     

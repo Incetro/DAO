@@ -78,7 +78,7 @@ class CategoryPlainObject: TransformablePlain {
     let name: String
     let id: Int64
     
-    var nioID: String {
+    var nioID: NioID {
         return NioID(value: id)
     }
     
@@ -104,7 +104,7 @@ class PositionPlainObject: TransformablePlain {
     let name: String
     let price: Double
     
-    var nioID: String {
+    var nioID: NioID {
         return NioID(value: id)
     }
     
@@ -134,7 +134,7 @@ class AdditivePlainObject: TransformablePlain {
     let name: String
     let price: Double  
     
-    var nioID: String {
+    var nioID: NioID {
         return NioID(value: id)
     }
     

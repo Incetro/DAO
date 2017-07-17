@@ -21,7 +21,7 @@ Now you can think less about database in your applications.
 
 ## Features
 - [x] CRUD operations for your database based on [Monreau](https://github.com/incetro/Monreau)
-- [x] Universal built-in Translator based on [Transformer](https://github.com/incetro/Transformer) with nested object support
+- [x] Universal built-in Translator based on [Transformer](https://github.com/incetro/Transformer) with nested objects support
 - [x] Universal built-in Refresher with nested objects support
 - [x] Custom translators
 - [x] Custom refreshers
@@ -234,22 +234,19 @@ let categories = try dao.read(byPredicate: "id > 5", orderedBy: "name", ascendin
 /// Update your model
 try dao.persist(category)
 
-/// Update your models
-/// if erase == true then dao remove all categories
-/// whicn is in the given array but are not in databse (subtraction)
-/// Example:
-/// array:    [1, 2, 3, 4]
-/// database: [2, 4, 6, 7]
-/// erase == true:  db --> [1(created), 2(upd), 3(created), 4(upd)] and 6, 7, will be deleted
-/// erase == false: db --> [1(created), 2(upd), 3(created), 4(upd), 6(without changes), 7(without changes)]
+/// Update your models.
+/// if erase == true then dao delete all models before persist
 try dao.persist(categories, erase: true)
 
 /// We recommend to use it in the following cases:
 /// 1. If you have big and complex database schema (many entities, many relationships)
-/// 2. If you have thousands of objects (> 10K)
-try dao.persistAsync(categories, erase: false, success: {   
+/// 2. If you have thousands of objects
+try dao.persistAsync(categories, erase: false, success: { 
+
     /// Success
+    
 }, failure: { error in
+
     /// Error       
 })
 ```

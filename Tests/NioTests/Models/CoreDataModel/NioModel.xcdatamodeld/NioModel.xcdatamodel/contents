@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AdditiveModelObject" representedClassName=".AdditiveModelObject" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nioID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="position" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PositionModelObject" inverseName="additives" inverseEntity="PositionModelObject" syncable="YES"/>
+    </entity>
+    <entity name="CategoryModelObject" representedClassName=".CategoryModelObject" syncable="YES">
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="nioID" attributeType="String" syncable="YES"/>
+        <relationship name="positions" toMany="YES" deletionRule="Cascade" destinationEntity="PositionModelObject" inverseName="category" inverseEntity="PositionModelObject" syncable="YES"/>
+    </entity>
+    <entity name="PositionModelObject" representedClassName=".PositionModelObject" syncable="YES">
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="nioID" attributeType="String" syncable="YES"/>
+        <attribute name="price" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="additives" toMany="YES" deletionRule="Cascade" destinationEntity="AdditiveModelObject" inverseName="position" inverseEntity="AdditiveModelObject" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryModelObject" inverseName="positions" inverseEntity="CategoryModelObject" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CategoryModelObject" positionX="-54" positionY="-9" width="128" height="105"/>
+        <element name="PositionModelObject" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="AdditiveModelObject" positionX="-54" positionY="27" width="128" height="120"/>
+    </elements>
+</model>

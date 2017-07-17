@@ -1,0 +1,51 @@
+use_frameworks!
+
+target "Nio iOS" do
+
+  pod "Transformer"
+  pod "Monreau"
+  pod "Reflex"
+
+  target "Nio iOS-Tests" do
+
+    inherit! :search_paths
+
+  end
+
+end
+
+target "Nio watchOS" do
+
+  pod "Transformer"
+  pod "Monreau"
+  pod "Reflex"
+
+end
+
+target "Nio tvOS" do
+
+  pod "Transformer"
+  pod "Monreau"
+  pod "Reflex"
+
+  target "Nio tvOS-Tests" do
+
+    inherit! :search_paths
+
+  end
+
+end
+
+target "Nio macOS" do
+
+  pod "Transformer"
+  pod "Monreau"
+  pod "Reflex"
+
+  target "Nio macOS-Tests" do
+
+    inherit! :search_paths
+
+  end
+
+end

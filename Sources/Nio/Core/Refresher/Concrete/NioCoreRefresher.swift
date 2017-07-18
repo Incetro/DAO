@@ -123,6 +123,13 @@ public class NioCoreRefresher<M, P>: Refresher where M: ManagedModel, M: Model, 
         object.setValue(model, forKey: property.name)
     }
     
+    /// Update collection by the given property
+    ///
+    /// - Parameters:
+    ///   - object: Object with collection
+    ///   - property: Object with information about collection
+    /// - Throws: Refreshing error
+    
     private func refreshCollection(_ object: NSManagedObject, property: Reflection, ignoredProperties: Set<String>) throws {
         
         if let relationship = object.entity.relationshipsByName[property.name], let entityName = relationship.destinationEntity?.managedObjectClassName {
@@ -165,6 +172,13 @@ public class NioCoreRefresher<M, P>: Refresher where M: ManagedModel, M: Model, 
             object.setValue(property.value, forKey: property.name)
         }
     }
+    
+    /// Update managed object with plain object
+    ///
+    /// - Parameters:
+    ///   - object: Database object
+    ///   - plainObject: Plain object instance
+    /// - Throws: Refreshing error
     
     private func refresh(object: ManagedModel, from plainObject: Plain, ignoredProperties: Set<String>) throws {
         
@@ -221,6 +235,8 @@ public class NioCoreRefresher<M, P>: Refresher where M: ManagedModel, M: Model, 
         try self.refresh(object: model, from: plain, ignoredProperties: [])
     }
 }
+
+// MARK: - NSObject
 
 fileprivate extension NSObject {
     

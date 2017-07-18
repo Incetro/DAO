@@ -10,6 +10,8 @@ import Foundation
 
 // MARK: - NioID
 
+/// Primary key for all Plain objects
+
 public struct NioID: RawRepresentable, Hashable {
     
     public let rawValue: String

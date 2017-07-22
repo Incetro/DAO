@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/incetro/NIO.svg?branch=master)](https://travis-ci.org/incetro/NIO)
 [![CocoaPods](https://img.shields.io/cocoapods/v/NIO.svg)](https://img.shields.io/cocoapods/v/NIO.svg)
-[![CocoaPodds Support](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)
+![CocoaPodds Support](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/incetro/NIO/master/LICENSE.md)
 [![Platforms](https://img.shields.io/cocoapods/p/NIO.svg)](https://cocoapods.org/pods/NIO)

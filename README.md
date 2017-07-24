@@ -1,4 +1,6 @@
-![Placeholder](https://user-images.githubusercontent.com/13930558/28310017-c3f8c296-6bb3-11e7-9572-83f99515149e.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/13930558/28519707-5d8fdf78-7075-11e7-9130-ccd91f55c1ac.png" alt="NIO logo"/>
+</p>
 
 [![Build Status](https://travis-ci.org/incetro/NIO.svg?branch=master)](https://travis-ci.org/incetro/NIO)
 [![CocoaPods](https://img.shields.io/cocoapods/v/NIO.svg)](https://img.shields.io/cocoapods/v/NIO.svg)

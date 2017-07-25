@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/13930558/28519707-5d8fdf78-7075-11e7-9130-ccd91f55c1ac.png" alt="NIO logo"/>
+  <img src="https://user-images.githubusercontent.com/13930558/28570312-4b6c1ce0-7146-11e7-8479-8dfc49c22120.png" alt="NIO logo"/>
 </p>
 
 <div align = "center">

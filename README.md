@@ -1,51 +1,398 @@
-osx_image: xcode9
-xcode_workspace: Nio.xcworkspace
-matrix:
-  include:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/13930558/28665145-5cae7d82-72cb-11e7-9db3-059fd95b547d.png"/>
+</p>
 
-    - xcode_scheme: Nio macOS
-      language: swift
-      env:
-        - XCODE_SDK=macosx10.13
-        - XCODE_ACTION="test"
-        - XCODE_DESTINATION="arch=x86_64"
+<div align = "center">
+  <a href="https://cocoapods.org/pods/NIO">
+    <img src="https://img.shields.io/cocoapods/v/NIO.svg?style=flat" />
+  </a>
+  <a href="https://github.com/incetro/NIO">
+    <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" />
+  </a>
+  <a href="https://github.com/incetro/NIO#installation">
+    <img src="https://img.shields.io/badge/compatible-swift%203.0-orange.svg" />
+  </a>
+</div>
 
-    - xcode_scheme: Nio iOS
-      language: swift
-      env:
-        - XCODE_SDK=iphonesimulator11.0
-        - XCODE_ACTION="test"
-        - XCODE_DESTINATION="platform=iOS Simulator,OS=9.3,name=iPhone SE"
+<div align = "center">
+  <a href="https://travis-ci.org/incetro/NIO">
+    <img src="https://travis-ci.org/incetro/NIO.svg?branch=master" />
+  </a>
+  <a href="https://cocoapods.org/pods/NIO" target="blank">
+    <img src="https://img.shields.io/cocoapods/p/NIO.svg?style=flat" />
+  </a>
+  <a href="https://cocoapods.org/pods/NIO" target="blank">
+    <img src="https://img.shields.io/cocoapods/l/NIO.svg?style=flat" />
+  </a>
+  <br>
+  <br>
+</div>
 
-    - xcode_scheme: Nio tvOS
-      language: swift
-      env:
-        - XCODE_SDK=appletvsimulator11.0
-        - XCODE_ACTION="test"
-        - XCODE_DESTINATION="platform=tvOS Simulator,OS=10.2,name=Apple TV 1080p"
+An implementation of [DAO pattern](http://www.oracle.com/technetwork/java/dataaccessobject-138824.html) for CoreData and Realm (Soon).
+Now you can think less about database in your applications.
 
-    - xcode_scheme: Nio watchOS
-      language: swift
-      env:
-        - XCODE_SDK=watchsimulator4.0
-        - XCODE_ACTION="build" 
-        - XCODE_DESTINATION="platform=watchOS Simulator,name=Apple Watch - 38mm"
-install:   
-  - if [[ `uname` == "Linux" ]] ; then 
-        eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)";
-    fi
-script:    
-    - if [[ `uname` == "Linux" ]] ; then
-        swift test;
-      fi
+- [Features](#features)
+- [Supported frameworks](#supported-frameworks)
+- [Usage](#usage)
+- [Requirements](#requirements)
+- [Communication](#communication)
+- [Installation](#installation)
+- [Author](#author)
+- [License](#license)
 
-    - if [[ `uname` == "Darwin" ]] ; then
-        pod install
-        set -o pipefail;
-        xcodebuild -version;
-        xcodebuild -showsdks;
-        instruments -s devices;
-        travis_retry xcodebuild -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" -configuration Debug ENABLE_TESTABILITY=YES $XCODE_ACTION | xcpretty;
-      fi
-after_success:
-    - sleep 5 # workaround https://github.com/travis-ci/travis-ci/issues/4725
+## Features
+- [x] CRUD operations for your database based on [Monreau](https://github.com/incetro/Monreau)
+- [x] Universal built-in Translator based on [Transformer](https://github.com/incetro/Transformer) with nested objects support
+- [x] Universal built-in Refresher with nested objects support
+- [x] Custom translators
+- [x] Custom refreshers
+- [x] Abstraction of database objects (models) from application objects (plains)
+
+## Supported frameworks
+- [x] CoreData
+- [ ] Realm
+
+## Usage
+The first thing you should know is that the primary key is a field named ```nioID```. And you must add this field (with String type) to your CoreData models (only in CoreData scheme). Next, I'll explain everything in the example with 3 models (```CategoryModelObject```, ```PositionModelObject``` and ```AdditiveModelObject```) and 3 plain objects (```CategoryPlainObject```, ```PositionPlainObject``` and ```AdditivePlainObject```)
+### Protocols and classes
+NIO contains several main classes and protocols:
+- ManagedModel (class)
+- TransformablePlain (protocol)
+- Plain (protocol)
+- Model (protocol)
+### ManagedModel
+All of your your CoreData models must conform this protocol.
+```swift
+// MARK: - CategoryModelObject
+class CategoryModelObject: ManagedModel {
+    
+    @NSManaged var id: Int64
+    @NSManaged var name: String
+    @NSManaged var positions: NSSet
+}
+
+// MARK: - PositionModelObject
+class PositionModelObject: ManagedModel {
+    
+    @NSManaged var id: Int64
+    @NSManaged var name: String
+    @NSManaged var price: Double
+    @NSManaged var additives: NSSet
+    @NSManaged var category: CategoryModelObject?
+}
+
+// MARK: - AdditiveModelObject
+class AdditiveModelObject: ManagedModel {
+    
+    @NSManaged var id: Int64
+    @NSManaged var name: String
+    @NSManaged var price: Double
+    @NSManaged var position: PositionModelObject?
+}
+```
+### TransformablePlain
+This protocol lets you use built-in Translator
+```swift
+// MARK: - CategoryPlainObject
+class CategoryPlainObject: TransformablePlain {
+    
+    let name: String
+    let id: Int64
+    
+    var nioID: NioID {
+        return NioID(value: id)
+    }
+    
+    var positions: [PositionPlainObject] = []
+    
+    init(name: String, id: Int64) {
+        self.name  = name
+        self.id    = id
+    }
+    
+    required init(with resolver: Resolver) throws {
+        self.id    = try resolver.value("id")
+        self.name  = try resolver.value("name")
+        
+        self.positions = (try? resolver.value("positions")) ?? []
+    }
+}
+
+// MARK: - PositionPlainObject
+class PositionPlainObject: TransformablePlain {
+    
+    let id: Int64
+    let name: String
+    let price: Double
+    
+    var nioID: NioID {
+        return NioID(value: id)
+    }
+    
+    init(name: String, price: Double, id: Int64) {
+        self.name  = name
+        self.id    = id
+        self.price = price
+    }
+    
+    var category: CategoryPlainObject? = nil
+    var additives: [AdditivePlainObject] = []
+    
+    required init(with resolver: Resolver) throws {
+        
+        self.id        =  try  resolver.value("id")
+        self.name      =  try  resolver.value("name")
+        self.price     =  try  resolver.value("price")
+        self.category  =  try? resolver.value("category")
+        self.additives = (try? resolver.value("additives")) ?? []
+    }
+}
+
+// MARK: - AdditivePlainObject
+class AdditivePlainObject: TransformablePlain {
+
+    let id: Int64
+    let name: String
+    let price: Double  
+    
+    var nioID: NioID {
+        return NioID(value: id)
+    }
+    
+    init(name: String, price: Double, id: Int64) {
+        self.name  = name
+        self.id    = id
+        self.price = price
+    }
+    
+    var position: PositionPlainObject? = nil
+    
+    required init(with resolver: Resolver) throws {
+        
+        self.id       = try  resolver.value("id")
+        self.name     = try  resolver.value("name")
+        self.price    = try  resolver.value("price")
+        self.position = try? resolver.value("position")
+    }
+}
+```
+### Plain
+If you want to use custom Translator, use this protocol - just conform it and write your own Translator. [Example](#custom-translators)
+### Initialization
+```swift
+/// Standard initializer with built-in Translator and Refresher
+let dao = Nio.coredata(named: "AppModel", model: UserModelObject.self, plain: UserPlainObject.self)
+
+/// Initializer with with built-in Translator and custom Refresher
+let dao = Nio.coredata(named: "AppModel", refresher: refresher)
+
+/// Initializer with custom Translator and built-in Refresher
+let dao = Nio.coredata(named: "AppModel", translator: translator)
+
+/// Initializer with custom Translator and Refresher
+let dao = Nio.coredata(named: "AppModel", refresher: refresher, translator: translator)
+
+/// Standard initializer for unit testing with built-in Translator and Refresher
+let dao = Nio.coredataInMemory(named: "AppModel", model: UserModelObject.self, plain: UserPlainObject.self)
+
+/// Initializer for unit testing with with built-in Translator and custom Refresher
+let dao = Nio.coredataInMemory(named: "AppModel", refresher: refresher)
+
+/// Initializer for unit testing with custom Translator and built-in Refresher
+let dao = Nio.coredataInMemory(named: "AppModel", translator: translator)
+
+/// Initializer for unit testing with custom Translator and Refresher
+let dao = Nio.coredataInMemory(named: "AppModel", refresher: refresher, translator: translator)
+
+/// Standard initializer with context, built-in Translator and Refresher
+let dao = Nio.coredata(withContext: context, model: UserModelObject.self, plain: UserPlainObject.self)
+
+/// Standard initializer with context, built-in Translator and custom Refresher
+let dao = Nio.coredata(withContext: context, refresher: refresher)
+
+/// Standard initializer with context, custom Translator and built-in Refresher
+let dao = Nio.coredata(withContext: context, translator: translator)
+
+/// Standard initializer with context, custom Translator and Refresher
+let dao = Nio.coredata(withContext: context, translator: translator, refresher: refresher)
+```
+### CRUD operations
+#### Create
+```swift
+let category = CategoryPlainObject(name: "Category #1", id: 1)
+let position = PositionPlainObject(name: "Position #1", price: 225.0, id: 1)
+
+position.additives = [
+    AdditivePlainObject(name: "Additive #1", price: 20.0, id: 1),
+    AdditivePlainObject(name: "Additive #2", price: 30.0, id: 2)
+]
+
+category.positions = [position]
+
+/// Add model to your database (positions and additives will be added automatically)
+try dao.create(category)
+```
+#### Read
+```swift
+/// Read all models
+let categories = try dao.read()
+
+/// Read models by filter
+let categories = try dao.read(byPredicate: "id > 5")
+
+/// Read models by NSPredicate
+let predicate  = NSPredicate(format: "name = %@", name)            
+let categories = try dao.read(byPredicate: predicate, orderedBy: "name", ascending: true)
+
+/// Read model by primary key
+let categories = try dao.read(byPrimaryKey: category.nioID)
+
+/// Read models by filter with sorting
+let categories = try dao.read(byPredicate: "id > 5", orderedBy: "name", ascending: true)
+```
+#### Update
+```swift
+/// Update your model
+try dao.persist(category)
+
+/// Update your models.
+/// if erase == true then dao delete all models before persist
+try dao.persist(categories, erase: true)
+
+/// We recommend to use it in the following cases:
+/// 1. If you have big and complex database schema (many entities, many relationships)
+/// 2. If you have thousands of objects
+try dao.persistAsync(categories, erase: false, success: { 
+
+    /// Success
+    
+}, failure: { error in
+
+    /// Error       
+})
+```
+#### Delete
+```swift
+/// Delete all models
+try dao.erase()
+
+/// Delete concrete models
+try dao.erase(plains: categories)
+
+/// Delete models by filter
+try dao.erase(byPredicate: "id < 5")
+
+/// Delete model by primary key
+try dao.erase(byPrimaryKey: category.nioID)
+
+/// Delete models by primary keys
+try dao.erase(byPrimaryKeys: keys)
+```
+### Custom Translators
+If you want to use custom Translator, your PlainObject class must conform ```Plain``` protocol and your ModelObject class (CoreData, Realm objects...) must conform ```Model``` protocol
+```swift
+class CategoryTranslator: Translator {
+    
+    func translate(model: CategoryModelObject) throws -> CategoryPlainObject {
+        /// Make plain from model here
+    }
+}
+
+/// Create DAO instance
+let dao = Nio.coredata(named: "AppModel", translator: CategoryTranslator())
+```
+### Custom Refreshers
+If you want to use custom Refresher, your PlainObject class must conform ```Plain``` protocol and your ModelObject class (CoreData, Realm objects...) must conform ```Model``` protocol
+```swift
+class CategoryRefresher: Refresher {
+    
+    func refresh(_ model: CategoryModelObject, withPlain plain: CategoryPlainObject) throws {
+        /// Fill model from plain here
+    }
+}
+
+/// Create DAO instance
+let dao = Nio.coredata(named: "AppModel", refresher: CategoryRefresher())
+```
+## Requirements
+- iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+
+- Xcode 8.1, 8.2, 8.3, and 9.0
+- Swift 3.0, 3.1, 3.2, and 4.0
+
+## Communication
+
+- If you **found a bug**, open an issue.
+- If you **have a feature request**, open an issue.
+- If you **want to contribute**, submit a pull request.
+
+## Installation
+
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate Nio into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+use_frameworks!
+
+target "<Your Target Name>" do
+    pod "NIO"
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+### Manually
+
+If you prefer not to use any dependency managers, you can integrate Nio into your project manually.
+
+#### Embedded Framework
+
+- Open up Terminal, `cd` into your top-level project directory, and run the following command "if" your project is not initialized as a git repository:
+
+  ```bash
+  $ git init
+  ```
+
+- Add Nio as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
+
+  ```bash
+  $ git submodule add https://github.com/incetro/NIO.git
+  ```
+
+- Open the new `Nio` folder, and drag the `Nio.xcodeproj` into the Project Navigator of your application's Xcode project.
+
+    > It should appear nested underneath your application's blue project icon. Whether it is above or below all the other Xcode groups does not matter.
+
+- Select the `Nio.xcodeproj` in the Project Navigator and verify the deployment target matches that of your application target.
+- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the "Targets" heading in the sidebar.
+- In the tab bar at the top of that window, open the "General" panel.
+- Click on the `+` button under the "Embedded Binaries" section.
+- You will see two different `Nio.xcodeproj` folders each with two different versions of the `Nio.framework` nested inside a `Products` folder.
+
+    > It does not matter which `Products` folder you choose from, but it does matter whether you choose the top or bottom `Nio.framework`.
+
+- Select the top `Nio.framework` for iOS and the bottom one for OS X.
+
+    > You can verify which one you selected by inspecting the build log for your project. The build target for `Nio` will be listed as either `Nio iOS`, `Nio macOS`, `Nio tvOS` or `Nio watchOS`.
+
+- And that's it!
+
+  > The `Nio.framework` is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.
+  
+## Author
+
+incetro, incetro@ya.ru
+
+## License
+
+NIO is available under the MIT license. See the LICENSE file for more info.

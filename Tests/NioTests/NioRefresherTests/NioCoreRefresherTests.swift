@@ -28,18 +28,18 @@ class NioCoreRefresherTests: XCTestCase {
     
     lazy var categoriesCRUD: CoreStorage<CategoryModelObject> = {
         
-        return CoreStorage<CategoryModelObject>(withContext: self.context)
+        return CoreStorage<CategoryModelObject>(context: self.context)
     }()
     
     lazy var positionsCRUD: CoreStorage<PositionModelObject> = {
         
-        return CoreStorage<PositionModelObject>(withContext: self.context)
+        return CoreStorage<PositionModelObject>(context: self.context)
     }()
     
     
     lazy var additivesCRUD: CoreStorage<AdditiveModelObject> = {
         
-        return CoreStorage<AdditiveModelObject>(withContext: self.context)
+        return CoreStorage<AdditiveModelObject>(context: self.context)
     }()
     
     let refresher = NioCoreRefresher(model: CategoryModelObject.self, plain: CategoryPlainObject.self)
@@ -151,8 +151,8 @@ class NioCoreRefresherTests: XCTestCase {
             
             XCTAssertEqual(model.positions.count, plain.positions.count)
             
-            let positionModelObjects = (model.positions.allObjects as? [PositionModelObject])?.sorted(by: { $0.0.id < $0.1.id }) ?? []
-            let positionPlainObjects = plain.positions.sorted(by: { $0.0.id < $0.1.id })
+            let positionModelObjects = (model.positions.allObjects as? [PositionModelObject])?.sorted(by: { $0.id < $1.id }) ?? []
+            let positionPlainObjects = plain.positions.sorted(by: { $0.id < $1.id })
             
             for i in 0..<positionModelObjects.count {
                 
@@ -165,8 +165,8 @@ class NioCoreRefresherTests: XCTestCase {
                 XCTAssertEqual(positionModelObjects[i].category?.objectID, model.objectID)
                 XCTAssertEqual(positionModelObjects[i].additives.count, positionPlainObjects[i].additives.count)
                 
-                let additiveModelObjects = (positionModelObjects[i].additives.allObjects as? [AdditiveModelObject])?.sorted(by: { $0.0.id < $0.1.id }) ?? []
-                let additivePlainObjects = positionPlainObjects[i].additives.sorted(by: { $0.0.id < $0.1.id })
+                let additiveModelObjects = (positionModelObjects[i].additives.allObjects as? [AdditiveModelObject])?.sorted(by: { $0.id < $1.id }) ?? []
+                let additivePlainObjects = positionPlainObjects[i].additives.sorted(by: { $0.id < $1.id })
                 
                 for j in 0..<additiveModelObjects.count {
                     

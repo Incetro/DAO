@@ -15,17 +15,13 @@ import CoreData
 open class ManagedModel: NSManagedObject, Model {
     
     /// Primary key
-    
     @NSManaged var nioID: String
     
     /// Primary key type = String for all models
-    
     public typealias PrimaryType = String
     
     /// Primary key name
-    
     public static var primaryKey: String {
-        
         return "nioID"
     }
 }

@@ -18,29 +18,23 @@ public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType
     // MARK: - Types
     
     /// Database model type
-    
     public typealias Model = TranslatorType.TranslatingModel
     
     /// Plain object type
-    
     public typealias Plain = TranslatorType.TranslatingPlain
     
     /// Primary key type
-    
     public typealias PKType = StorageType.Key
     
     // MARK: - Properties
     
     /// Database storage
-    
     private let storage: StorageType
     
     /// Translator for current `Model` and `Plain` types
-    
     private let refresher: RefresherType
     
     /// Refresher for current `Model` and `Plain` types
-    
     private let translator: TranslatorType
     
     // MARK: - Initializers
@@ -51,16 +45,14 @@ public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType
     ///   - storage: Database storage
     ///   - translator: Translator for current `Model` and `Plain` types
     ///   - refresher: Refresher for current `Model` and `Plain` types
-    
     public init(storage: StorageType, translator: TranslatorType, refresher: RefresherType) {
-        
         self.storage    = storage
         self.refresher  = refresher
         self.translator = translator
     }
     
     // MARK: - Create
-    
+
     /// Create entity in database
     ///
     /// - Parameter plain: Plain object with all data for creating
@@ -69,7 +61,6 @@ public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType
     public func create(_ plain: Plain) throws {
         
         _ = try self.storage.create { model in
-            
             try self.refresher.refresh(model, withPlain: plain)
         }
     }
@@ -147,7 +138,7 @@ public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType
     
     public func read(byPredicate predicate: Predicate, orderedBy name: String, ascending: Bool) throws -> [Plain] {
         
-        let sorter = SortDescriptor(withKey: name, ascending: ascending)
+        let sorter = SortDescriptor(key: name, ascending: ascending)
         
         let models = try self.storage.find(byPredicate: predicate, includeSubentities: true, sortDescriptors: [sorter])
         let plains = try self.translator.translate(models: models)

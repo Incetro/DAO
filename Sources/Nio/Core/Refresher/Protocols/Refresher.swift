@@ -21,7 +21,6 @@ public protocol Refresher {
     ///   - model: Database model
     ///   - withPlain: Plain object
     /// - Throws: Updating error
-    
     func refresh(_ model: RefreshingModel, withPlain plain: RefreshingPlain) throws
 }
 
@@ -33,13 +32,9 @@ extension Refresher {
     ///   - model: Database models
     ///   - withPlain: Plain objects
     /// - Throws: Updating error
-    
     func refresh(_ models: [RefreshingModel], withPlains plains: [RefreshingPlain]) throws {
-        
         if models.count == plains.count {
-            
             for i in 0..<models.count {
-                
                 try self.refresh(models[i], withPlain: plains[i])
             }
         }

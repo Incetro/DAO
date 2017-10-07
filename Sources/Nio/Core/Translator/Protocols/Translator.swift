@@ -22,7 +22,6 @@ public protocol Translator {
     /// - Parameter model: Database model
     /// - Returns: Plain object
     /// - Throws: Translation error
-    
     func translate(model: TranslatingModel) throws -> TranslatingPlain
 }
 
@@ -33,11 +32,8 @@ public extension Translator {
     /// - Parameter models: Database models
     /// - Returns: Plain objects
     /// - Throws: Translation error
-    
     func translate(models: [TranslatingModel]) throws -> [TranslatingPlain] {
-        
         return try models.map {
-            
             try self.translate(model: $0)
         }
     }

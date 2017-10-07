@@ -24,7 +24,6 @@ public class NioTranslator<M: Model, P: TransformablePlain>: Translator {
     // MARK: - Properties
     
     /// Transformer instance
-    
     private let transformer: Transformer
     
     // MARK: - Initializers
@@ -32,9 +31,7 @@ public class NioTranslator<M: Model, P: TransformablePlain>: Translator {
     /// Initializer with tranformer instance
     ///
     /// - Parameter transformer: Transformer instance
-    
     public init(transformer: Transformer) {
-        
         self.transformer = transformer
     }
     
@@ -44,18 +41,14 @@ public class NioTranslator<M: Model, P: TransformablePlain>: Translator {
     ///   - transformer: Transformer instance
     ///   - model: Database model type
     ///   - plain: Plain object type
-    
     public init(transformer: Transformer, model: M.Type, plain: P.Type) {
-        
         self.transformer = transformer
     }
     
     /// Initializer with transform type
     ///
     /// - Parameter transformType: Transform type (coredata, realm)
-    
     public init(withTransformType transformType: MappingType) {
-        
         self.transformer = Transformer(from: transformType)
     }
     
@@ -65,18 +58,13 @@ public class NioTranslator<M: Model, P: TransformablePlain>: Translator {
     ///   - transformType: Transform type (coredata, realm)
     ///   - model: Database model type
     ///   - plain: Plain object type
-    
     public init(withTransformType transformType: MappingType, model: M.Type, plain: P.Type) {
-        
-        self.transformer = Transformer(from: transformType)
+        transformer = Transformer(from: transformType)
     }
     
     // MARK: - Translator
     
     public func translate(model: M) throws -> P {
-        
-        let plain: P = try self.transformer.transform(from: model)
-        
-        return plain
+        return try self.transformer.transform(from: model)
     }
 }

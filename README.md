@@ -1,10 +1,32 @@
-![Placeholder](https://user-images.githubusercontent.com/13930558/28310017-c3f8c296-6bb3-11e7-9572-83f99515149e.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/13930558/28665145-5cae7d82-72cb-11e7-9db3-059fd95b547d.png"/>
+</p>
 
-[![Build Status](https://travis-ci.org/incetro/NIO.svg?branch=master)](https://travis-ci.org/incetro/NIO)
-[![CocoaPods](https://img.shields.io/cocoapods/v/NIO.svg)](https://img.shields.io/cocoapods/v/NIO.svg)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/incetro/NIO/master/LICENSE.md)
-[![Platforms](https://img.shields.io/cocoapods/p/NIO.svg)](https://cocoapods.org/pods/NIO)
+<div align = "center">
+  <a href="https://cocoapods.org/pods/NIO">
+    <img src="https://img.shields.io/cocoapods/v/NIO.svg?style=flat" />
+  </a>
+  <a href="https://github.com/incetro/NIO">
+    <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" />
+  </a>
+  <a href="https://github.com/incetro/NIO#installation">
+    <img src="https://img.shields.io/badge/compatible-swift%203.0-orange.svg" />
+  </a>
+</div>
+
+<div align = "center">
+  <a href="https://travis-ci.org/incetro/NIO">
+    <img src="https://travis-ci.org/incetro/NIO.svg?branch=master" />
+  </a>
+  <a href="https://cocoapods.org/pods/NIO" target="blank">
+    <img src="https://img.shields.io/cocoapods/p/NIO.svg?style=flat" />
+  </a>
+  <a href="https://cocoapods.org/pods/NIO" target="blank">
+    <img src="https://img.shields.io/cocoapods/l/NIO.svg?style=flat" />
+  </a>
+  <br>
+  <br>
+</div>
 
 An implementation of [DAO pattern](http://www.oracle.com/technetwork/java/dataaccessobject-138824.html) for CoreData and Realm (Soon).
 Now you can think less about database in your applications.

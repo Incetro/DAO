@@ -1,4 +1,4 @@
-osx_image: xcode8.3
+osx_image: xcode9
 xcode_workspace: Nio.xcworkspace
 matrix:
   include:
@@ -6,28 +6,28 @@ matrix:
     - xcode_scheme: Nio macOS
       language: swift
       env:
-        - XCODE_SDK=macosx10.12
+        - XCODE_SDK=macosx10.13
         - XCODE_ACTION="test"
         - XCODE_DESTINATION="arch=x86_64"
 
     - xcode_scheme: Nio iOS
       language: swift
       env:
-        - XCODE_SDK=iphonesimulator10.3
+        - XCODE_SDK=iphonesimulator11.0
         - XCODE_ACTION="test"
         - XCODE_DESTINATION="platform=iOS Simulator,OS=9.3,name=iPhone SE"
 
     - xcode_scheme: Nio tvOS
       language: swift
       env:
-        - XCODE_SDK=appletvsimulator10.2
+        - XCODE_SDK=appletvsimulator11.0
         - XCODE_ACTION="test"
         - XCODE_DESTINATION="platform=tvOS Simulator,OS=10.2,name=Apple TV 1080p"
 
     - xcode_scheme: Nio watchOS
       language: swift
       env:
-        - XCODE_SDK=watchsimulator3.2
+        - XCODE_SDK=watchsimulator4.0
         - XCODE_ACTION="build" 
         - XCODE_DESTINATION="platform=watchOS Simulator,name=Apple Watch - 38mm"
 install:   

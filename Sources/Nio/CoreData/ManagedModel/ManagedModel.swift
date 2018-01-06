@@ -11,7 +11,6 @@ import CoreData
 // MARK: - ManagedModel
 
 /// If you use CoreData you must inherit your models from this class
-
 open class ManagedModel: NSManagedObject, Model {
     
     /// Primary key

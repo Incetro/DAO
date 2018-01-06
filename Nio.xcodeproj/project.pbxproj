@@ -28,9 +28,9 @@
 		33318CF01F1BBE5800F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
 		33318CF11F1BBE5800F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
 		33318CF21F1BBE5900F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
-		33318CF51F1BBE8F00F27BC7 /* NioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CF41F1BBE8F00F27BC7 /* NioTests.swift */; };
-		33318CF61F1BBE8F00F27BC7 /* NioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CF41F1BBE8F00F27BC7 /* NioTests.swift */; };
-		33318CF71F1BBE8F00F27BC7 /* NioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CF41F1BBE8F00F27BC7 /* NioTests.swift */; };
+		33318CF51F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CF41F1BBE8F00F27BC7 /* CoreDataTestCase.swift */; };
+		33318CF61F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CF41F1BBE8F00F27BC7 /* CoreDataTestCase.swift */; };
+		33318CF71F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CF41F1BBE8F00F27BC7 /* CoreDataTestCase.swift */; };
 		3358B6201F19EE6400CBD8CF /* NioCoreRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B61F1F19EE6400CBD8CF /* NioCoreRefresher.swift */; };
 		3358B6211F19F7D200CBD8CF /* NioCoreRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B61F1F19EE6400CBD8CF /* NioCoreRefresher.swift */; };
 		3358B6221F19F7D200CBD8CF /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C0C1F1918B2002425AF /* Refresher.swift */; };
@@ -77,6 +77,37 @@
 		3358B6991F1A3E2A00CBD8CF /* Nio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6971F1A3E2A00CBD8CF /* Nio.swift */; };
 		3358B69A1F1A3E2A00CBD8CF /* Nio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6971F1A3E2A00CBD8CF /* Nio.swift */; };
 		3358B69B1F1A3E2A00CBD8CF /* Nio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6971F1A3E2A00CBD8CF /* Nio.swift */; };
+		3369A9112000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
+		3369A9122000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
+		3369A9132000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
+		3369A9142000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
+		3369A9162000FD2D003BA78B /* RealmTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9152000FD2D003BA78B /* RealmTestCase.swift */; };
+		3369A9172000FD2D003BA78B /* RealmTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9152000FD2D003BA78B /* RealmTestCase.swift */; };
+		3369A9182000FD2D003BA78B /* RealmTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9152000FD2D003BA78B /* RealmTestCase.swift */; };
+		3369A91A2000FD72003BA78B /* DeckRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9192000FD72003BA78B /* DeckRealmObject.swift */; };
+		3369A91B2000FD72003BA78B /* DeckRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9192000FD72003BA78B /* DeckRealmObject.swift */; };
+		3369A91C2000FD72003BA78B /* DeckRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9192000FD72003BA78B /* DeckRealmObject.swift */; };
+		3369A91E2000FDB9003BA78B /* CardRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A91D2000FDB9003BA78B /* CardRealmObject.swift */; };
+		3369A91F2000FDB9003BA78B /* CardRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A91D2000FDB9003BA78B /* CardRealmObject.swift */; };
+		3369A9202000FDB9003BA78B /* CardRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A91D2000FDB9003BA78B /* CardRealmObject.swift */; };
+		3369A9222000FF5A003BA78B /* DeckPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9212000FF5A003BA78B /* DeckPlainObject.swift */; };
+		3369A9232000FF5A003BA78B /* DeckPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9212000FF5A003BA78B /* DeckPlainObject.swift */; };
+		3369A9242000FF5A003BA78B /* DeckPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9212000FF5A003BA78B /* DeckPlainObject.swift */; };
+		3369A9262000FFB7003BA78B /* CardPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9252000FFB7003BA78B /* CardPlainObject.swift */; };
+		3369A9272000FFB7003BA78B /* CardPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9252000FFB7003BA78B /* CardPlainObject.swift */; };
+		3369A9282000FFB7003BA78B /* CardPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9252000FFB7003BA78B /* CardPlainObject.swift */; };
+		3369A92D2001040C003BA78B /* DeckRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A92C2001040C003BA78B /* DeckRefresher.swift */; };
+		3369A92E2001040C003BA78B /* DeckRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A92C2001040C003BA78B /* DeckRefresher.swift */; };
+		3369A92F2001040C003BA78B /* DeckRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A92C2001040C003BA78B /* DeckRefresher.swift */; };
+		3369A93120010923003BA78B /* CardsRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A93020010923003BA78B /* CardsRefresher.swift */; };
+		3369A93220010923003BA78B /* CardsRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A93020010923003BA78B /* CardsRefresher.swift */; };
+		3369A93320010923003BA78B /* CardsRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A93020010923003BA78B /* CardsRefresher.swift */; };
+		3369A9352001231B003BA78B /* DeckTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9342001231B003BA78B /* DeckTranslator.swift */; };
+		3369A9362001231B003BA78B /* DeckTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9342001231B003BA78B /* DeckTranslator.swift */; };
+		3369A9372001231B003BA78B /* DeckTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9342001231B003BA78B /* DeckTranslator.swift */; };
+		3369A9392001235C003BA78B /* CardTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9382001235C003BA78B /* CardTranslator.swift */; };
+		3369A93A2001235C003BA78B /* CardTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9382001235C003BA78B /* CardTranslator.swift */; };
+		3369A93B2001235C003BA78B /* CardTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9382001235C003BA78B /* CardTranslator.swift */; };
 		3375FCC51F1C977600FD7106 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC41F1C977600FD7106 /* Numeric.swift */; };
 		3375FCC61F1C977800FD7106 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC41F1C977600FD7106 /* Numeric.swift */; };
 		3375FCC71F1C977800FD7106 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC41F1C977600FD7106 /* Numeric.swift */; };
@@ -143,7 +174,7 @@
 		33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedModel.swift; sourceTree = "<group>"; };
 		33318CE11F1BBD5A00F27BC7 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		33318CE31F1BBD5A00F27BC7 /* TransformablePlain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformablePlain.swift; sourceTree = "<group>"; };
-		33318CF41F1BBE8F00F27BC7 /* NioTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NioTests.swift; sourceTree = "<group>"; };
+		33318CF41F1BBE8F00F27BC7 /* CoreDataTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTestCase.swift; sourceTree = "<group>"; };
 		3358B61F1F19EE6400CBD8CF /* NioCoreRefresher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NioCoreRefresher.swift; sourceTree = "<group>"; };
 		3358B63D1F19F8B100CBD8CF /* Nio macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nio macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3358B64C1F19F8BB00CBD8CF /* Nio tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nio tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +187,16 @@
 		3358B6891F19FBE600CBD8CF /* CategoryPlainObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPlainObject.swift; sourceTree = "<group>"; };
 		3358B68E1F19FC1100CBD8CF /* PositionPlainObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionPlainObject.swift; sourceTree = "<group>"; };
 		3358B6971F1A3E2A00CBD8CF /* Nio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nio.swift; sourceTree = "<group>"; };
+		3369A9102000F7E9003BA78B /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		3369A9152000FD2D003BA78B /* RealmTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTestCase.swift; sourceTree = "<group>"; };
+		3369A9192000FD72003BA78B /* DeckRealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckRealmObject.swift; sourceTree = "<group>"; };
+		3369A91D2000FDB9003BA78B /* CardRealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRealmObject.swift; sourceTree = "<group>"; };
+		3369A9212000FF5A003BA78B /* DeckPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckPlainObject.swift; sourceTree = "<group>"; };
+		3369A9252000FFB7003BA78B /* CardPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPlainObject.swift; sourceTree = "<group>"; };
+		3369A92C2001040C003BA78B /* DeckRefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckRefresher.swift; sourceTree = "<group>"; };
+		3369A93020010923003BA78B /* CardsRefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRefresher.swift; sourceTree = "<group>"; };
+		3369A9342001231B003BA78B /* DeckTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckTranslator.swift; sourceTree = "<group>"; };
+		3369A9382001235C003BA78B /* CardTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTranslator.swift; sourceTree = "<group>"; };
 		3375FCC41F1C977600FD7106 /* Numeric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numeric.swift; sourceTree = "<group>"; };
 		3375FCC91F1C97B700FD7106 /* NioID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NioID.swift; sourceTree = "<group>"; };
 		3375FCCE1F1C98CC00FD7106 /* Plain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plain.swift; sourceTree = "<group>"; };
@@ -274,7 +315,8 @@
 		33318CF31F1BBE8300F27BC7 /* NioTests */ = {
 			isa = PBXGroup;
 			children = (
-				33318CF41F1BBE8F00F27BC7 /* NioTests.swift */,
+				33318CF41F1BBE8F00F27BC7 /* CoreDataTestCase.swift */,
+				3369A9152000FD2D003BA78B /* RealmTestCase.swift */,
 			);
 			path = NioTests;
 			sourceTree = "<group>";
@@ -317,6 +359,7 @@
 		3358B6701F19F9A300CBD8CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3369A92920010307003BA78B /* Realm */,
 				3358B6711F19F9A300CBD8CF /* CoreDataModel */,
 				3358B6721F19F9A300CBD8CF /* Model */,
 				3358B6731F19F9A300CBD8CF /* Plain */,
@@ -338,6 +381,8 @@
 				3358B67A1F19FA0D00CBD8CF /* CategoryModelObject.swift */,
 				3358B6841F19FB0600CBD8CF /* PositionModelObject.swift */,
 				33318CD31F1B676600F27BC7 /* AdditiveModelObject.swift */,
+				3369A9192000FD72003BA78B /* DeckRealmObject.swift */,
+				3369A91D2000FDB9003BA78B /* CardRealmObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,8 +393,53 @@
 				3358B6891F19FBE600CBD8CF /* CategoryPlainObject.swift */,
 				3358B68E1F19FC1100CBD8CF /* PositionPlainObject.swift */,
 				33318CD81F1B67B600F27BC7 /* AdditivePlainObject.swift */,
+				3369A9212000FF5A003BA78B /* DeckPlainObject.swift */,
+				3369A9252000FFB7003BA78B /* CardPlainObject.swift */,
 			);
 			path = Plain;
+			sourceTree = "<group>";
+		};
+		3369A90E2000F7D6003BA78B /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				3369A90F2000F7E0003BA78B /* RealmModel */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		3369A90F2000F7E0003BA78B /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				3369A9102000F7E9003BA78B /* RealmModel.swift */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
+		3369A92920010307003BA78B /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				3369A92A20010317003BA78B /* Refreshers */,
+				3369A92B20010317003BA78B /* Translators */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		3369A92A20010317003BA78B /* Refreshers */ = {
+			isa = PBXGroup;
+			children = (
+				3369A92C2001040C003BA78B /* DeckRefresher.swift */,
+				3369A93020010923003BA78B /* CardsRefresher.swift */,
+			);
+			path = Refreshers;
+			sourceTree = "<group>";
+		};
+		3369A92B20010317003BA78B /* Translators */ = {
+			isa = PBXGroup;
+			children = (
+				3369A9342001231B003BA78B /* DeckTranslator.swift */,
+				3369A9382001235C003BA78B /* CardTranslator.swift */,
+			);
+			path = Translators;
 			sourceTree = "<group>";
 		};
 		3375FCC31F1C96BF00FD7106 /* Plain */ = {
@@ -399,6 +489,7 @@
 		337B5A501F17646800F4FDAF /* Nio */ = {
 			isa = PBXGroup;
 			children = (
+				3369A90E2000F7D6003BA78B /* Realm */,
 				33318CF81F1BD33D00F27BC7 /* DAO */,
 				33318CF91F1BD33D00F27BC7 /* NIO */,
 				33E32BFD1F18DFAD002425AF /* Core */,
@@ -726,25 +817,27 @@
 					};
 					3358B64B1F19F8BB00CBD8CF = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Manual;
 					};
 					3358B65A1F19F8C900CBD8CF = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					337B5A111F17615000F4FDAF = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					337B5A2C1F17616F00F4FDAF = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					337B5A391F17617700F4FDAF = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					337B5A461F1763DB00F4FDAF = {
@@ -874,12 +967,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Nio tvOS-Tests/Pods-Nio tvOS-Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Monreau-tvOS/Monreau.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-tvOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-tvOS/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Reflex-tvOS/Reflex.framework",
 				"${BUILT_PRODUCTS_DIR}/Transformer-tvOS/Transformer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Monreau.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reflex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Transformer.framework",
 			);
@@ -911,12 +1008,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Nio macOS-Tests/Pods-Nio macOS-Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Monreau-macOS/Monreau.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-macOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-macOS/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Reflex-macOS/Reflex.framework",
 				"${BUILT_PRODUCTS_DIR}/Transformer-macOS/Transformer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Monreau.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reflex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Transformer.framework",
 			);
@@ -1068,12 +1169,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Nio iOS-Tests/Pods-Nio iOS-Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Monreau-iOS/Monreau.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-iOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-iOS/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Reflex-iOS/Reflex.framework",
 				"${BUILT_PRODUCTS_DIR}/Transformer-iOS/Transformer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Monreau.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reflex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Transformer.framework",
 			);
@@ -1134,8 +1239,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33318CF51F1BBE8F00F27BC7 /* NioTests.swift in Sources */,
+				3369A9222000FF5A003BA78B /* DeckPlainObject.swift in Sources */,
+				3369A91A2000FD72003BA78B /* DeckRealmObject.swift in Sources */,
+				3369A93120010923003BA78B /* CardsRefresher.swift in Sources */,
+				3369A91E2000FDB9003BA78B /* CardRealmObject.swift in Sources */,
+				3369A9352001231B003BA78B /* DeckTranslator.swift in Sources */,
+				3369A92D2001040C003BA78B /* DeckRefresher.swift in Sources */,
+				33318CF51F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */,
+				3369A9392001235C003BA78B /* CardTranslator.swift in Sources */,
 				3358B66D1F19F96F00CBD8CF /* NioCoreRefresherTests.swift in Sources */,
+				3369A9262000FFB7003BA78B /* CardPlainObject.swift in Sources */,
+				3369A9162000FD2D003BA78B /* RealmTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1143,8 +1257,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33318CF61F1BBE8F00F27BC7 /* NioTests.swift in Sources */,
+				3369A9232000FF5A003BA78B /* DeckPlainObject.swift in Sources */,
+				3369A91B2000FD72003BA78B /* DeckRealmObject.swift in Sources */,
+				3369A93220010923003BA78B /* CardsRefresher.swift in Sources */,
+				3369A91F2000FDB9003BA78B /* CardRealmObject.swift in Sources */,
+				3369A9362001231B003BA78B /* DeckTranslator.swift in Sources */,
+				3369A92E2001040C003BA78B /* DeckRefresher.swift in Sources */,
+				33318CF61F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */,
+				3369A93A2001235C003BA78B /* CardTranslator.swift in Sources */,
 				3358B66E1F19F96F00CBD8CF /* NioCoreRefresherTests.swift in Sources */,
+				3369A9272000FFB7003BA78B /* CardPlainObject.swift in Sources */,
+				3369A9172000FD2D003BA78B /* RealmTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1152,8 +1275,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33318CF71F1BBE8F00F27BC7 /* NioTests.swift in Sources */,
+				3369A9242000FF5A003BA78B /* DeckPlainObject.swift in Sources */,
+				3369A91C2000FD72003BA78B /* DeckRealmObject.swift in Sources */,
+				3369A93320010923003BA78B /* CardsRefresher.swift in Sources */,
+				3369A9202000FDB9003BA78B /* CardRealmObject.swift in Sources */,
+				3369A9372001231B003BA78B /* DeckTranslator.swift in Sources */,
+				3369A92F2001040C003BA78B /* DeckRefresher.swift in Sources */,
+				33318CF71F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */,
+				3369A93B2001235C003BA78B /* CardTranslator.swift in Sources */,
 				3358B66F1F19F96F00CBD8CF /* NioCoreRefresherTests.swift in Sources */,
+				3369A9282000FFB7003BA78B /* CardPlainObject.swift in Sources */,
+				3369A9182000FD2D003BA78B /* RealmTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1162,6 +1294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33318CE41F1BBD5A00F27BC7 /* Model.swift in Sources */,
+				3369A9112000F7E9003BA78B /* RealmModel.swift in Sources */,
 				33318CD91F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */,
 				3375FCCF1F1C98CC00FD7106 /* Plain.swift in Sources */,
 				3358B68F1F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */,
@@ -1189,6 +1322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33318CDA1F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */,
+				3369A9122000F7E9003BA78B /* RealmModel.swift in Sources */,
 				3358B6901F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */,
 				3375FCD01F1C98CC00FD7106 /* Plain.swift in Sources */,
 				3358B67C1F19FA0D00CBD8CF /* CategoryModelObject.swift in Sources */,
@@ -1216,6 +1350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33318CDB1F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */,
+				3369A9132000F7E9003BA78B /* RealmModel.swift in Sources */,
 				3358B6911F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */,
 				3375FCD11F1C98CC00FD7106 /* Plain.swift in Sources */,
 				3358B67D1F19FA0D00CBD8CF /* CategoryModelObject.swift in Sources */,
@@ -1243,6 +1378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33318CDC1F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */,
+				3369A9142000F7E9003BA78B /* RealmModel.swift in Sources */,
 				3358B6921F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */,
 				3375FCD21F1C98CC00FD7106 /* Plain.swift in Sources */,
 				3358B67E1F19FA0D00CBD8CF /* CategoryModelObject.swift in Sources */,
@@ -1339,7 +1475,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1389,7 +1525,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -1446,7 +1582,8 @@
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Debug;
@@ -1495,7 +1632,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 10.2;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1553,7 +1691,8 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1601,7 +1740,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1726,7 +1866,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1785,7 +1926,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1852,7 +1994,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1911,7 +2054,8 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1978,7 +2122,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2036,7 +2181,8 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VALIDATE_PRODUCT = YES;
@@ -2106,7 +2252,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2166,7 +2312,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

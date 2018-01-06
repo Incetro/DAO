@@ -26,8 +26,8 @@ public class NioCoreRefresher<M, P>: Refresher where M: ManagedModel, P: Plain {
     /// Initializer with model and plain types
     ///
     /// - Parameters:
-    ///   - mode: Model type
-    ///   - plain: Plain type
+    ///   - mode: model type
+    ///   - plain: plain type
     public init(model: M.Type, plain: P.Type) {
 
     }
@@ -37,8 +37,8 @@ public class NioCoreRefresher<M, P>: Refresher where M: ManagedModel, P: Plain {
     /// Check if property named propertyName in the given object is a collection
     ///
     /// - Parameters:
-    ///   - object: Given object
-    ///   - propertyName: Property name
+    ///   - object: given object
+    ///   - propertyName: property name
     /// - Returns: true if property named propertyName is collection
     private func propertyIsCollection(_ object: NSManagedObject, propertyName: String) -> Bool {
         
@@ -64,8 +64,8 @@ public class NioCoreRefresher<M, P>: Refresher where M: ManagedModel, P: Plain {
     /// Check if property named propertyName in the given object is a relationship
     ///
     /// - Parameters:
-    ///   - object: Given object
-    ///   - propertyName: Property name
+    ///   - object: some object
+    ///   - propertyName: property name
     /// - Returns: true if property named propertyName is a relationship
     private func propertyIsRelationship(_ object: NSManagedObject, propertyName: String) -> Bool {
         return object.entity.relationshipsByName[propertyName] != nil
@@ -74,9 +74,9 @@ public class NioCoreRefresher<M, P>: Refresher where M: ManagedModel, P: Plain {
     /// Update subentity by the given property
     ///
     /// - Parameters:
-    ///   - object: Object with subentity
-    ///   - property: Object with information about subentity
-    /// - Throws: Refreshing error
+    ///   - object: object with subentity
+    ///   - property: object with information about subentity
+    /// - Throws: refreshing error
     private func refreshSubentity(_ object: NSManagedObject, property: Reflection, ignoredProperties: Set<String>) throws {
         
         guard let relationship = object.entity.relationshipsByName[property.name] else {
@@ -107,41 +107,30 @@ public class NioCoreRefresher<M, P>: Refresher where M: ManagedModel, P: Plain {
     /// Update collection by the given property
     ///
     /// - Parameters:
-    ///   - object: Object with collection
-    ///   - property: Object with information about collection
-    /// - Throws: Refreshing error
+    ///   - object: object with some collection
+    ///   - property: object with some information about collection
+    /// - Throws: refreshing error
     private func refreshCollection(_ object: NSManagedObject, property: Reflection, ignoredProperties: Set<String>) throws {
-        
         if let relationship = object.entity.relationshipsByName[property.name], let entityName = relationship.destinationEntity?.managedObjectClassName {
-            
             let set = NSMutableSet()
-            
             guard let plains = property.value as? [Any] else {
                 throw NioCoreRefresherError.cannotConvertObjectToPlainArray(name: String(describing: type(of: property.value)))
             }
-            
             for plainObject in plains {
-                
                 guard let clazz: ManagedModel.Type = NSClassFromString(entityName) as? ManagedModel.Type else {
                     throw NioCoreRefresherError.entityIsNotManaged(name: entityName)
                 }
-                
                 guard let context = object.managedObjectContext else {
                     throw NioCoreRefresherError.unexistingContext(inObject: String(describing: object.classForCoder))
                 }
-                
                 let instance = clazz.init(context: context)
-                
                 guard let plain = plainObject as? Plain else {
                     throw NioCoreRefresherError.cannotConvertObjectToPlain(name: property.name)
                 }
-                
                 try self.refresh(object: instance, from: plain, ignoredProperties: ignoredProperties)
                 set.add(instance)
             }
-            
             object.setValue(set, forKey: property.name)
-            
         } else {
             object.setValue(property.value, forKey: property.name)
         }
@@ -150,10 +139,9 @@ public class NioCoreRefresher<M, P>: Refresher where M: ManagedModel, P: Plain {
     /// Update managed object with plain object
     ///
     /// - Parameters:
-    ///   - object: Database object
-    ///   - plainObject: Plain object instance
-    /// - Throws: Refreshing error
-    
+    ///   - object: database object
+    ///   - plainObject: plain object instance
+    /// - Throws: refreshing error
     private func refresh(object: ManagedModel, from plainObject: Plain, ignoredProperties: Set<String>) throws {
         
         var ignoredProperties = ignoredProperties
@@ -163,28 +151,20 @@ public class NioCoreRefresher<M, P>: Refresher where M: ManagedModel, P: Plain {
         object.setValue(plainObject.nioID.rawValue, forKey: "nioID")
         
         for propertyName in managedObjectPropertyNames where !ignoredProperties.contains(propertyName) {
-            
             guard let property = plainObjectProperties.children(propertyName) else {
                 throw NioCoreRefresherError.unexistingPropertyInPlainObject(className: Reflector.reflect(from: plainObject).name, propertyName: propertyName)
             }
-            
             if self.propertyIsCollection(object, propertyName: propertyName) {
-                
                 if let ignoredProperty = object.entity.relationshipsByName[property.name]?.inverseRelationship?.name {
                     ignoredProperties.insert(ignoredProperty)
                 }
-                
                 try self.refreshCollection(object, property: property, ignoredProperties: ignoredProperties)
-                
             } else if self.propertyIsRelationship(object, propertyName: propertyName) {
-                
                 guard let ignoredProperty = object.entity.relationshipsByName[property.name]?.inverseRelationship?.name else {
                     throw NioCoreRefresherError.unexistingInverseRelationship(from: property.name, className: String(describing: object.classForCoder))
                 }
-                
                 ignoredProperties.insert(ignoredProperty)
                 try self.refreshSubentity(object, property: property, ignoredProperties: ignoredProperties)
-                
             } else {
                 object.setValue(property.value, forKey: propertyName)
             }
@@ -201,29 +181,20 @@ public class NioCoreRefresher<M, P>: Refresher where M: ManagedModel, P: Plain {
 // MARK: - NSObject
 
 fileprivate extension NSObject {
-    
     func propertyNames() -> Array<String> {
-        
         var results: [String] = []
         var count: UInt32 = 0
-
         if let properties = class_copyPropertyList(classForCoder, &count) {
-
             for i in 0..<count {
-
                 let property = properties[Int(i)]
                 let cname = property_getName(property)
-
                 if let name = String(validatingUTF8: cname) {
                     results.append(name)
                 }
             }
-
             free(properties)
-
             return results
         }
-
         return []
     }
 }

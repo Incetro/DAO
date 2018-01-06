@@ -11,7 +11,6 @@ import CoreData
 // MARK: - PositionModelObject
 
 class PositionModelObject: ManagedModel {
-    
     @NSManaged var name: String
     @NSManaged var id: Int64
     @NSManaged var price: Double

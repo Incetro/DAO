@@ -15,7 +15,6 @@ import Transformer
 /// database models to plain objects.
 /// So, if you don't like this class, you can implement `Translator`
 /// protocol for your entities and use it.
-
 public class NioTranslator<M: Model, P: TransformablePlain>: Translator {
     
     public typealias TranslatingModel = M
@@ -39,15 +38,15 @@ public class NioTranslator<M: Model, P: TransformablePlain>: Translator {
     ///
     /// - Parameters:
     ///   - transformer: Transformer instance
-    ///   - model: Database model type
-    ///   - plain: Plain object type
+    ///   - model: database model type
+    ///   - plain: plain object type
     public init(transformer: Transformer, model: M.Type, plain: P.Type) {
         self.transformer = transformer
     }
     
     /// Initializer with transform type
     ///
-    /// - Parameter transformType: Transform type (coredata, realm)
+    /// - Parameter transformType: transform type (coredata, realm)
     public init(withTransformType transformType: MappingType) {
         self.transformer = Transformer(from: transformType)
     }
@@ -55,9 +54,9 @@ public class NioTranslator<M: Model, P: TransformablePlain>: Translator {
     /// Initializer with tranform type and model/plain types
     ///
     /// - Parameters:
-    ///   - transformType: Transform type (coredata, realm)
-    ///   - model: Database model type
-    ///   - plain: Plain object type
+    ///   - transformType: transform type (coredata, realm)
+    ///   - model: database model type
+    ///   - plain: plain object type
     public init(withTransformType transformType: MappingType, model: M.Type, plain: P.Type) {
         transformer = Transformer(from: transformType)
     }

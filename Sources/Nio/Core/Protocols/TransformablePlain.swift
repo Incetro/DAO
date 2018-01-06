@@ -10,9 +10,8 @@ import Transformer
 
 // MARK: - TransformablePlain
 
-/// If you want to use NioTranslator your plain
+/// If you want use NioTranslator your plain
 /// object must implement this protocol
-
 public protocol TransformablePlain: Plain, Mappable {
     
 }

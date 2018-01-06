@@ -13,7 +13,6 @@ import Transformer
 class CategoryPlainObject: TransformablePlain {
     
     var nioID: NioID {
-        
         return NioID(value: id)
     }
     
@@ -23,16 +22,13 @@ class CategoryPlainObject: TransformablePlain {
     var positions: [PositionPlainObject] = []
     
     init(with name: String, id: Int64) {
-        
         self.name = name
         self.id = id
     }
     
     required init(with resolver: Resolver) throws {
-        
-        self.id      = try resolver.value("id")
-        self.name    = try resolver.value("name")
-        
+        self.id = try resolver.value("id")
+        self.name = try resolver.value("name")
         self.positions = (try? resolver.value("positions")) ?? []
     }
 }

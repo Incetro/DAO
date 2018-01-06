@@ -12,7 +12,6 @@ import CoreData
 // MARK: - Model
 
 /// Base protocol for all database models (CoreData, Realm...)
-
 public protocol Model: Storable {
 
 }

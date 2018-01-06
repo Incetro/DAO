@@ -13,7 +13,6 @@ import Transformer
 class PositionPlainObject: TransformablePlain {
     
     var nioID: NioID {
-        
         return NioID(value: id)
     }
     
@@ -22,7 +21,6 @@ class PositionPlainObject: TransformablePlain {
     let price: Double
     
     init(with name: String, price: Double, id: Int64) {
-        
         self.name = name
         self.id = id
         self.price = price
@@ -32,12 +30,10 @@ class PositionPlainObject: TransformablePlain {
     var additives: [AdditivePlainObject] = []
     
     required init(with resolver: Resolver) throws {
-        
-        self.id        = try  resolver.value("id")
-        self.name      = try  resolver.value("name")
-        self.price     = try  resolver.value("price")
-        self.category  = try? resolver.value("category")
-        
+        self.id = try  resolver.value("id")
+        self.name = try  resolver.value("name")
+        self.price = try  resolver.value("price")
+        self.category = try? resolver.value("category")
         self.additives = (try? resolver.value("additives")) ?? []
     }
 }

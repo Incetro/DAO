@@ -11,7 +11,6 @@ import CoreData
 // MARK: - CategoryModelObject
 
 class CategoryModelObject: ManagedModel {
-    
     @NSManaged var name: String
     @NSManaged var id: Int64
     @NSManaged var positions: NSSet

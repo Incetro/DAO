@@ -1,51 +1,34 @@
 use_frameworks!
 
-target "Nio iOS" do
-
-  pod "Transformer"
+def standard_pods
   pod "Monreau"
-  pod "Reflex"
+end
 
+target "Nio iOS" do
+  platform :ios, "10.3"
+  standard_pods
   target "Nio iOS-Tests" do
-
-    inherit! :search_paths
-
+    standard_pods
   end
-
 end
 
 target "Nio watchOS" do
-
-  pod "Transformer"
-  pod "Monreau"
-  pod "Reflex"
-
+  platform :watchos, "3.0"
+  standard_pods
 end
 
 target "Nio tvOS" do
-
-  pod "Transformer"
-  pod "Monreau"
-  pod "Reflex"
-
+  platform :tvos, "10.2"
+  standard_pods
   target "Nio tvOS-Tests" do
-
-    inherit! :search_paths
-
+    standard_pods
   end
-
 end
 
 target "Nio macOS" do
-
-  pod "Transformer"
-  pod "Monreau"
-  pod "Reflex"
-
+  platform :osx, "10.12"
+  standard_pods
   target "Nio macOS-Tests" do
-
-    inherit! :search_paths
-
+    standard_pods
   end
-
 end

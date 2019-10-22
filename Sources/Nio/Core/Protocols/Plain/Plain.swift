@@ -11,9 +11,10 @@ import Foundation
 // MARK: - Plain
 
 /// Parent for all plain objects
-
 public protocol Plain {
-    var nioID: NioID { get }
+
+    /// Unique identifier
+    var uniqueId: UniqueID { get }
 }
 
 public extension Plain {
@@ -22,7 +23,7 @@ public extension Plain {
     ///
     /// - Parameter other: entity compare with.
     /// - Returns: result of comparison.
-    public func equals<T>(_ other: T) -> Bool where T: Plain {
-        return self.nioID == other.nioID
+    func equals<T>(_ other: T) -> Bool where T: Plain {
+        return self.uniqueId == other.uniqueId
     }
 }

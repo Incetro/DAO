@@ -10,32 +10,26 @@ import Monreau
 
 // MARK: - DAO
 
-public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType: Refresher> where StorageType.Model             == TranslatorType.TranslatingModel,
-                                                                                                   RefresherType.RefreshingModel == TranslatorType.TranslatingModel,
-                                                                                                   RefresherType.RefreshingPlain == TranslatorType.TranslatingPlain,
-                                                                                                   StorageType.Key               == String {
+public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.Key == String {
     
     // MARK: - Types
     
     /// Database model type
-    public typealias Model = TranslatorType.TranslatingModel
-    
+    public typealias Model = T.DatabaseModel
+
     /// Plain object type
-    public typealias Plain = TranslatorType.TranslatingPlain
+    public typealias Plain = T.PlainModel
     
     /// Primary key type
-    public typealias PKType = StorageType.Key
+    public typealias PKType = S.Key
     
     // MARK: - Properties
     
     /// Database storage
-    private let storage: StorageType
+    private let storage: S
     
-    /// Translator for current `Model` and `Plain` types
-    private let refresher: RefresherType
-    
-    /// Refresher for current `Model` and `Plain` types
-    private let translator: TranslatorType
+    /// Objects translator
+    private let translator: T
     
     // MARK: - Initializers
     
@@ -44,10 +38,8 @@ public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType
     /// - Parameters:
     ///   - storage: database storage
     ///   - translator: translator for current `Model` and `Plain` types
-    ///   - refresher: Refresher for current `Model` and `Plain` types
-    public init(storage: StorageType, translator: TranslatorType, refresher: RefresherType) {
-        self.storage    = storage
-        self.refresher  = refresher
+    public init(storage: S, translator: T) {
+        self.storage = storage
         self.translator = translator
     }
     
@@ -58,31 +50,34 @@ public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType
     /// - Parameter plain: plain object with all data for creating
     /// - Throws: error if entity cannot be created
     public func create(_ plain: Plain) throws {
-        _ = try self.storage.create { model in
-            try self.refresher.refresh(model, withPlain: plain)
+        try storage.create { model in
+            try translator.translate(from: plain, to: model)
         }
     }
-    
     
     /// Create entities in database
     ///
     /// - Parameter plains: plain objects with all data for creating
     /// - Throws: error if any entity cannot be created
     public func create(_ plains: [Plain]) throws {
-        try plains.forEach {
-            try self.create($0)
-        }
+        try plains.forEach(create)
     }
     
     // MARK: - Read
+    
+    /// Returns the number of objects which fits the predicate
+    /// - Parameter predicate: some predicate
+    func count(predicatedBy predicate: Predicate? = nil) throws -> Int {
+        return try storage.count(predicatedBy: predicate)
+    }
     
     /// Read all entities from database of `Plain` type
     ///
     /// - Returns: array of entities
     /// - Throws: error if any entity cannot be read
     public func read() throws -> [Plain] {
-        let models = try self.storage.findAll()
-        let plains = try self.translator.translate(models: models)
+        let models = try storage.read()
+        let plains = try translator.translate(models: models)
         return plains
     }
     
@@ -91,11 +86,11 @@ public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType
     /// - Parameter primaryKey: entity identifier
     /// - Returns: instance of existant entity or nil
     /// - Throws: error if entity cannot be read
-    public func read(byPrimaryKey primaryKey: NioID) throws -> Plain? {
-        guard let model = try self.storage.find(byPrimaryKey: primaryKey.rawValue) else {
+    public func read(byPrimaryKey primaryKey: UniqueID) throws -> Plain? {
+        guard let model = try storage.read(byPrimaryKey: primaryKey.rawValue) else {
             return nil
         }
-        let plain = try self.translator.translate(model: model)
+        let plain = try translator.translate(model: model)
         return plain
     }
     
@@ -105,9 +100,9 @@ public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType
     ///   - predicate: Filter
     /// - Returns: ordered array of entities
     /// - Throws: error if any entity cannot be read
-    public func read(byPredicate predicate: Predicate) throws -> [Plain] {
-        let models = try self.storage.find(byPredicate: predicate)
-        let plains = try self.translator.translate(models: models)
+    public func read(predicatedBy predicate: Predicate) throws -> [Plain] {
+        let models = try storage.read(predicatedBy: predicate)
+        let plains = try translator.translate(models: models)
         return plains
     }
     
@@ -119,64 +114,43 @@ public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType
     ///   - ascending: ascending flag (descending otherwise)
     /// - Returns: ordered array of entities
     /// - Throws: error if any entity cannot be read
-    public func read(byPredicate predicate: Predicate, orderedBy name: String, ascending: Bool) throws -> [Plain] {
+    public func read(predicatedBy predicate: Predicate, orderedBy name: String, ascending: Bool) throws -> [Plain] {
         let sorter = SortDescriptor(key: name, ascending: ascending)
-        let models = try self.storage.find(byPredicate: predicate, includeSubentities: true, sortDescriptors: [sorter])
-        let plains = try self.translator.translate(models: models)
+        let models = try storage.read(predicatedBy: predicate, includeSubentities: true, sortDescriptors: [sorter])
+        let plains = try translator.translate(models: models)
         return plains
     }
     
     // MARK: - Update
-    
+
     /// Save new entity or update existing
     ///
     /// - Parameter plain: plain object with all data for saving
     /// - Throws: error if entity can not be saved
     public func persist(_ plain: Plain) throws {
-        if let model = try self.storage.find(byPrimaryKey: plain.nioID.rawValue) {
-            try self.refresher.refresh(model, withPlain: plain)
-            try self.storage.save()
-        } else {
-            try self.create(plain)
-        }
-    }
-    
-    /// Saving new entities or update existing
-    ///
-    /// - Parameters:
-    ///   - plains: plain objects with all data for saving
-    ///   - erase: true if need to clear database before persist
-    /// - Throws: error if any entity can not be saved/deleted
-    public func persist(_ plains: [Plain], erase: Bool) throws {
-        if erase {
-            try self.erase()
-        } else {
-            let plainSet = Set(plains.map { $0.nioID })
-            let modelSet = Set(try self.read().map { $0.nioID })
-            try self.erase(byPrimaryKeys: Array(modelSet.intersection(plainSet)))
-        }
-        try plains.forEach {
-            try self.persist($0)
-        }
-    }
-    
-    /// Saving new entities or update existing
-    ///
-    /// - Parameters:
-    ///   - plains: plain objects with all data for saving
-    ///   - erase: true if need to clear database before persist
-    ///   - success: success block
-    ///   - failure: failure block
-    /// - Throws: error if any entity can not be saved/deleted
-    public func persistAsync(_ plains: [Plain], erase: Bool, success: @escaping () -> (), failure: @escaping (Error) -> ()) throws {
-        DispatchQueue(label: "com.incetro.Nio.DAO.PersistAsync").async {
-            do {
-                try self.persist(plains, erase: erase)
-                success()
-            } catch {
-                failure(error)
+        let primaryKey = plain.uniqueId.rawValue
+        if let _ = try storage.read(byPrimaryKey: primaryKey) {
+            try storage.persist(withPrimaryKey: primaryKey) { model in
+                guard let model = model else {
+                    fatalError("There is some unknown error with Monreau framework (model must exists here)")
+                }
+                try translator.translate(from: plain, to: model)
             }
+        } else {
+            try create(plain)
         }
+    }
+    
+    /// Saving new entities or update existing
+    ///
+    /// - Parameters:
+    ///   - plains: plain objects with all data for saving
+    /// - Throws: error if any entity can not be saved
+    public func persist(_ plains: [Plain]) throws {
+        let plainSet = Set(plains.map { $0.uniqueId })
+        let modelSet = Set(try read().map { $0.uniqueId })
+        try erase(byPrimaryKeys: Array(modelSet.intersection(plainSet)))
+        try plains.forEach(persist)
     }
     
     // MARK: - Delete
@@ -185,42 +159,39 @@ public class DAO<StorageType: Storage, TranslatorType: Translator, RefresherType
     ///
     /// - Throws: error if any entity can not be deleted
     public func erase() throws {
-        try self.storage.removeAll()
+        try storage.erase()
     }
     
     /// Delete entity of `Plain` type by identifier
     ///
     /// - Parameter primaryKeys: identifier
     /// - Throws: error if entity cannot be deleted
-    public func erase(byPrimaryKey primaryKey: NioID) throws {
-        try self.storage.remove(byPrimaryKey: primaryKey.rawValue)
+    public func erase(byPrimaryKey primaryKey: UniqueID) throws {
+        try storage.erase(byPrimaryKey: primaryKey.rawValue)
     }
-    
-    /// Delete entity of `Plain` type by identifiers
-    ///
-    /// - Parameter primaryKeys: identifiers
-    /// - Throws: error if any entity cannot be deleted
-    public func erase(byPrimaryKeys primaryKeys: [NioID]) throws {
-        try primaryKeys.forEach {
-            try self.erase(byPrimaryKey: $0)
-        }
-    }
-    
+
     /// Delete entities of `Plain` type by plain objects
     ///
     /// - Parameter plains: plain objects
     /// - Throws: error if any entity cannot be deleted
-    public func erase(plains: [Plain]) throws {
-        try self.erase(byPrimaryKeys: plains.map {
-            $0.nioID
-        })
+    public func erase(_ plains: [Plain]) throws {
+        try erase(byPrimaryKeys: plains.map { $0.uniqueId })
     }
-    
+
+    /// Delete entity of `Plain` type by identifiers
+    ///
+    /// - Parameter primaryKeys: identifiers
+    /// - Throws: error if any entity cannot be deleted
+    public func erase(byPrimaryKeys primaryKeys: [UniqueID]) throws {
+        let predicate = NSPredicate(format: "uniqueId IN %@", primaryKeys.map { $0.rawValue })
+        try erase(predicatedBy: predicate)
+    }
+
     /// Delete entities of `Plain` type by predicate
     ///
     /// - Parameter predicate: filter
     /// - Throws: error if any entity cannot be deleted
-    public func erase(byPredicate predicate: Predicate) throws {
-        try self.storage.remove(byPredicate: predicate)
+    public func erase(predicatedBy predicate: Predicate) throws {
+        try storage.erase(predicatedBy: predicate)
     }
 }

@@ -3,141 +3,89 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FA5714FCBF5AFA6BB36801B /* Pods_Nio_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02BD6460A8003B7918904DB9 /* Pods_Nio_tvOS_Tests.framework */; };
-		33318CD41F1B676600F27BC7 /* AdditiveModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CD31F1B676600F27BC7 /* AdditiveModelObject.swift */; };
-		33318CD51F1B676600F27BC7 /* AdditiveModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CD31F1B676600F27BC7 /* AdditiveModelObject.swift */; };
-		33318CD61F1B676600F27BC7 /* AdditiveModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CD31F1B676600F27BC7 /* AdditiveModelObject.swift */; };
-		33318CD71F1B676600F27BC7 /* AdditiveModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CD31F1B676600F27BC7 /* AdditiveModelObject.swift */; };
-		33318CD91F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CD81F1B67B600F27BC7 /* AdditivePlainObject.swift */; };
-		33318CDA1F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CD81F1B67B600F27BC7 /* AdditivePlainObject.swift */; };
-		33318CDB1F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CD81F1B67B600F27BC7 /* AdditivePlainObject.swift */; };
-		33318CDC1F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CD81F1B67B600F27BC7 /* AdditivePlainObject.swift */; };
+		074FC5434BF006B8DDCBA833 /* Pods_Nio_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB020CA2C8B05E87FEF4EE7C /* Pods_Nio_macOS.framework */; };
+		2440C6365364B27790301B46 /* Pods_Nio_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B557615EDBD5FF20B10570BF /* Pods_Nio_tvOS.framework */; };
 		33318CE01F1BBD4F00F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
 		33318CE41F1BBD5A00F27BC7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE11F1BBD5A00F27BC7 /* Model.swift */; };
-		33318CE61F1BBD5A00F27BC7 /* TransformablePlain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE31F1BBD5A00F27BC7 /* TransformablePlain.swift */; };
 		33318CE71F1BBE5500F27BC7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE11F1BBD5A00F27BC7 /* Model.swift */; };
-		33318CE91F1BBE5500F27BC7 /* TransformablePlain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE31F1BBD5A00F27BC7 /* TransformablePlain.swift */; };
 		33318CEA1F1BBE5500F27BC7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE11F1BBD5A00F27BC7 /* Model.swift */; };
-		33318CEC1F1BBE5500F27BC7 /* TransformablePlain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE31F1BBD5A00F27BC7 /* TransformablePlain.swift */; };
 		33318CED1F1BBE5600F27BC7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE11F1BBD5A00F27BC7 /* Model.swift */; };
-		33318CEF1F1BBE5600F27BC7 /* TransformablePlain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE31F1BBD5A00F27BC7 /* TransformablePlain.swift */; };
 		33318CF01F1BBE5800F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
 		33318CF11F1BBE5800F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
 		33318CF21F1BBE5900F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
-		33318CF51F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CF41F1BBE8F00F27BC7 /* CoreDataTestCase.swift */; };
-		33318CF61F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CF41F1BBE8F00F27BC7 /* CoreDataTestCase.swift */; };
-		33318CF71F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CF41F1BBE8F00F27BC7 /* CoreDataTestCase.swift */; };
-		3358B6201F19EE6400CBD8CF /* NioCoreRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B61F1F19EE6400CBD8CF /* NioCoreRefresher.swift */; };
-		3358B6211F19F7D200CBD8CF /* NioCoreRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B61F1F19EE6400CBD8CF /* NioCoreRefresher.swift */; };
-		3358B6221F19F7D200CBD8CF /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C0C1F1918B2002425AF /* Refresher.swift */; };
-		3358B6231F19F7D200CBD8CF /* NioTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C0E1F1947C9002425AF /* NioTranslator.swift */; };
 		3358B6241F19F7D200CBD8CF /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C051F18E7DF002425AF /* Translator.swift */; };
 		3358B6281F19F7D200CBD8CF /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C001F18E4AD002425AF /* DAO.swift */; };
-		3358B6291F19F7D300CBD8CF /* NioCoreRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B61F1F19EE6400CBD8CF /* NioCoreRefresher.swift */; };
-		3358B62A1F19F7D300CBD8CF /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C0C1F1918B2002425AF /* Refresher.swift */; };
-		3358B62B1F19F7D300CBD8CF /* NioTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C0E1F1947C9002425AF /* NioTranslator.swift */; };
 		3358B62C1F19F7D300CBD8CF /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C051F18E7DF002425AF /* Translator.swift */; };
 		3358B6301F19F7D300CBD8CF /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C001F18E4AD002425AF /* DAO.swift */; };
-		3358B6311F19F7D300CBD8CF /* NioCoreRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B61F1F19EE6400CBD8CF /* NioCoreRefresher.swift */; };
-		3358B6321F19F7D300CBD8CF /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C0C1F1918B2002425AF /* Refresher.swift */; };
-		3358B6331F19F7D300CBD8CF /* NioTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C0E1F1947C9002425AF /* NioTranslator.swift */; };
 		3358B6341F19F7D300CBD8CF /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C051F18E7DF002425AF /* Translator.swift */; };
 		3358B6381F19F7D300CBD8CF /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C001F18E4AD002425AF /* DAO.swift */; };
 		3358B6421F19F8B100CBD8CF /* Nio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337B5A471F1763DB00F4FDAF /* Nio.framework */; };
 		3358B6511F19F8BC00CBD8CF /* Nio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337B5A3A1F17617700F4FDAF /* Nio.framework */; };
 		3358B6601F19F8C900CBD8CF /* Nio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337B5A121F17615000F4FDAF /* Nio.framework */; };
-		3358B66D1F19F96F00CBD8CF /* NioCoreRefresherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B66C1F19F96F00CBD8CF /* NioCoreRefresherTests.swift */; };
-		3358B66E1F19F96F00CBD8CF /* NioCoreRefresherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B66C1F19F96F00CBD8CF /* NioCoreRefresherTests.swift */; };
-		3358B66F1F19F96F00CBD8CF /* NioCoreRefresherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B66C1F19F96F00CBD8CF /* NioCoreRefresherTests.swift */; };
-		3358B6761F19F9B500CBD8CF /* NioModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6741F19F9B500CBD8CF /* NioModel.xcdatamodeld */; };
-		3358B6771F19F9B500CBD8CF /* NioModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6741F19F9B500CBD8CF /* NioModel.xcdatamodeld */; };
-		3358B6781F19F9B500CBD8CF /* NioModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6741F19F9B500CBD8CF /* NioModel.xcdatamodeld */; };
-		3358B6791F19F9B500CBD8CF /* NioModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6741F19F9B500CBD8CF /* NioModel.xcdatamodeld */; };
-		3358B67B1F19FA0D00CBD8CF /* CategoryModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B67A1F19FA0D00CBD8CF /* CategoryModelObject.swift */; };
-		3358B67C1F19FA0D00CBD8CF /* CategoryModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B67A1F19FA0D00CBD8CF /* CategoryModelObject.swift */; };
-		3358B67D1F19FA0D00CBD8CF /* CategoryModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B67A1F19FA0D00CBD8CF /* CategoryModelObject.swift */; };
-		3358B67E1F19FA0D00CBD8CF /* CategoryModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B67A1F19FA0D00CBD8CF /* CategoryModelObject.swift */; };
-		3358B6851F19FB0600CBD8CF /* PositionModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6841F19FB0600CBD8CF /* PositionModelObject.swift */; };
-		3358B6861F19FB0600CBD8CF /* PositionModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6841F19FB0600CBD8CF /* PositionModelObject.swift */; };
-		3358B6871F19FB0600CBD8CF /* PositionModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6841F19FB0600CBD8CF /* PositionModelObject.swift */; };
-		3358B6881F19FB0600CBD8CF /* PositionModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6841F19FB0600CBD8CF /* PositionModelObject.swift */; };
-		3358B68A1F19FBE600CBD8CF /* CategoryPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6891F19FBE600CBD8CF /* CategoryPlainObject.swift */; };
-		3358B68B1F19FBE600CBD8CF /* CategoryPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6891F19FBE600CBD8CF /* CategoryPlainObject.swift */; };
-		3358B68C1F19FBE600CBD8CF /* CategoryPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6891F19FBE600CBD8CF /* CategoryPlainObject.swift */; };
-		3358B68D1F19FBE600CBD8CF /* CategoryPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6891F19FBE600CBD8CF /* CategoryPlainObject.swift */; };
-		3358B68F1F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B68E1F19FC1100CBD8CF /* PositionPlainObject.swift */; };
-		3358B6901F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B68E1F19FC1100CBD8CF /* PositionPlainObject.swift */; };
-		3358B6911F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B68E1F19FC1100CBD8CF /* PositionPlainObject.swift */; };
-		3358B6921F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B68E1F19FC1100CBD8CF /* PositionPlainObject.swift */; };
-		3358B6981F1A3E2A00CBD8CF /* Nio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6971F1A3E2A00CBD8CF /* Nio.swift */; };
-		3358B6991F1A3E2A00CBD8CF /* Nio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6971F1A3E2A00CBD8CF /* Nio.swift */; };
-		3358B69A1F1A3E2A00CBD8CF /* Nio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6971F1A3E2A00CBD8CF /* Nio.swift */; };
-		3358B69B1F1A3E2A00CBD8CF /* Nio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358B6971F1A3E2A00CBD8CF /* Nio.swift */; };
 		3369A9112000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
 		3369A9122000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
 		3369A9132000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
 		3369A9142000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
-		3369A9162000FD2D003BA78B /* RealmTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9152000FD2D003BA78B /* RealmTestCase.swift */; };
-		3369A9172000FD2D003BA78B /* RealmTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9152000FD2D003BA78B /* RealmTestCase.swift */; };
-		3369A9182000FD2D003BA78B /* RealmTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9152000FD2D003BA78B /* RealmTestCase.swift */; };
-		3369A91A2000FD72003BA78B /* DeckRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9192000FD72003BA78B /* DeckRealmObject.swift */; };
-		3369A91B2000FD72003BA78B /* DeckRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9192000FD72003BA78B /* DeckRealmObject.swift */; };
-		3369A91C2000FD72003BA78B /* DeckRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9192000FD72003BA78B /* DeckRealmObject.swift */; };
-		3369A91E2000FDB9003BA78B /* CardRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A91D2000FDB9003BA78B /* CardRealmObject.swift */; };
-		3369A91F2000FDB9003BA78B /* CardRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A91D2000FDB9003BA78B /* CardRealmObject.swift */; };
-		3369A9202000FDB9003BA78B /* CardRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A91D2000FDB9003BA78B /* CardRealmObject.swift */; };
-		3369A9222000FF5A003BA78B /* DeckPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9212000FF5A003BA78B /* DeckPlainObject.swift */; };
-		3369A9232000FF5A003BA78B /* DeckPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9212000FF5A003BA78B /* DeckPlainObject.swift */; };
-		3369A9242000FF5A003BA78B /* DeckPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9212000FF5A003BA78B /* DeckPlainObject.swift */; };
-		3369A9262000FFB7003BA78B /* CardPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9252000FFB7003BA78B /* CardPlainObject.swift */; };
-		3369A9272000FFB7003BA78B /* CardPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9252000FFB7003BA78B /* CardPlainObject.swift */; };
-		3369A9282000FFB7003BA78B /* CardPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9252000FFB7003BA78B /* CardPlainObject.swift */; };
-		3369A92D2001040C003BA78B /* DeckRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A92C2001040C003BA78B /* DeckRefresher.swift */; };
-		3369A92E2001040C003BA78B /* DeckRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A92C2001040C003BA78B /* DeckRefresher.swift */; };
-		3369A92F2001040C003BA78B /* DeckRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A92C2001040C003BA78B /* DeckRefresher.swift */; };
-		3369A93120010923003BA78B /* CardsRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A93020010923003BA78B /* CardsRefresher.swift */; };
-		3369A93220010923003BA78B /* CardsRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A93020010923003BA78B /* CardsRefresher.swift */; };
-		3369A93320010923003BA78B /* CardsRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A93020010923003BA78B /* CardsRefresher.swift */; };
-		3369A9352001231B003BA78B /* DeckTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9342001231B003BA78B /* DeckTranslator.swift */; };
-		3369A9362001231B003BA78B /* DeckTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9342001231B003BA78B /* DeckTranslator.swift */; };
-		3369A9372001231B003BA78B /* DeckTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9342001231B003BA78B /* DeckTranslator.swift */; };
-		3369A9392001235C003BA78B /* CardTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9382001235C003BA78B /* CardTranslator.swift */; };
-		3369A93A2001235C003BA78B /* CardTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9382001235C003BA78B /* CardTranslator.swift */; };
-		3369A93B2001235C003BA78B /* CardTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9382001235C003BA78B /* CardTranslator.swift */; };
+		336E0A54234B79EA0026B44B /* DialogPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A53234B79EA0026B44B /* DialogPlainObject.swift */; };
+		336E0A55234B79EA0026B44B /* DialogPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A53234B79EA0026B44B /* DialogPlainObject.swift */; };
+		336E0A56234B79EA0026B44B /* DialogPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A53234B79EA0026B44B /* DialogPlainObject.swift */; };
+		336E0A58234B7A880026B44B /* MessagePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A57234B7A870026B44B /* MessagePlainObject.swift */; };
+		336E0A59234B7A880026B44B /* MessagePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A57234B7A870026B44B /* MessagePlainObject.swift */; };
+		336E0A5A234B7A880026B44B /* MessagePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A57234B7A870026B44B /* MessagePlainObject.swift */; };
+		336E0A5C234B7EBF0026B44B /* MessagesTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5B234B7EBF0026B44B /* MessagesTranslator.swift */; };
+		336E0A5D234B7EBF0026B44B /* MessagesTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5B234B7EBF0026B44B /* MessagesTranslator.swift */; };
+		336E0A5E234B7EBF0026B44B /* MessagesTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5B234B7EBF0026B44B /* MessagesTranslator.swift */; };
+		336E0A60234B7F110026B44B /* MessageModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5F234B7F110026B44B /* MessageModelObject.swift */; };
+		336E0A61234B7F110026B44B /* MessageModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5F234B7F110026B44B /* MessageModelObject.swift */; };
+		336E0A62234B7F110026B44B /* MessageModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5F234B7F110026B44B /* MessageModelObject.swift */; };
+		336E0A64234B80E70026B44B /* DialogModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A63234B80E70026B44B /* DialogModelObject.swift */; };
+		336E0A65234B80E70026B44B /* DialogModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A63234B80E70026B44B /* DialogModelObject.swift */; };
+		336E0A66234B80E70026B44B /* DialogModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A63234B80E70026B44B /* DialogModelObject.swift */; };
+		336E0A68234B83750026B44B /* DialogsTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A67234B83750026B44B /* DialogsTranslator.swift */; };
+		336E0A69234B83750026B44B /* DialogsTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A67234B83750026B44B /* DialogsTranslator.swift */; };
+		336E0A6A234B83750026B44B /* DialogsTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A67234B83750026B44B /* DialogsTranslator.swift */; };
+		336E0A71234B89D40026B44B /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A70234B89D40026B44B /* Factories.swift */; };
+		336E0A72234B89D40026B44B /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A70234B89D40026B44B /* Factories.swift */; };
+		336E0A73234B89D40026B44B /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A70234B89D40026B44B /* Factories.swift */; };
 		3375FCC51F1C977600FD7106 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC41F1C977600FD7106 /* Numeric.swift */; };
 		3375FCC61F1C977800FD7106 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC41F1C977600FD7106 /* Numeric.swift */; };
 		3375FCC71F1C977800FD7106 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC41F1C977600FD7106 /* Numeric.swift */; };
 		3375FCC81F1C977900FD7106 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC41F1C977600FD7106 /* Numeric.swift */; };
-		3375FCCA1F1C97B700FD7106 /* NioID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* NioID.swift */; };
-		3375FCCB1F1C980600FD7106 /* NioID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* NioID.swift */; };
-		3375FCCC1F1C980700FD7106 /* NioID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* NioID.swift */; };
-		3375FCCD1F1C980700FD7106 /* NioID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* NioID.swift */; };
+		3375FCCA1F1C97B700FD7106 /* UniqueID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* UniqueID.swift */; };
+		3375FCCB1F1C980600FD7106 /* UniqueID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* UniqueID.swift */; };
+		3375FCCC1F1C980700FD7106 /* UniqueID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* UniqueID.swift */; };
+		3375FCCD1F1C980700FD7106 /* UniqueID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* UniqueID.swift */; };
 		3375FCCF1F1C98CC00FD7106 /* Plain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCCE1F1C98CC00FD7106 /* Plain.swift */; };
 		3375FCD01F1C98CC00FD7106 /* Plain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCCE1F1C98CC00FD7106 /* Plain.swift */; };
 		3375FCD11F1C98CC00FD7106 /* Plain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCCE1F1C98CC00FD7106 /* Plain.swift */; };
 		3375FCD21F1C98CC00FD7106 /* Plain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCCE1F1C98CC00FD7106 /* Plain.swift */; };
-		3375FCD41F1CAD9500FD7106 /* NioCoreRefresherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCD31F1CAD9500FD7106 /* NioCoreRefresherError.swift */; };
-		3375FCD51F1CAD9500FD7106 /* NioCoreRefresherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCD31F1CAD9500FD7106 /* NioCoreRefresherError.swift */; };
-		3375FCD61F1CAD9500FD7106 /* NioCoreRefresherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCD31F1CAD9500FD7106 /* NioCoreRefresherError.swift */; };
-		3375FCD71F1CAD9500FD7106 /* NioCoreRefresherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCD31F1CAD9500FD7106 /* NioCoreRefresherError.swift */; };
 		337B5A561F17646800F4FDAF /* Nio.h in Headers */ = {isa = PBXBuildFile; fileRef = 337B5A531F17646800F4FDAF /* Nio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		337B5A571F17647000F4FDAF /* Nio.h in Headers */ = {isa = PBXBuildFile; fileRef = 337B5A531F17646800F4FDAF /* Nio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		337B5A581F17647000F4FDAF /* Nio.h in Headers */ = {isa = PBXBuildFile; fileRef = 337B5A531F17646800F4FDAF /* Nio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		337B5A591F17647100F4FDAF /* Nio.h in Headers */ = {isa = PBXBuildFile; fileRef = 337B5A531F17646800F4FDAF /* Nio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		337EC2A52132C244006156E7 /* RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2A02132C22C006156E7 /* RealmTests.swift */; };
+		337EC2A62132C244006156E7 /* RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2A02132C22C006156E7 /* RealmTests.swift */; };
+		337EC2A72132C244006156E7 /* RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2A02132C22C006156E7 /* RealmTests.swift */; };
 		33E32C011F18E4AD002425AF /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C001F18E4AD002425AF /* DAO.swift */; };
 		33E32C061F18E7DF002425AF /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C051F18E7DF002425AF /* Translator.swift */; };
-		33E32C0D1F1918B2002425AF /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C0C1F1918B2002425AF /* Refresher.swift */; };
-		33E32C0F1F1947C9002425AF /* NioTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C0E1F1947C9002425AF /* NioTranslator.swift */; };
-		4BF2E279519F38930FB700C5 /* Pods_Nio_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3844474BAC63016817019350 /* Pods_Nio_macOS.framework */; };
-		5FFEB6D417953640D248A823 /* Pods_Nio_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52AD2D6F69C43FF8C801488 /* Pods_Nio_macOS_Tests.framework */; };
-		7B59E274DC71855B2C213CCA /* Pods_Nio_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E38BAF95D4502C6E2B5A8F /* Pods_Nio_tvOS.framework */; };
-		A6D9C1CC8EF187F495FA66E2 /* Pods_Nio_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AD1ED48055E36654298B5F /* Pods_Nio_iOS_Tests.framework */; };
-		F4E932B322AFFE71DEABAA53 /* Pods_Nio_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFF347F55BBFF169FF53CD6 /* Pods_Nio_iOS.framework */; };
-		FBBAECBE479AE2A4AB9E9C18 /* Pods_Nio_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DF4B7DD121FC7902EDB957 /* Pods_Nio_watchOS.framework */; };
+		33F442C0234A8AE0004745B2 /* UserPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC28C2132BCF6006156E7 /* UserPlainObject.swift */; };
+		33F442C1234A8AE0004745B2 /* UserPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC28C2132BCF6006156E7 /* UserPlainObject.swift */; };
+		33F442C2234A8AE1004745B2 /* UserPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC28C2132BCF6006156E7 /* UserPlainObject.swift */; };
+		33F442C3234A8B29004745B2 /* UserModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2912132BD7C006156E7 /* UserModelObject.swift */; };
+		33F442C4234A8B29004745B2 /* UserModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2912132BD7C006156E7 /* UserModelObject.swift */; };
+		33F442C5234A8B29004745B2 /* UserModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2912132BD7C006156E7 /* UserModelObject.swift */; };
+		33F442C6234A8B5E004745B2 /* UsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2962132BE8C006156E7 /* UsersTranslator.swift */; };
+		33F442C7234A8B5F004745B2 /* UsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2962132BE8C006156E7 /* UsersTranslator.swift */; };
+		33F442C8234A8B5F004745B2 /* UsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2962132BE8C006156E7 /* UsersTranslator.swift */; };
+		590E4C633BDE65A822E48B64 /* Pods_Nio_iOS_Nio_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940311BB332100BDCD67EEFE /* Pods_Nio_iOS_Nio_iOS_Tests.framework */; };
+		64145A0A2A34DC3195522BEF /* Pods_Nio_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C583128708370157C60A9C4 /* Pods_Nio_iOS.framework */; platformFilter = ios; };
+		A23BE8E8118B1D5F5881B43B /* Pods_Nio_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854219CAB9C3D5BAC786506C /* Pods_Nio_watchOS.framework */; };
+		CB183FE6671A7622A5F03877 /* Pods_Nio_tvOS_Nio_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C445DC47B5626585503F1B /* Pods_Nio_tvOS_Nio_tvOS_Tests.framework */; };
+		E604F58F552E0F216F910F53 /* Pods_Nio_macOS_Nio_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C7B7F9555B94B5ECDB0B21 /* Pods_Nio_macOS_Nio_macOS_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,70 +113,57 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02BD6460A8003B7918904DB9 /* Pods_Nio_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		129768A6A711963A0593F8FC /* Pods-Nio tvOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio tvOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nio tvOS-Tests/Pods-Nio tvOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		271A0E34CEC446DDDA80EEAF /* Pods-Nio tvOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio tvOS-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nio tvOS-Tests/Pods-Nio tvOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2770003FF9439E991B39D932 /* Pods-Nio watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nio watchOS/Pods-Nio watchOS.debug.xcconfig"; sourceTree = "<group>"; };
-		33318CD31F1B676600F27BC7 /* AdditiveModelObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditiveModelObject.swift; sourceTree = "<group>"; };
-		33318CD81F1B67B600F27BC7 /* AdditivePlainObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditivePlainObject.swift; sourceTree = "<group>"; };
+		322F339EE59E4DCE83E702D1 /* Pods-Nio iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio iOS.debug.xcconfig"; path = "Target Support Files/Pods-Nio iOS/Pods-Nio iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedModel.swift; sourceTree = "<group>"; };
 		33318CE11F1BBD5A00F27BC7 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		33318CE31F1BBD5A00F27BC7 /* TransformablePlain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformablePlain.swift; sourceTree = "<group>"; };
-		33318CF41F1BBE8F00F27BC7 /* CoreDataTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTestCase.swift; sourceTree = "<group>"; };
-		3358B61F1F19EE6400CBD8CF /* NioCoreRefresher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NioCoreRefresher.swift; sourceTree = "<group>"; };
 		3358B63D1F19F8B100CBD8CF /* Nio macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nio macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3358B64C1F19F8BB00CBD8CF /* Nio tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nio tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3358B65B1F19F8C900CBD8CF /* Nio iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nio iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3358B6691F19F92100CBD8CF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3358B66C1F19F96F00CBD8CF /* NioCoreRefresherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NioCoreRefresherTests.swift; sourceTree = "<group>"; };
-		3358B6751F19F9B500CBD8CF /* NioModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NioModel.xcdatamodel; sourceTree = "<group>"; };
-		3358B67A1F19FA0D00CBD8CF /* CategoryModelObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModelObject.swift; sourceTree = "<group>"; };
-		3358B6841F19FB0600CBD8CF /* PositionModelObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionModelObject.swift; sourceTree = "<group>"; };
-		3358B6891F19FBE600CBD8CF /* CategoryPlainObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPlainObject.swift; sourceTree = "<group>"; };
-		3358B68E1F19FC1100CBD8CF /* PositionPlainObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionPlainObject.swift; sourceTree = "<group>"; };
-		3358B6971F1A3E2A00CBD8CF /* Nio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nio.swift; sourceTree = "<group>"; };
 		3369A9102000F7E9003BA78B /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
-		3369A9152000FD2D003BA78B /* RealmTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTestCase.swift; sourceTree = "<group>"; };
-		3369A9192000FD72003BA78B /* DeckRealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckRealmObject.swift; sourceTree = "<group>"; };
-		3369A91D2000FDB9003BA78B /* CardRealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRealmObject.swift; sourceTree = "<group>"; };
-		3369A9212000FF5A003BA78B /* DeckPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckPlainObject.swift; sourceTree = "<group>"; };
-		3369A9252000FFB7003BA78B /* CardPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPlainObject.swift; sourceTree = "<group>"; };
-		3369A92C2001040C003BA78B /* DeckRefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckRefresher.swift; sourceTree = "<group>"; };
-		3369A93020010923003BA78B /* CardsRefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRefresher.swift; sourceTree = "<group>"; };
-		3369A9342001231B003BA78B /* DeckTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckTranslator.swift; sourceTree = "<group>"; };
-		3369A9382001235C003BA78B /* CardTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTranslator.swift; sourceTree = "<group>"; };
+		336E0A53234B79EA0026B44B /* DialogPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogPlainObject.swift; sourceTree = "<group>"; };
+		336E0A57234B7A870026B44B /* MessagePlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePlainObject.swift; sourceTree = "<group>"; };
+		336E0A5B234B7EBF0026B44B /* MessagesTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTranslator.swift; sourceTree = "<group>"; };
+		336E0A5F234B7F110026B44B /* MessageModelObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModelObject.swift; sourceTree = "<group>"; };
+		336E0A63234B80E70026B44B /* DialogModelObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogModelObject.swift; sourceTree = "<group>"; };
+		336E0A67234B83750026B44B /* DialogsTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsTranslator.swift; sourceTree = "<group>"; };
+		336E0A70234B89D40026B44B /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 		3375FCC41F1C977600FD7106 /* Numeric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numeric.swift; sourceTree = "<group>"; };
-		3375FCC91F1C97B700FD7106 /* NioID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NioID.swift; sourceTree = "<group>"; };
+		3375FCC91F1C97B700FD7106 /* UniqueID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueID.swift; sourceTree = "<group>"; };
 		3375FCCE1F1C98CC00FD7106 /* Plain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plain.swift; sourceTree = "<group>"; };
-		3375FCD31F1CAD9500FD7106 /* NioCoreRefresherError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NioCoreRefresherError.swift; sourceTree = "<group>"; };
 		337B5A121F17615000F4FDAF /* Nio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		337B5A2D1F17616F00F4FDAF /* Nio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		337B5A3A1F17617700F4FDAF /* Nio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		337B5A471F1763DB00F4FDAF /* Nio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		337B5A521F17646800F4FDAF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		337B5A531F17646800F4FDAF /* Nio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nio.h; sourceTree = "<group>"; };
+		337EC2812132BC97006156E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		337EC28C2132BCF6006156E7 /* UserPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlainObject.swift; sourceTree = "<group>"; };
+		337EC2912132BD7C006156E7 /* UserModelObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelObject.swift; sourceTree = "<group>"; };
+		337EC2962132BE8C006156E7 /* UsersTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTranslator.swift; sourceTree = "<group>"; };
+		337EC2A02132C22C006156E7 /* RealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTests.swift; sourceTree = "<group>"; };
 		33AB45F71F1CB1ED00A79990 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		33E32C001F18E4AD002425AF /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DAO.swift; path = Sources/Nio/DAO/DAO.swift; sourceTree = SOURCE_ROOT; };
 		33E32C051F18E7DF002425AF /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
-		33E32C0C1F1918B2002425AF /* Refresher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refresher.swift; sourceTree = "<group>"; };
-		33E32C0E1F1947C9002425AF /* NioTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NioTranslator.swift; sourceTree = "<group>"; };
-		3844474BAC63016817019350 /* Pods_Nio_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39E38BAF95D4502C6E2B5A8F /* Pods_Nio_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		40D5A5B494137FD9C42DFF38 /* Pods-Nio watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nio watchOS/Pods-Nio watchOS.release.xcconfig"; sourceTree = "<group>"; };
-		500504A5F9B6F2BA47CAB30F /* Pods-Nio macOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio macOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nio macOS-Tests/Pods-Nio macOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		51E57CCAB7764ED2D3729B45 /* Pods-Nio macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nio macOS/Pods-Nio macOS.release.xcconfig"; sourceTree = "<group>"; };
-		98DF4B7DD121FC7902EDB957 /* Pods_Nio_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98FB7C1AE11964E6BFC4BF9F /* Pods-Nio tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nio tvOS/Pods-Nio tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		9C524CAB149CC2CA9B4DA1D9 /* Pods-Nio tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nio tvOS/Pods-Nio tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		A4B4D2FCF891497D15BF5D40 /* Pods-Nio macOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio macOS-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nio macOS-Tests/Pods-Nio macOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B1AA166A11A94C40F0824798 /* Pods-Nio iOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio iOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nio iOS-Tests/Pods-Nio iOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B9AD1ED48055E36654298B5F /* Pods_Nio_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBFF347F55BBFF169FF53CD6 /* Pods_Nio_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4F71CDCF22A4FADA6FA4AD4 /* Pods-Nio macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nio macOS/Pods-Nio macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		E1D523BD6CE520E621436C93 /* Pods-Nio iOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio iOS-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nio iOS-Tests/Pods-Nio iOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E37E05E01A24A07E3A56EDF4 /* Pods-Nio iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nio iOS/Pods-Nio iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		F52AD2D6F69C43FF8C801488 /* Pods_Nio_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F92439282E02EC04F4B54293 /* Pods-Nio iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nio iOS/Pods-Nio iOS.release.xcconfig"; sourceTree = "<group>"; };
+		369843AE56FA785C8A4BF14C /* Pods-Nio iOS-Nio iOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio iOS-Nio iOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-Nio iOS-Nio iOS-Tests/Pods-Nio iOS-Nio iOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		39FAB81BFEFCC79761C30F06 /* Pods-Nio watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio watchOS.debug.xcconfig"; path = "Target Support Files/Pods-Nio watchOS/Pods-Nio watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4430B95A936FA739BE697C30 /* Pods-Nio tvOS-Nio tvOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio tvOS-Nio tvOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-Nio tvOS-Nio tvOS-Tests/Pods-Nio tvOS-Nio tvOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5476F7987CB676A11D028472 /* Pods-Nio iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio iOS.release.xcconfig"; path = "Target Support Files/Pods-Nio iOS/Pods-Nio iOS.release.xcconfig"; sourceTree = "<group>"; };
+		5E94D10C03844FAA5E462AE7 /* Pods-Nio macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio macOS.release.xcconfig"; path = "Target Support Files/Pods-Nio macOS/Pods-Nio macOS.release.xcconfig"; sourceTree = "<group>"; };
+		6C583128708370157C60A9C4 /* Pods_Nio_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B1681E7F290E0134E1116F /* Pods-Nio iOS-Nio iOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio iOS-Nio iOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-Nio iOS-Nio iOS-Tests/Pods-Nio iOS-Nio iOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		854219CAB9C3D5BAC786506C /* Pods_Nio_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4E505AA8497113A9168153 /* Pods-Nio macOS-Nio macOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio macOS-Nio macOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-Nio macOS-Nio macOS-Tests/Pods-Nio macOS-Nio macOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		940311BB332100BDCD67EEFE /* Pods_Nio_iOS_Nio_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_iOS_Nio_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C7B7F9555B94B5ECDB0B21 /* Pods_Nio_macOS_Nio_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_macOS_Nio_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D78AA39C0B46E2D6F72B2A /* Pods-Nio tvOS-Nio tvOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio tvOS-Nio tvOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-Nio tvOS-Nio tvOS-Tests/Pods-Nio tvOS-Nio tvOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4EC9DDA4A514852B3A80F06 /* Pods-Nio tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio tvOS.release.xcconfig"; path = "Target Support Files/Pods-Nio tvOS/Pods-Nio tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		B00226541699FEC7C6781A4A /* Pods-Nio macOS-Nio macOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio macOS-Nio macOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-Nio macOS-Nio macOS-Tests/Pods-Nio macOS-Nio macOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B557615EDBD5FF20B10570BF /* Pods_Nio_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C548DD38D9307BF3BD0A5A46 /* Pods-Nio tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Nio tvOS/Pods-Nio tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C59FDDC7B6F71CE9E89BD2CA /* Pods-Nio macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio macOS.debug.xcconfig"; path = "Target Support Files/Pods-Nio macOS/Pods-Nio macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D3C445DC47B5626585503F1B /* Pods_Nio_tvOS_Nio_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_tvOS_Nio_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB020CA2C8B05E87FEF4EE7C /* Pods_Nio_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nio_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AA06DC3B4D5F152D20BB39 /* Pods-Nio watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nio watchOS.release.xcconfig"; path = "Target Support Files/Pods-Nio watchOS/Pods-Nio watchOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3358B6421F19F8B100CBD8CF /* Nio.framework in Frameworks */,
-				5FFEB6D417953640D248A823 /* Pods_Nio_macOS_Tests.framework in Frameworks */,
+				E604F58F552E0F216F910F53 /* Pods_Nio_macOS_Nio_macOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3358B6511F19F8BC00CBD8CF /* Nio.framework in Frameworks */,
-				0FA5714FCBF5AFA6BB36801B /* Pods_Nio_tvOS_Tests.framework in Frameworks */,
+				CB183FE6671A7622A5F03877 /* Pods_Nio_tvOS_Nio_tvOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3358B6601F19F8C900CBD8CF /* Nio.framework in Frameworks */,
-				A6D9C1CC8EF187F495FA66E2 /* Pods_Nio_iOS_Tests.framework in Frameworks */,
+				590E4C633BDE65A822E48B64 /* Pods_Nio_iOS_Nio_iOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4E932B322AFFE71DEABAA53 /* Pods_Nio_iOS.framework in Frameworks */,
+				64145A0A2A34DC3195522BEF /* Pods_Nio_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBBAECBE479AE2A4AB9E9C18 /* Pods_Nio_watchOS.framework in Frameworks */,
+				A23BE8E8118B1D5F5881B43B /* Pods_Nio_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B59E274DC71855B2C213CCA /* Pods_Nio_tvOS.framework in Frameworks */,
+				2440C6365364B27790301B46 /* Pods_Nio_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,19 +222,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF2E279519F38930FB700C5 /* Pods_Nio_macOS.framework in Frameworks */,
+				074FC5434BF006B8DDCBA833 /* Pods_Nio_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BC3F18A58FE7E94DA89A6D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C583128708370157C60A9C4 /* Pods_Nio_iOS.framework */,
+				DB020CA2C8B05E87FEF4EE7C /* Pods_Nio_macOS.framework */,
+				B557615EDBD5FF20B10570BF /* Pods_Nio_tvOS.framework */,
+				854219CAB9C3D5BAC786506C /* Pods_Nio_watchOS.framework */,
+				940311BB332100BDCD67EEFE /* Pods_Nio_iOS_Nio_iOS_Tests.framework */,
+				A2C7B7F9555B94B5ECDB0B21 /* Pods_Nio_macOS_Nio_macOS_Tests.framework */,
+				D3C445DC47B5626585503F1B /* Pods_Nio_tvOS_Nio_tvOS_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23091A480C6C59C894C7CBD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				322F339EE59E4DCE83E702D1 /* Pods-Nio iOS.debug.xcconfig */,
+				5476F7987CB676A11D028472 /* Pods-Nio iOS.release.xcconfig */,
+				C59FDDC7B6F71CE9E89BD2CA /* Pods-Nio macOS.debug.xcconfig */,
+				5E94D10C03844FAA5E462AE7 /* Pods-Nio macOS.release.xcconfig */,
+				C548DD38D9307BF3BD0A5A46 /* Pods-Nio tvOS.debug.xcconfig */,
+				A4EC9DDA4A514852B3A80F06 /* Pods-Nio tvOS.release.xcconfig */,
+				39FAB81BFEFCC79761C30F06 /* Pods-Nio watchOS.debug.xcconfig */,
+				E1AA06DC3B4D5F152D20BB39 /* Pods-Nio watchOS.release.xcconfig */,
+				78B1681E7F290E0134E1116F /* Pods-Nio iOS-Nio iOS-Tests.debug.xcconfig */,
+				369843AE56FA785C8A4BF14C /* Pods-Nio iOS-Nio iOS-Tests.release.xcconfig */,
+				B00226541699FEC7C6781A4A /* Pods-Nio macOS-Nio macOS-Tests.debug.xcconfig */,
+				8C4E505AA8497113A9168153 /* Pods-Nio macOS-Nio macOS-Tests.release.xcconfig */,
+				A2D78AA39C0B46E2D6F72B2A /* Pods-Nio tvOS-Nio tvOS-Tests.debug.xcconfig */,
+				4430B95A936FA739BE697C30 /* Pods-Nio tvOS-Nio tvOS-Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		33318CDD1F1BBD1F00F27BC7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				3375FCC31F1C96BF00FD7106 /* Plain */,
 				33318CE11F1BBD5A00F27BC7 /* Model.swift */,
-				33318CE31F1BBD5A00F27BC7 /* TransformablePlain.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -312,91 +281,12 @@
 			path = ManagedModel;
 			sourceTree = "<group>";
 		};
-		33318CF31F1BBE8300F27BC7 /* NioTests */ = {
-			isa = PBXGroup;
-			children = (
-				33318CF41F1BBE8F00F27BC7 /* CoreDataTestCase.swift */,
-				3369A9152000FD2D003BA78B /* RealmTestCase.swift */,
-			);
-			path = NioTests;
-			sourceTree = "<group>";
-		};
 		33318CF81F1BD33D00F27BC7 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
 				33E32C001F18E4AD002425AF /* DAO.swift */,
 			);
 			path = DAO;
-			sourceTree = "<group>";
-		};
-		33318CF91F1BD33D00F27BC7 /* NIO */ = {
-			isa = PBXGroup;
-			children = (
-				3358B6971F1A3E2A00CBD8CF /* Nio.swift */,
-			);
-			path = NIO;
-			sourceTree = "<group>";
-		};
-		3358B6681F19F92100CBD8CF /* NioTests */ = {
-			isa = PBXGroup;
-			children = (
-				33318CF31F1BBE8300F27BC7 /* NioTests */,
-				3358B6701F19F9A300CBD8CF /* Models */,
-				3358B66B1F19F95A00CBD8CF /* NioRefresherTests */,
-				3358B6691F19F92100CBD8CF /* Info.plist */,
-			);
-			path = NioTests;
-			sourceTree = "<group>";
-		};
-		3358B66B1F19F95A00CBD8CF /* NioRefresherTests */ = {
-			isa = PBXGroup;
-			children = (
-				3358B66C1F19F96F00CBD8CF /* NioCoreRefresherTests.swift */,
-			);
-			path = NioRefresherTests;
-			sourceTree = "<group>";
-		};
-		3358B6701F19F9A300CBD8CF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3369A92920010307003BA78B /* Realm */,
-				3358B6711F19F9A300CBD8CF /* CoreDataModel */,
-				3358B6721F19F9A300CBD8CF /* Model */,
-				3358B6731F19F9A300CBD8CF /* Plain */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		3358B6711F19F9A300CBD8CF /* CoreDataModel */ = {
-			isa = PBXGroup;
-			children = (
-				3358B6741F19F9B500CBD8CF /* NioModel.xcdatamodeld */,
-			);
-			path = CoreDataModel;
-			sourceTree = "<group>";
-		};
-		3358B6721F19F9A300CBD8CF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3358B67A1F19FA0D00CBD8CF /* CategoryModelObject.swift */,
-				3358B6841F19FB0600CBD8CF /* PositionModelObject.swift */,
-				33318CD31F1B676600F27BC7 /* AdditiveModelObject.swift */,
-				3369A9192000FD72003BA78B /* DeckRealmObject.swift */,
-				3369A91D2000FDB9003BA78B /* CardRealmObject.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3358B6731F19F9A300CBD8CF /* Plain */ = {
-			isa = PBXGroup;
-			children = (
-				3358B6891F19FBE600CBD8CF /* CategoryPlainObject.swift */,
-				3358B68E1F19FC1100CBD8CF /* PositionPlainObject.swift */,
-				33318CD81F1B67B600F27BC7 /* AdditivePlainObject.swift */,
-				3369A9212000FF5A003BA78B /* DeckPlainObject.swift */,
-				3369A9252000FFB7003BA78B /* CardPlainObject.swift */,
-			);
-			path = Plain;
 			sourceTree = "<group>";
 		};
 		3369A90E2000F7D6003BA78B /* Realm */ = {
@@ -415,38 +305,19 @@
 			path = RealmModel;
 			sourceTree = "<group>";
 		};
-		3369A92920010307003BA78B /* Realm */ = {
+		336E0A6F234B89CA0026B44B /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				3369A92A20010317003BA78B /* Refreshers */,
-				3369A92B20010317003BA78B /* Translators */,
+				336E0A70234B89D40026B44B /* Factories.swift */,
 			);
-			path = Realm;
-			sourceTree = "<group>";
-		};
-		3369A92A20010317003BA78B /* Refreshers */ = {
-			isa = PBXGroup;
-			children = (
-				3369A92C2001040C003BA78B /* DeckRefresher.swift */,
-				3369A93020010923003BA78B /* CardsRefresher.swift */,
-			);
-			path = Refreshers;
-			sourceTree = "<group>";
-		};
-		3369A92B20010317003BA78B /* Translators */ = {
-			isa = PBXGroup;
-			children = (
-				3369A9342001231B003BA78B /* DeckTranslator.swift */,
-				3369A9382001235C003BA78B /* CardTranslator.swift */,
-			);
-			path = Translators;
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		3375FCC31F1C96BF00FD7106 /* Plain */ = {
 			isa = PBXGroup;
 			children = (
 				3375FCC41F1C977600FD7106 /* Numeric.swift */,
-				3375FCC91F1C97B700FD7106 /* NioID.swift */,
+				3375FCC91F1C97B700FD7106 /* UniqueID.swift */,
 				3375FCCE1F1C98CC00FD7106 /* Plain.swift */,
 			);
 			path = Plain;
@@ -459,8 +330,8 @@
 				337B5A4F1F17646800F4FDAF /* Sources */,
 				337B5A541F17646800F4FDAF /* Tests */,
 				337B5A131F17615000F4FDAF /* Products */,
-				937B499A3AF0F173688199F8 /* Pods */,
-				B2EAC193A794E418A1334462 /* Frameworks */,
+				23091A480C6C59C894C7CBD9 /* Pods */,
+				0BC3F18A58FE7E94DA89A6D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -491,7 +362,6 @@
 			children = (
 				3369A90E2000F7D6003BA78B /* Realm */,
 				33318CF81F1BD33D00F27BC7 /* DAO */,
-				33318CF91F1BD33D00F27BC7 /* NIO */,
 				33E32BFD1F18DFAD002425AF /* Core */,
 				33E32BFC1F18DF46002425AF /* CoreData */,
 				337B5A511F17646800F4FDAF /* Supporting */,
@@ -511,9 +381,68 @@
 		337B5A541F17646800F4FDAF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3358B6681F19F92100CBD8CF /* NioTests */,
+				337EC2802132BC84006156E7 /* NioTests */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		337EC2802132BC84006156E7 /* NioTests */ = {
+			isa = PBXGroup;
+			children = (
+				337EC2862132BCA4006156E7 /* Realm */,
+				337EC2812132BC97006156E7 /* Info.plist */,
+			);
+			path = NioTests;
+			sourceTree = "<group>";
+		};
+		337EC2862132BCA4006156E7 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				336E0A6F234B89CA0026B44B /* Factories */,
+				337EC28A2132BCE4006156E7 /* Translators */,
+				337EC2882132BCD1006156E7 /* Models */,
+				337EC2892132BCD1006156E7 /* Plains */,
+				337EC2872132BCD1006156E7 /* UnitTests */,
+				337EC2A02132C22C006156E7 /* RealmTests.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		337EC2872132BCD1006156E7 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		337EC2882132BCD1006156E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				337EC2912132BD7C006156E7 /* UserModelObject.swift */,
+				336E0A5F234B7F110026B44B /* MessageModelObject.swift */,
+				336E0A63234B80E70026B44B /* DialogModelObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		337EC2892132BCD1006156E7 /* Plains */ = {
+			isa = PBXGroup;
+			children = (
+				337EC28C2132BCF6006156E7 /* UserPlainObject.swift */,
+				336E0A53234B79EA0026B44B /* DialogPlainObject.swift */,
+				336E0A57234B7A870026B44B /* MessagePlainObject.swift */,
+			);
+			path = Plains;
+			sourceTree = "<group>";
+		};
+		337EC28A2132BCE4006156E7 /* Translators */ = {
+			isa = PBXGroup;
+			children = (
+				337EC2962132BE8C006156E7 /* UsersTranslator.swift */,
+				336E0A5B234B7EBF0026B44B /* MessagesTranslator.swift */,
+				336E0A67234B83750026B44B /* DialogsTranslator.swift */,
+			);
+			path = Translators;
 			sourceTree = "<group>";
 		};
 		33E32BFC1F18DF46002425AF /* CoreData */ = {
@@ -528,7 +457,6 @@
 			isa = PBXGroup;
 			children = (
 				33318CDD1F1BBD1F00F27BC7 /* Protocols */,
-				33E32C091F1918A9002425AF /* Refresher */,
 				33E32C021F18E7D9002425AF /* Translator */,
 			);
 			path = Core;
@@ -537,18 +465,9 @@
 		33E32C021F18E7D9002425AF /* Translator */ = {
 			isa = PBXGroup;
 			children = (
-				33E32C031F18E7D9002425AF /* Concrete */,
 				33E32C041F18E7D9002425AF /* Protocols */,
 			);
 			path = Translator;
-			sourceTree = "<group>";
-		};
-		33E32C031F18E7D9002425AF /* Concrete */ = {
-			isa = PBXGroup;
-			children = (
-				33E32C0E1F1947C9002425AF /* NioTranslator.swift */,
-			);
-			path = Concrete;
 			sourceTree = "<group>";
 		};
 		33E32C041F18E7D9002425AF /* Protocols */ = {
@@ -557,67 +476,6 @@
 				33E32C051F18E7DF002425AF /* Translator.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		33E32C091F1918A9002425AF /* Refresher */ = {
-			isa = PBXGroup;
-			children = (
-				33E32C0A1F1918A9002425AF /* Concrete */,
-				33E32C0B1F1918A9002425AF /* Protocols */,
-			);
-			path = Refresher;
-			sourceTree = "<group>";
-		};
-		33E32C0A1F1918A9002425AF /* Concrete */ = {
-			isa = PBXGroup;
-			children = (
-				3358B61F1F19EE6400CBD8CF /* NioCoreRefresher.swift */,
-				3375FCD31F1CAD9500FD7106 /* NioCoreRefresherError.swift */,
-			);
-			path = Concrete;
-			sourceTree = "<group>";
-		};
-		33E32C0B1F1918A9002425AF /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				33E32C0C1F1918B2002425AF /* Refresher.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		937B499A3AF0F173688199F8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E37E05E01A24A07E3A56EDF4 /* Pods-Nio iOS.debug.xcconfig */,
-				F92439282E02EC04F4B54293 /* Pods-Nio iOS.release.xcconfig */,
-				D4F71CDCF22A4FADA6FA4AD4 /* Pods-Nio macOS.debug.xcconfig */,
-				51E57CCAB7764ED2D3729B45 /* Pods-Nio macOS.release.xcconfig */,
-				98FB7C1AE11964E6BFC4BF9F /* Pods-Nio tvOS.debug.xcconfig */,
-				9C524CAB149CC2CA9B4DA1D9 /* Pods-Nio tvOS.release.xcconfig */,
-				2770003FF9439E991B39D932 /* Pods-Nio watchOS.debug.xcconfig */,
-				40D5A5B494137FD9C42DFF38 /* Pods-Nio watchOS.release.xcconfig */,
-				E1D523BD6CE520E621436C93 /* Pods-Nio iOS-Tests.debug.xcconfig */,
-				B1AA166A11A94C40F0824798 /* Pods-Nio iOS-Tests.release.xcconfig */,
-				A4B4D2FCF891497D15BF5D40 /* Pods-Nio macOS-Tests.debug.xcconfig */,
-				500504A5F9B6F2BA47CAB30F /* Pods-Nio macOS-Tests.release.xcconfig */,
-				271A0E34CEC446DDDA80EEAF /* Pods-Nio tvOS-Tests.debug.xcconfig */,
-				129768A6A711963A0593F8FC /* Pods-Nio tvOS-Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B2EAC193A794E418A1334462 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CBFF347F55BBFF169FF53CD6 /* Pods_Nio_iOS.framework */,
-				3844474BAC63016817019350 /* Pods_Nio_macOS.framework */,
-				39E38BAF95D4502C6E2B5A8F /* Pods_Nio_tvOS.framework */,
-				98DF4B7DD121FC7902EDB957 /* Pods_Nio_watchOS.framework */,
-				B9AD1ED48055E36654298B5F /* Pods_Nio_iOS_Tests.framework */,
-				F52AD2D6F69C43FF8C801488 /* Pods_Nio_macOS_Tests.framework */,
-				02BD6460A8003B7918904DB9 /* Pods_Nio_tvOS_Tests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,12 +520,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3358B6451F19F8B100CBD8CF /* Build configuration list for PBXNativeTarget "Nio macOS-Tests" */;
 			buildPhases = (
-				8C4AC3A0CFD01423DE1D3953 /* [CP] Check Pods Manifest.lock */,
+				7B6650C92DCDAAF0AB8FD387 /* [CP] Check Pods Manifest.lock */,
 				3358B6391F19F8B100CBD8CF /* Sources */,
 				3358B63A1F19F8B100CBD8CF /* Frameworks */,
 				3358B63B1F19F8B100CBD8CF /* Resources */,
-				4F61DBE916F6145372F55C81 /* [CP] Embed Pods Frameworks */,
-				4D5213CB2BF2E7F0F54E3610 /* [CP] Copy Pods Resources */,
+				090128616C95AC4E5E8101EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -683,12 +540,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3358B6541F19F8BC00CBD8CF /* Build configuration list for PBXNativeTarget "Nio tvOS-Tests" */;
 			buildPhases = (
-				06BDBA63B774A1EFE2601F36 /* [CP] Check Pods Manifest.lock */,
+				A163D1FDB004EBA0089AC5C5 /* [CP] Check Pods Manifest.lock */,
 				3358B6481F19F8BB00CBD8CF /* Sources */,
 				3358B6491F19F8BB00CBD8CF /* Frameworks */,
 				3358B64A1F19F8BB00CBD8CF /* Resources */,
-				3551C7E464BAE4DF7E1CD7CC /* [CP] Embed Pods Frameworks */,
-				615B66570B3E64D65CA85F24 /* [CP] Copy Pods Resources */,
+				B4051B32989532D977A28603 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -704,12 +560,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3358B6631F19F8C900CBD8CF /* Build configuration list for PBXNativeTarget "Nio iOS-Tests" */;
 			buildPhases = (
-				D8CAB2E530BB71751B9D7053 /* [CP] Check Pods Manifest.lock */,
+				F85253F998245D5405AF98D3 /* [CP] Check Pods Manifest.lock */,
 				3358B6571F19F8C900CBD8CF /* Sources */,
 				3358B6581F19F8C900CBD8CF /* Frameworks */,
 				3358B6591F19F8C900CBD8CF /* Resources */,
-				E41BEB283AF5C3F0197C5F3A /* [CP] Embed Pods Frameworks */,
-				FF58C4F39D2D102830D6ED8D /* [CP] Copy Pods Resources */,
+				6687F1967499814AD2CBECD1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -725,12 +580,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337B5A181F17615000F4FDAF /* Build configuration list for PBXNativeTarget "Nio iOS" */;
 			buildPhases = (
-				856AC1580B2755FD04218AC9 /* [CP] Check Pods Manifest.lock */,
+				A1A89D230076775321C03028 /* [CP] Check Pods Manifest.lock */,
 				337B5A0D1F17615000F4FDAF /* Sources */,
 				337B5A0E1F17615000F4FDAF /* Frameworks */,
 				337B5A0F1F17615000F4FDAF /* Headers */,
 				337B5A101F17615000F4FDAF /* Resources */,
-				D6143C3766213AC855118AA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -745,12 +599,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337B5A321F17616F00F4FDAF /* Build configuration list for PBXNativeTarget "Nio watchOS" */;
 			buildPhases = (
-				C3CB4F5BE1DE9E3CC7DE7258 /* [CP] Check Pods Manifest.lock */,
+				C2147AB372C6BE8C7D65D2C0 /* [CP] Check Pods Manifest.lock */,
 				337B5A281F17616F00F4FDAF /* Sources */,
 				337B5A291F17616F00F4FDAF /* Frameworks */,
 				337B5A2A1F17616F00F4FDAF /* Headers */,
 				337B5A2B1F17616F00F4FDAF /* Resources */,
-				9188C5985B420D6683EE2932 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -765,12 +618,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337B5A3F1F17617700F4FDAF /* Build configuration list for PBXNativeTarget "Nio tvOS" */;
 			buildPhases = (
-				1DCA808E2CFDD3D08118F849 /* [CP] Check Pods Manifest.lock */,
+				0A3BA1543ED439F628F3E6F3 /* [CP] Check Pods Manifest.lock */,
 				337B5A351F17617700F4FDAF /* Sources */,
 				337B5A361F17617700F4FDAF /* Frameworks */,
 				337B5A371F17617700F4FDAF /* Headers */,
 				337B5A381F17617700F4FDAF /* Resources */,
-				FC8C13BAE6F6207F71C3B683 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -785,12 +637,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337B5A4C1F1763DB00F4FDAF /* Build configuration list for PBXNativeTarget "Nio macOS" */;
 			buildPhases = (
-				8E1D7772C653D550E26D7E06 /* [CP] Check Pods Manifest.lock */,
+				2152D7F48E1769D3115E6DAE /* [CP] Check Pods Manifest.lock */,
 				337B5A421F1763DB00F4FDAF /* Sources */,
 				337B5A431F1763DB00F4FDAF /* Frameworks */,
 				337B5A441F1763DB00F4FDAF /* Headers */,
 				337B5A451F1763DB00F4FDAF /* Resources */,
-				E7B9F7D11F197A2FDDA43B92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -808,7 +659,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1030;
 				TargetAttributes = {
 					3358B63C1F19F8B100CBD8CF = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -852,6 +703,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 337B5A061F17614200F4FDAF;
@@ -923,34 +775,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06BDBA63B774A1EFE2601F36 /* [CP] Check Pods Manifest.lock */ = {
+		090128616C95AC4E5E8101EC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nio macOS-Nio macOS-Tests/Pods-Nio macOS-Nio macOS-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Nio tvOS-Tests-checkManifestLockResult.txt",
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nio macOS-Nio macOS-Tests/Pods-Nio macOS-Nio macOS-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nio macOS-Nio macOS-Tests/Pods-Nio macOS-Nio macOS-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1DCA808E2CFDD3D08118F849 /* [CP] Check Pods Manifest.lock */ = {
+		0A3BA1543ED439F628F3E6F3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Nio tvOS-checkManifestLockResult.txt",
 			);
@@ -959,134 +814,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3551C7E464BAE4DF7E1CD7CC /* [CP] Embed Pods Frameworks */ = {
+		2152D7F48E1769D3115E6DAE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Nio tvOS-Tests/Pods-Nio tvOS-Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Monreau-tvOS/Monreau.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm-tvOS/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift-tvOS/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Reflex-tvOS/Reflex.framework",
-				"${BUILT_PRODUCTS_DIR}/Transformer-tvOS/Transformer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Monreau.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reflex.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Transformer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nio tvOS-Tests/Pods-Nio tvOS-Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4D5213CB2BF2E7F0F54E3610 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nio macOS-Tests/Pods-Nio macOS-Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4F61DBE916F6145372F55C81 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Nio macOS-Tests/Pods-Nio macOS-Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Monreau-macOS/Monreau.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm-macOS/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift-macOS/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Reflex-macOS/Reflex.framework",
-				"${BUILT_PRODUCTS_DIR}/Transformer-macOS/Transformer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Monreau.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reflex.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Transformer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nio macOS-Tests/Pods-Nio macOS-Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		615B66570B3E64D65CA85F24 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nio tvOS-Tests/Pods-Nio tvOS-Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		856AC1580B2755FD04218AC9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Nio iOS-checkManifestLockResult.txt",
+			outputFileListPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C4AC3A0CFD01423DE1D3953 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Nio macOS-Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E1D7772C653D550E26D7E06 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Nio macOS-checkManifestLockResult.txt",
 			);
@@ -1095,31 +836,120 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9188C5985B420D6683EE2932 /* [CP] Copy Pods Resources */ = {
+		6687F1967499814AD2CBECD1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nio iOS-Nio iOS-Tests/Pods-Nio iOS-Nio iOS-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nio iOS-Nio iOS-Tests/Pods-Nio iOS-Nio iOS-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nio watchOS/Pods-Nio watchOS-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nio iOS-Nio iOS-Tests/Pods-Nio iOS-Nio iOS-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C3CB4F5BE1DE9E3CC7DE7258 /* [CP] Check Pods Manifest.lock */ = {
+		7B6650C92DCDAAF0AB8FD387 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nio macOS-Nio macOS-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A163D1FDB004EBA0089AC5C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nio tvOS-Nio tvOS-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1A89D230076775321C03028 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nio iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4051B32989532D977A28603 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nio tvOS-Nio tvOS-Tests/Pods-Nio tvOS-Nio tvOS-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nio tvOS-Nio tvOS-Tests/Pods-Nio tvOS-Nio tvOS-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nio tvOS-Nio tvOS-Tests/Pods-Nio tvOS-Nio tvOS-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2147AB372C6BE8C7D65D2C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Nio watchOS-checkManifestLockResult.txt",
 			);
@@ -1128,108 +958,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D6143C3766213AC855118AA9 /* [CP] Copy Pods Resources */ = {
+		F85253F998245D5405AF98D3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nio iOS/Pods-Nio iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D8CAB2E530BB71751B9D7053 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Nio iOS-Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Nio iOS-Nio iOS-Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E41BEB283AF5C3F0197C5F3A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Nio iOS-Tests/Pods-Nio iOS-Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Monreau-iOS/Monreau.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm-iOS/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift-iOS/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Reflex-iOS/Reflex.framework",
-				"${BUILT_PRODUCTS_DIR}/Transformer-iOS/Transformer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Monreau.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reflex.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Transformer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nio iOS-Tests/Pods-Nio iOS-Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7B9F7D11F197A2FDDA43B92 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nio macOS/Pods-Nio macOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC8C13BAE6F6207F71C3B683 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nio tvOS/Pods-Nio tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FF58C4F39D2D102830D6ED8D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nio iOS-Tests/Pods-Nio iOS-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1239,17 +987,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3369A9222000FF5A003BA78B /* DeckPlainObject.swift in Sources */,
-				3369A91A2000FD72003BA78B /* DeckRealmObject.swift in Sources */,
-				3369A93120010923003BA78B /* CardsRefresher.swift in Sources */,
-				3369A91E2000FDB9003BA78B /* CardRealmObject.swift in Sources */,
-				3369A9352001231B003BA78B /* DeckTranslator.swift in Sources */,
-				3369A92D2001040C003BA78B /* DeckRefresher.swift in Sources */,
-				33318CF51F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */,
-				3369A9392001235C003BA78B /* CardTranslator.swift in Sources */,
-				3358B66D1F19F96F00CBD8CF /* NioCoreRefresherTests.swift in Sources */,
-				3369A9262000FFB7003BA78B /* CardPlainObject.swift in Sources */,
-				3369A9162000FD2D003BA78B /* RealmTestCase.swift in Sources */,
+				336E0A60234B7F110026B44B /* MessageModelObject.swift in Sources */,
+				33F442C0234A8AE0004745B2 /* UserPlainObject.swift in Sources */,
+				336E0A64234B80E70026B44B /* DialogModelObject.swift in Sources */,
+				336E0A71234B89D40026B44B /* Factories.swift in Sources */,
+				336E0A68234B83750026B44B /* DialogsTranslator.swift in Sources */,
+				336E0A58234B7A880026B44B /* MessagePlainObject.swift in Sources */,
+				33F442C3234A8B29004745B2 /* UserModelObject.swift in Sources */,
+				33F442C8234A8B5F004745B2 /* UsersTranslator.swift in Sources */,
+				337EC2A52132C244006156E7 /* RealmTests.swift in Sources */,
+				336E0A5C234B7EBF0026B44B /* MessagesTranslator.swift in Sources */,
+				336E0A54234B79EA0026B44B /* DialogPlainObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1257,17 +1005,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3369A9232000FF5A003BA78B /* DeckPlainObject.swift in Sources */,
-				3369A91B2000FD72003BA78B /* DeckRealmObject.swift in Sources */,
-				3369A93220010923003BA78B /* CardsRefresher.swift in Sources */,
-				3369A91F2000FDB9003BA78B /* CardRealmObject.swift in Sources */,
-				3369A9362001231B003BA78B /* DeckTranslator.swift in Sources */,
-				3369A92E2001040C003BA78B /* DeckRefresher.swift in Sources */,
-				33318CF61F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */,
-				3369A93A2001235C003BA78B /* CardTranslator.swift in Sources */,
-				3358B66E1F19F96F00CBD8CF /* NioCoreRefresherTests.swift in Sources */,
-				3369A9272000FFB7003BA78B /* CardPlainObject.swift in Sources */,
-				3369A9172000FD2D003BA78B /* RealmTestCase.swift in Sources */,
+				336E0A61234B7F110026B44B /* MessageModelObject.swift in Sources */,
+				33F442C1234A8AE0004745B2 /* UserPlainObject.swift in Sources */,
+				336E0A65234B80E70026B44B /* DialogModelObject.swift in Sources */,
+				336E0A72234B89D40026B44B /* Factories.swift in Sources */,
+				336E0A69234B83750026B44B /* DialogsTranslator.swift in Sources */,
+				336E0A59234B7A880026B44B /* MessagePlainObject.swift in Sources */,
+				33F442C4234A8B29004745B2 /* UserModelObject.swift in Sources */,
+				33F442C7234A8B5F004745B2 /* UsersTranslator.swift in Sources */,
+				337EC2A62132C244006156E7 /* RealmTests.swift in Sources */,
+				336E0A5D234B7EBF0026B44B /* MessagesTranslator.swift in Sources */,
+				336E0A55234B79EA0026B44B /* DialogPlainObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1275,17 +1023,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3369A9242000FF5A003BA78B /* DeckPlainObject.swift in Sources */,
-				3369A91C2000FD72003BA78B /* DeckRealmObject.swift in Sources */,
-				3369A93320010923003BA78B /* CardsRefresher.swift in Sources */,
-				3369A9202000FDB9003BA78B /* CardRealmObject.swift in Sources */,
-				3369A9372001231B003BA78B /* DeckTranslator.swift in Sources */,
-				3369A92F2001040C003BA78B /* DeckRefresher.swift in Sources */,
-				33318CF71F1BBE8F00F27BC7 /* CoreDataTestCase.swift in Sources */,
-				3369A93B2001235C003BA78B /* CardTranslator.swift in Sources */,
-				3358B66F1F19F96F00CBD8CF /* NioCoreRefresherTests.swift in Sources */,
-				3369A9282000FFB7003BA78B /* CardPlainObject.swift in Sources */,
-				3369A9182000FD2D003BA78B /* RealmTestCase.swift in Sources */,
+				336E0A62234B7F110026B44B /* MessageModelObject.swift in Sources */,
+				33F442C2234A8AE1004745B2 /* UserPlainObject.swift in Sources */,
+				336E0A66234B80E70026B44B /* DialogModelObject.swift in Sources */,
+				336E0A73234B89D40026B44B /* Factories.swift in Sources */,
+				336E0A6A234B83750026B44B /* DialogsTranslator.swift in Sources */,
+				336E0A5A234B7A880026B44B /* MessagePlainObject.swift in Sources */,
+				33F442C5234A8B29004745B2 /* UserModelObject.swift in Sources */,
+				33F442C6234A8B5E004745B2 /* UsersTranslator.swift in Sources */,
+				337EC2A72132C244006156E7 /* RealmTests.swift in Sources */,
+				336E0A5E234B7EBF0026B44B /* MessagesTranslator.swift in Sources */,
+				336E0A56234B79EA0026B44B /* DialogPlainObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1295,24 +1043,11 @@
 			files = (
 				33318CE41F1BBD5A00F27BC7 /* Model.swift in Sources */,
 				3369A9112000F7E9003BA78B /* RealmModel.swift in Sources */,
-				33318CD91F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */,
 				3375FCCF1F1C98CC00FD7106 /* Plain.swift in Sources */,
-				3358B68F1F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */,
-				3358B67B1F19FA0D00CBD8CF /* CategoryModelObject.swift in Sources */,
-				3375FCD41F1CAD9500FD7106 /* NioCoreRefresherError.swift in Sources */,
-				3358B6851F19FB0600CBD8CF /* PositionModelObject.swift in Sources */,
-				33E32C0F1F1947C9002425AF /* NioTranslator.swift in Sources */,
-				3358B6201F19EE6400CBD8CF /* NioCoreRefresher.swift in Sources */,
 				33E32C011F18E4AD002425AF /* DAO.swift in Sources */,
-				3375FCCA1F1C97B700FD7106 /* NioID.swift in Sources */,
+				3375FCCA1F1C97B700FD7106 /* UniqueID.swift in Sources */,
 				33318CE01F1BBD4F00F27BC7 /* ManagedModel.swift in Sources */,
-				33318CD41F1B676600F27BC7 /* AdditiveModelObject.swift in Sources */,
-				33E32C0D1F1918B2002425AF /* Refresher.swift in Sources */,
-				3358B6761F19F9B500CBD8CF /* NioModel.xcdatamodeld in Sources */,
 				3375FCC51F1C977600FD7106 /* Numeric.swift in Sources */,
-				3358B68A1F19FBE600CBD8CF /* CategoryPlainObject.swift in Sources */,
-				33318CE61F1BBD5A00F27BC7 /* TransformablePlain.swift in Sources */,
-				3358B6981F1A3E2A00CBD8CF /* Nio.swift in Sources */,
 				33E32C061F18E7DF002425AF /* Translator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1321,27 +1056,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33318CDA1F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */,
 				3369A9122000F7E9003BA78B /* RealmModel.swift in Sources */,
-				3358B6901F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */,
 				3375FCD01F1C98CC00FD7106 /* Plain.swift in Sources */,
-				3358B67C1F19FA0D00CBD8CF /* CategoryModelObject.swift in Sources */,
 				33318CF01F1BBE5800F27BC7 /* ManagedModel.swift in Sources */,
-				3375FCD51F1CAD9500FD7106 /* NioCoreRefresherError.swift in Sources */,
-				3358B6861F19FB0600CBD8CF /* PositionModelObject.swift in Sources */,
-				3358B6331F19F7D300CBD8CF /* NioTranslator.swift in Sources */,
 				3358B6381F19F7D300CBD8CF /* DAO.swift in Sources */,
-				3375FCCB1F1C980600FD7106 /* NioID.swift in Sources */,
-				33318CE91F1BBE5500F27BC7 /* TransformablePlain.swift in Sources */,
-				33318CD51F1B676600F27BC7 /* AdditiveModelObject.swift in Sources */,
+				3375FCCB1F1C980600FD7106 /* UniqueID.swift in Sources */,
 				33318CE71F1BBE5500F27BC7 /* Model.swift in Sources */,
 				3358B6341F19F7D300CBD8CF /* Translator.swift in Sources */,
-				3358B6771F19F9B500CBD8CF /* NioModel.xcdatamodeld in Sources */,
 				3375FCC81F1C977900FD7106 /* Numeric.swift in Sources */,
-				3358B68B1F19FBE600CBD8CF /* CategoryPlainObject.swift in Sources */,
-				3358B6991F1A3E2A00CBD8CF /* Nio.swift in Sources */,
-				3358B6321F19F7D300CBD8CF /* Refresher.swift in Sources */,
-				3358B6311F19F7D300CBD8CF /* NioCoreRefresher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1349,27 +1071,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33318CDB1F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */,
 				3369A9132000F7E9003BA78B /* RealmModel.swift in Sources */,
-				3358B6911F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */,
 				3375FCD11F1C98CC00FD7106 /* Plain.swift in Sources */,
-				3358B67D1F19FA0D00CBD8CF /* CategoryModelObject.swift in Sources */,
 				33318CF11F1BBE5800F27BC7 /* ManagedModel.swift in Sources */,
-				3375FCD61F1CAD9500FD7106 /* NioCoreRefresherError.swift in Sources */,
-				3358B6871F19FB0600CBD8CF /* PositionModelObject.swift in Sources */,
-				3358B62B1F19F7D300CBD8CF /* NioTranslator.swift in Sources */,
 				3358B6301F19F7D300CBD8CF /* DAO.swift in Sources */,
-				3375FCCC1F1C980700FD7106 /* NioID.swift in Sources */,
-				33318CEC1F1BBE5500F27BC7 /* TransformablePlain.swift in Sources */,
-				33318CD61F1B676600F27BC7 /* AdditiveModelObject.swift in Sources */,
+				3375FCCC1F1C980700FD7106 /* UniqueID.swift in Sources */,
 				33318CEA1F1BBE5500F27BC7 /* Model.swift in Sources */,
 				3358B62C1F19F7D300CBD8CF /* Translator.swift in Sources */,
-				3358B6781F19F9B500CBD8CF /* NioModel.xcdatamodeld in Sources */,
 				3375FCC71F1C977800FD7106 /* Numeric.swift in Sources */,
-				3358B68C1F19FBE600CBD8CF /* CategoryPlainObject.swift in Sources */,
-				3358B69A1F1A3E2A00CBD8CF /* Nio.swift in Sources */,
-				3358B62A1F19F7D300CBD8CF /* Refresher.swift in Sources */,
-				3358B6291F19F7D300CBD8CF /* NioCoreRefresher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1377,27 +1086,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33318CDC1F1B67B600F27BC7 /* AdditivePlainObject.swift in Sources */,
 				3369A9142000F7E9003BA78B /* RealmModel.swift in Sources */,
-				3358B6921F19FC1100CBD8CF /* PositionPlainObject.swift in Sources */,
 				3375FCD21F1C98CC00FD7106 /* Plain.swift in Sources */,
-				3358B67E1F19FA0D00CBD8CF /* CategoryModelObject.swift in Sources */,
 				33318CF21F1BBE5900F27BC7 /* ManagedModel.swift in Sources */,
-				3375FCD71F1CAD9500FD7106 /* NioCoreRefresherError.swift in Sources */,
-				3358B6881F19FB0600CBD8CF /* PositionModelObject.swift in Sources */,
-				3358B6231F19F7D200CBD8CF /* NioTranslator.swift in Sources */,
 				3358B6281F19F7D200CBD8CF /* DAO.swift in Sources */,
-				3375FCCD1F1C980700FD7106 /* NioID.swift in Sources */,
-				33318CEF1F1BBE5600F27BC7 /* TransformablePlain.swift in Sources */,
-				33318CD71F1B676600F27BC7 /* AdditiveModelObject.swift in Sources */,
+				3375FCCD1F1C980700FD7106 /* UniqueID.swift in Sources */,
 				33318CED1F1BBE5600F27BC7 /* Model.swift in Sources */,
 				3358B6241F19F7D200CBD8CF /* Translator.swift in Sources */,
-				3358B6791F19F9B500CBD8CF /* NioModel.xcdatamodeld in Sources */,
 				3375FCC61F1C977800FD7106 /* Numeric.swift in Sources */,
-				3358B68D1F19FBE600CBD8CF /* CategoryPlainObject.swift in Sources */,
-				3358B69B1F1A3E2A00CBD8CF /* Nio.swift in Sources */,
-				3358B6221F19F7D200CBD8CF /* Refresher.swift in Sources */,
-				3358B6211F19F7D200CBD8CF /* NioCoreRefresher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1424,7 +1120,7 @@
 /* Begin XCBuildConfiguration section */
 		3358B6461F19F8B100CBD8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4B4D2FCF891497D15BF5D40 /* Pods-Nio macOS-Tests.debug.xcconfig */;
+			baseConfigurationReference = B00226541699FEC7C6781A4A /* Pods-Nio macOS-Nio macOS-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1449,6 +1145,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1466,7 +1163,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/NioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1482,7 +1183,7 @@
 		};
 		3358B6471F19F8B100CBD8CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 500504A5F9B6F2BA47CAB30F /* Pods-Nio macOS-Tests.release.xcconfig */;
+			baseConfigurationReference = 8C4E505AA8497113A9168153 /* Pods-Nio macOS-Nio macOS-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1507,6 +1208,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1518,13 +1220,18 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/NioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Nio-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -1532,7 +1239,7 @@
 		};
 		3358B6551F19F8BC00CBD8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 271A0E34CEC446DDDA80EEAF /* Pods-Nio tvOS-Tests.debug.xcconfig */;
+			baseConfigurationReference = A2D78AA39C0B46E2D6F72B2A /* Pods-Nio tvOS-Nio tvOS-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1555,7 +1262,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1573,7 +1280,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/NioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Nio-tvOS-Tests";
@@ -1590,7 +1301,7 @@
 		};
 		3358B6561F19F8BC00CBD8CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 129768A6A711963A0593F8FC /* Pods-Nio tvOS-Tests.release.xcconfig */;
+			baseConfigurationReference = 4430B95A936FA739BE697C30 /* Pods-Nio tvOS-Nio tvOS-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1613,7 +1324,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1625,13 +1336,18 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/NioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Nio-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 10.2;
@@ -1641,7 +1357,7 @@
 		};
 		3358B6641F19F8C900CBD8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1D523BD6CE520E621436C93 /* Pods-Nio iOS-Tests.debug.xcconfig */;
+			baseConfigurationReference = 78B1681E7F290E0134E1116F /* Pods-Nio iOS-Nio iOS-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1665,6 +1381,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1683,7 +1400,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/NioTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Nio-iOS-Tests";
@@ -1698,7 +1419,7 @@
 		};
 		3358B6651F19F8C900CBD8CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1AA166A11A94C40F0824798 /* Pods-Nio iOS-Tests.release.xcconfig */;
+			baseConfigurationReference = 369843AE56FA785C8A4BF14C /* Pods-Nio iOS-Nio iOS-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1722,6 +1443,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1734,12 +1456,17 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/NioTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Nio-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
@@ -1749,15 +1476,18 @@
 		337B5A0B1F17614200F4FDAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -1780,15 +1510,18 @@
 		337B5A0C1F17614200F4FDAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -1808,7 +1541,7 @@
 		};
 		337B5A191F17615000F4FDAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E37E05E01A24A07E3A56EDF4 /* Pods-Nio iOS.debug.xcconfig */;
+			baseConfigurationReference = 322F339EE59E4DCE83E702D1 /* Pods-Nio iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1829,12 +1562,13 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1856,8 +1590,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Sources/Nio/Supporting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.Nio;
@@ -1876,7 +1614,7 @@
 		};
 		337B5A1A1F17615000F4FDAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F92439282E02EC04F4B54293 /* Pods-Nio iOS.release.xcconfig */;
+			baseConfigurationReference = 5476F7987CB676A11D028472 /* Pods-Nio iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1897,12 +1635,13 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1918,14 +1657,19 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Sources/Nio/Supporting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.Nio;
 				PRODUCT_NAME = Nio;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1937,7 +1681,7 @@
 		};
 		337B5A331F17616F00F4FDAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2770003FF9439E991B39D932 /* Pods-Nio watchOS.debug.xcconfig */;
+			baseConfigurationReference = 39FAB81BFEFCC79761C30F06 /* Pods-Nio watchOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -1959,11 +1703,12 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1985,7 +1730,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Sources/Nio/Supporting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.Nio;
@@ -2005,7 +1754,7 @@
 		};
 		337B5A341F17616F00F4FDAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40D5A5B494137FD9C42DFF38 /* Pods-Nio watchOS.release.xcconfig */;
+			baseConfigurationReference = E1AA06DC3B4D5F152D20BB39 /* Pods-Nio watchOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -2027,11 +1776,12 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2047,13 +1797,18 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Sources/Nio/Supporting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.Nio;
 				PRODUCT_NAME = Nio;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -2066,7 +1821,7 @@
 		};
 		337B5A401F17617700F4FDAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98FB7C1AE11964E6BFC4BF9F /* Pods-Nio tvOS.debug.xcconfig */;
+			baseConfigurationReference = C548DD38D9307BF3BD0A5A46 /* Pods-Nio tvOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2087,11 +1842,12 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2113,7 +1869,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Sources/Nio/Supporting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.Nio;
@@ -2125,7 +1885,7 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -2133,7 +1893,7 @@
 		};
 		337B5A411F17617700F4FDAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C524CAB149CC2CA9B4DA1D9 /* Pods-Nio tvOS.release.xcconfig */;
+			baseConfigurationReference = A4EC9DDA4A514852B3A80F06 /* Pods-Nio tvOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2154,11 +1914,12 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2174,17 +1935,22 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Sources/Nio/Supporting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.Nio;
 				PRODUCT_NAME = Nio;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2193,7 +1959,7 @@
 		};
 		337B5A4D1F1763DB00F4FDAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4F71CDCF22A4FADA6FA4AD4 /* Pods-Nio macOS.debug.xcconfig */;
+			baseConfigurationReference = C59FDDC7B6F71CE9E89BD2CA /* Pods-Nio macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2214,12 +1980,13 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2242,7 +2009,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Sources/Nio/Supporting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2261,7 +2032,7 @@
 		};
 		337B5A4E1F1763DB00F4FDAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51E57CCAB7764ED2D3729B45 /* Pods-Nio macOS.release.xcconfig */;
+			baseConfigurationReference = 5E94D10C03844FAA5E462AE7 /* Pods-Nio macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2282,12 +2053,13 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2304,14 +2076,19 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Sources/Nio/Supporting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.Nio;
 				PRODUCT_NAME = Nio;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2395,19 +2172,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3358B6741F19F9B500CBD8CF /* NioModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3358B6751F19F9B500CBD8CF /* NioModel.xcdatamodel */,
-			);
-			currentVersion = 3358B6751F19F9B500CBD8CF /* NioModel.xcdatamodel */;
-			path = NioModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 337B5A071F17614200F4FDAF /* Project object */;
 }

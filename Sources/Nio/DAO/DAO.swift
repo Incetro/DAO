@@ -67,7 +67,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     
     /// Returns the number of objects which fits the predicate
     /// - Parameter predicate: some predicate
-    func count(predicatedBy predicate: Predicate? = nil) throws -> Int {
+    public func count(predicatedBy predicate: Predicate? = nil) throws -> Int {
         return try storage.count(predicatedBy: predicate)
     }
     

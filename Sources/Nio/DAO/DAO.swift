@@ -93,7 +93,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
         let plain = try translator.translate(model: model)
         return plain
     }
-    
+
     /// Read entity from database of `Plain` filtered by predicate
     ///
     /// - Parameters:
@@ -102,6 +102,18 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     /// - Throws: error if any entity cannot be read
     public func read(predicatedBy predicate: Predicate) throws -> [Plain] {
         let models = try storage.read(predicatedBy: predicate)
+        let plains = try translator.translate(models: models)
+        return plains
+    }
+
+    // Read all entities in storage ordered by the given key
+    ///
+    /// - Parameters:
+    ///   - key: key for sorting
+    ///   - ascending: ascending flag
+    /// - Returns: all found objects ordered by the given key
+    public func read(orderedBy field: String, asceding: Bool = true) throws -> [Plain] {
+        let models = try storage.read(orderedBy: field, ascending: asceding)
         let plains = try translator.translate(models: models)
         return plains
     }

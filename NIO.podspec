@@ -18,5 +18,4 @@ Pod::Spec.new do |spec|
 
     spec.dependency "Reflex"
     spec.dependency "Monreau"
-    spec.dependency "Transformer"
 end

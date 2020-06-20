@@ -7,6 +7,7 @@ Pod::Spec.new do |spec|
     spec.license        = "MIT"
     spec.authors        = { "incetro" => "incetro@ya.ru" }
     spec.requires_arc   = true
+    spec.swift_version  = "5.2"
 
     spec.ios.deployment_target     = "10.3"
     spec.osx.deployment_target     = "10.12"

@@ -1,6 +1,6 @@
 //
 //  Package.swift
-//  Nio
+//  DAO
 //
 //  Created by incetro on 17/07/2017.
 //
@@ -9,7 +9,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "NIO",
+    name: "SwiftyDAO",
     dependencies : [],
     exclude: ["Tests"]
 )

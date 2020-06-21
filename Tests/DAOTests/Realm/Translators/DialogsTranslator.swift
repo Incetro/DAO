@@ -10,7 +10,9 @@ import DAO
 // MARK: - DialogsTranslator
 
 final class DialogsTranslator {
-    
+
+    // MARK: - Aliases
+
     typealias PlainModel = DialogPlainObject
     typealias DatabaseModel = DialogModelObject
 }
@@ -20,7 +22,7 @@ final class DialogsTranslator {
 extension DialogsTranslator: Translator {
 
     func translate(model: DatabaseModel) throws -> PlainModel {
-        return DialogPlainObject(
+        DialogPlainObject(
             id: Int(model.uniqueId) ?? 0,
             isPinned: model.isPinned,
             messages: try MessagesTranslator().translate(
@@ -48,4 +50,3 @@ extension DialogsTranslator: Translator {
         )
     }
 }
-

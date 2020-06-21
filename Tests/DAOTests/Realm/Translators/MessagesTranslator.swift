@@ -10,7 +10,9 @@ import DAO
 // MARK: - MessagesTranslator
 
 final class MessagesTranslator {
-    
+
+    // MARK: - Aliases
+
     typealias PlainModel = MessagePlainObject
     typealias DatabaseModel = MessageModelObject
 }
@@ -20,7 +22,7 @@ final class MessagesTranslator {
 extension MessagesTranslator: Translator {
 
     func translate(model: DatabaseModel) throws -> PlainModel {
-        return MessagePlainObject(
+        MessagePlainObject(
             id: Int(model.uniqueId) ?? 0,
             date: model.date,
             text: model.text,

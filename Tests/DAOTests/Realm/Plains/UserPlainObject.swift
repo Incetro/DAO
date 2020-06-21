@@ -17,8 +17,15 @@ struct UserPlainObject: Plain {
         return UniqueID(value: id)
     }
 
+    /// Unique identifier
     let id: Int
+
+    /// User's name
     let name: String
+
+    /// User's age
     let age: Int
+
+    /// User's dialogs
     let dialogs: [DialogPlainObject]
 }

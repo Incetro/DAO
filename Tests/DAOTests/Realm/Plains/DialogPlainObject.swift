@@ -11,13 +11,18 @@ import DAO
 
 struct DialogPlainObject: Plain {
 
+    // MARK: - Properties
+
     var uniqueId: UniqueID {
         return UniqueID(value: id)
     }
-    
-    // MARK: - Properties
 
+    /// Unique id
     let id: Int
+
+    /// True if the dialog has been pinned
     let isPinned: Bool
+
+    /// All available (stored) the dialog's messages
     let messages: [MessagePlainObject]
 }

@@ -286,17 +286,17 @@ extension DialogTranslator: Translator {
 
 ```swift
 let dao = DAO(
-    storage: RealmStorage<UserModelObject>,
-    translator: UsersTranslator()
+    storage: RealmStorage<DialogModelObject>,
+    translator: DialogTranslator()
 )
 
 // Obtain messages (from backend for example)
-let messages = messagesService.obtainMessages()
+let dialogs = dialogsService.obtainDialogs()
 
 ...
 
 /// Obtain messages from your database
-let messages = try dao.read()
+let dialogs = try dao.read()
 ```
 	
 ## Requirements

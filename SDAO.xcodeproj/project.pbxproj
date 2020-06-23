@@ -1,0 +1,2169 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21B29D7B01891EC407E3A81C /* Pods_SDAO_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9232EBF4EBFE0664336B6C9D /* Pods_SDAO_tvOS.framework */; };
+		33318CE01F1BBD4F00F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
+		33318CE41F1BBD5A00F27BC7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE11F1BBD5A00F27BC7 /* Model.swift */; };
+		33318CE71F1BBE5500F27BC7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE11F1BBD5A00F27BC7 /* Model.swift */; };
+		33318CEA1F1BBE5500F27BC7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE11F1BBD5A00F27BC7 /* Model.swift */; };
+		33318CED1F1BBE5600F27BC7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE11F1BBD5A00F27BC7 /* Model.swift */; };
+		33318CF01F1BBE5800F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
+		33318CF11F1BBE5800F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
+		33318CF21F1BBE5900F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
+		3358B6241F19F7D200CBD8CF /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C051F18E7DF002425AF /* Translator.swift */; };
+		3358B6281F19F7D200CBD8CF /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C001F18E4AD002425AF /* DAO.swift */; };
+		3358B62C1F19F7D300CBD8CF /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C051F18E7DF002425AF /* Translator.swift */; };
+		3358B6301F19F7D300CBD8CF /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C001F18E4AD002425AF /* DAO.swift */; };
+		3358B6341F19F7D300CBD8CF /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C051F18E7DF002425AF /* Translator.swift */; };
+		3358B6381F19F7D300CBD8CF /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C001F18E4AD002425AF /* DAO.swift */; };
+		3358B6421F19F8B100CBD8CF /* SDAO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337B5A471F1763DB00F4FDAF /* SDAO.framework */; };
+		3358B6511F19F8BC00CBD8CF /* SDAO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337B5A3A1F17617700F4FDAF /* SDAO.framework */; };
+		3358B6601F19F8C900CBD8CF /* SDAO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337B5A121F17615000F4FDAF /* SDAO.framework */; };
+		3369A9112000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
+		3369A9122000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
+		3369A9132000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
+		3369A9142000F7E9003BA78B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369A9102000F7E9003BA78B /* RealmModel.swift */; };
+		336E0A54234B79EA0026B44B /* DialogPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A53234B79EA0026B44B /* DialogPlainObject.swift */; };
+		336E0A55234B79EA0026B44B /* DialogPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A53234B79EA0026B44B /* DialogPlainObject.swift */; };
+		336E0A56234B79EA0026B44B /* DialogPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A53234B79EA0026B44B /* DialogPlainObject.swift */; };
+		336E0A58234B7A880026B44B /* MessagePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A57234B7A870026B44B /* MessagePlainObject.swift */; };
+		336E0A59234B7A880026B44B /* MessagePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A57234B7A870026B44B /* MessagePlainObject.swift */; };
+		336E0A5A234B7A880026B44B /* MessagePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A57234B7A870026B44B /* MessagePlainObject.swift */; };
+		336E0A5C234B7EBF0026B44B /* MessagesTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5B234B7EBF0026B44B /* MessagesTranslator.swift */; };
+		336E0A5D234B7EBF0026B44B /* MessagesTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5B234B7EBF0026B44B /* MessagesTranslator.swift */; };
+		336E0A5E234B7EBF0026B44B /* MessagesTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5B234B7EBF0026B44B /* MessagesTranslator.swift */; };
+		336E0A60234B7F110026B44B /* MessageModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5F234B7F110026B44B /* MessageModelObject.swift */; };
+		336E0A61234B7F110026B44B /* MessageModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5F234B7F110026B44B /* MessageModelObject.swift */; };
+		336E0A62234B7F110026B44B /* MessageModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A5F234B7F110026B44B /* MessageModelObject.swift */; };
+		336E0A64234B80E70026B44B /* DialogModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A63234B80E70026B44B /* DialogModelObject.swift */; };
+		336E0A65234B80E70026B44B /* DialogModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A63234B80E70026B44B /* DialogModelObject.swift */; };
+		336E0A66234B80E70026B44B /* DialogModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A63234B80E70026B44B /* DialogModelObject.swift */; };
+		336E0A68234B83750026B44B /* DialogsTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A67234B83750026B44B /* DialogsTranslator.swift */; };
+		336E0A69234B83750026B44B /* DialogsTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A67234B83750026B44B /* DialogsTranslator.swift */; };
+		336E0A6A234B83750026B44B /* DialogsTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A67234B83750026B44B /* DialogsTranslator.swift */; };
+		336E0A71234B89D40026B44B /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A70234B89D40026B44B /* Factories.swift */; };
+		336E0A72234B89D40026B44B /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A70234B89D40026B44B /* Factories.swift */; };
+		336E0A73234B89D40026B44B /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E0A70234B89D40026B44B /* Factories.swift */; };
+		3375FCC51F1C977600FD7106 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC41F1C977600FD7106 /* Numeric.swift */; };
+		3375FCC61F1C977800FD7106 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC41F1C977600FD7106 /* Numeric.swift */; };
+		3375FCC71F1C977800FD7106 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC41F1C977600FD7106 /* Numeric.swift */; };
+		3375FCC81F1C977900FD7106 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC41F1C977600FD7106 /* Numeric.swift */; };
+		3375FCCA1F1C97B700FD7106 /* UniqueID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* UniqueID.swift */; };
+		3375FCCB1F1C980600FD7106 /* UniqueID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* UniqueID.swift */; };
+		3375FCCC1F1C980700FD7106 /* UniqueID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* UniqueID.swift */; };
+		3375FCCD1F1C980700FD7106 /* UniqueID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCC91F1C97B700FD7106 /* UniqueID.swift */; };
+		3375FCCF1F1C98CC00FD7106 /* Plain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCCE1F1C98CC00FD7106 /* Plain.swift */; };
+		3375FCD01F1C98CC00FD7106 /* Plain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCCE1F1C98CC00FD7106 /* Plain.swift */; };
+		3375FCD11F1C98CC00FD7106 /* Plain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCCE1F1C98CC00FD7106 /* Plain.swift */; };
+		3375FCD21F1C98CC00FD7106 /* Plain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375FCCE1F1C98CC00FD7106 /* Plain.swift */; };
+		337EC2A52132C244006156E7 /* RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2A02132C22C006156E7 /* RealmTests.swift */; };
+		337EC2A62132C244006156E7 /* RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2A02132C22C006156E7 /* RealmTests.swift */; };
+		337EC2A72132C244006156E7 /* RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2A02132C22C006156E7 /* RealmTests.swift */; };
+		33E32C011F18E4AD002425AF /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C001F18E4AD002425AF /* DAO.swift */; };
+		33E32C061F18E7DF002425AF /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E32C051F18E7DF002425AF /* Translator.swift */; };
+		33F442C0234A8AE0004745B2 /* UserPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC28C2132BCF6006156E7 /* UserPlainObject.swift */; };
+		33F442C1234A8AE0004745B2 /* UserPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC28C2132BCF6006156E7 /* UserPlainObject.swift */; };
+		33F442C2234A8AE1004745B2 /* UserPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC28C2132BCF6006156E7 /* UserPlainObject.swift */; };
+		33F442C3234A8B29004745B2 /* UserModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2912132BD7C006156E7 /* UserModelObject.swift */; };
+		33F442C4234A8B29004745B2 /* UserModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2912132BD7C006156E7 /* UserModelObject.swift */; };
+		33F442C5234A8B29004745B2 /* UserModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2912132BD7C006156E7 /* UserModelObject.swift */; };
+		33F442C6234A8B5E004745B2 /* UsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2962132BE8C006156E7 /* UsersTranslator.swift */; };
+		33F442C7234A8B5F004745B2 /* UsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2962132BE8C006156E7 /* UsersTranslator.swift */; };
+		33F442C8234A8B5F004745B2 /* UsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2962132BE8C006156E7 /* UsersTranslator.swift */; };
+		40894394B8E7C2C4CB7BD67E /* Pods_SDAO_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7E032F148CAF8120BDBCFD /* Pods_SDAO_iOS_Tests.framework */; };
+		68D5AAEC19D18369B9CD74FF /* Pods_SDAO_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09C314BE08A319D59950D0D /* Pods_SDAO_tvOS_Tests.framework */; };
+		87214B8DC213ACD040A5D49B /* Pods_SDAO_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0C9E19B881F5054E7119AC /* Pods_SDAO_macOS_Tests.framework */; };
+		ABD521116862A6A03AC0CACF /* Pods_SDAO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6654D9AAA18F04D2210F95 /* Pods_SDAO_iOS.framework */; };
+		D79AB04702269134E8054BE2 /* Pods_SDAO_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B457C8A4AB3A05699A8FC64F /* Pods_SDAO_watchOS.framework */; };
+		E39195A685568A6F78DD7717 /* Pods_SDAO_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AAB22803C7A0B8BD695F9E /* Pods_SDAO_macOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3358B6431F19F8B100CBD8CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337B5A071F17614200F4FDAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 337B5A461F1763DB00F4FDAF;
+			remoteInfo = "Nio macOS";
+		};
+		3358B6521F19F8BC00CBD8CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337B5A071F17614200F4FDAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 337B5A391F17617700F4FDAF;
+			remoteInfo = "Nio tvOS";
+		};
+		3358B6611F19F8C900CBD8CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337B5A071F17614200F4FDAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 337B5A111F17615000F4FDAF;
+			remoteInfo = "Nio iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E81160DF3EEF87DA970C215 /* Pods-SDAO iOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		17AAB22803C7A0B8BD695F9E /* Pods_SDAO_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DE3D52C18568A3596CA2B2 /* Pods-SDAO iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO iOS/Pods-SDAO iOS.release.xcconfig"; sourceTree = "<group>"; };
+		288664B95CBA0624E0E6283D /* Pods-SDAO tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS/Pods-SDAO tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedModel.swift; sourceTree = "<group>"; };
+		33318CE11F1BBD5A00F27BC7 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3358B63D1F19F8B100CBD8CF /* SDAO macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SDAO macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3358B64C1F19F8BB00CBD8CF /* SDAO tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SDAO tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3358B65B1F19F8C900CBD8CF /* SDAO iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SDAO iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3369A9102000F7E9003BA78B /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		336E0A53234B79EA0026B44B /* DialogPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogPlainObject.swift; sourceTree = "<group>"; };
+		336E0A57234B7A870026B44B /* MessagePlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePlainObject.swift; sourceTree = "<group>"; };
+		336E0A5B234B7EBF0026B44B /* MessagesTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTranslator.swift; sourceTree = "<group>"; };
+		336E0A5F234B7F110026B44B /* MessageModelObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModelObject.swift; sourceTree = "<group>"; };
+		336E0A63234B80E70026B44B /* DialogModelObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogModelObject.swift; sourceTree = "<group>"; };
+		336E0A67234B83750026B44B /* DialogsTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsTranslator.swift; sourceTree = "<group>"; };
+		336E0A70234B89D40026B44B /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		3374C8DE249AB5330068FF3D /* DAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAO.h; sourceTree = "<group>"; };
+		3375FCC41F1C977600FD7106 /* Numeric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numeric.swift; sourceTree = "<group>"; };
+		3375FCC91F1C97B700FD7106 /* UniqueID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueID.swift; sourceTree = "<group>"; };
+		3375FCCE1F1C98CC00FD7106 /* Plain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plain.swift; sourceTree = "<group>"; };
+		337B5A121F17615000F4FDAF /* SDAO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDAO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337B5A2D1F17616F00F4FDAF /* SDAO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDAO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337B5A3A1F17617700F4FDAF /* SDAO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDAO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337B5A471F1763DB00F4FDAF /* SDAO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDAO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337B5A521F17646800F4FDAF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		337EC2812132BC97006156E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		337EC28C2132BCF6006156E7 /* UserPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlainObject.swift; sourceTree = "<group>"; };
+		337EC2912132BD7C006156E7 /* UserModelObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelObject.swift; sourceTree = "<group>"; };
+		337EC2962132BE8C006156E7 /* UsersTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTranslator.swift; sourceTree = "<group>"; };
+		337EC2A02132C22C006156E7 /* RealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTests.swift; sourceTree = "<group>"; };
+		33AB45F71F1CB1ED00A79990 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		33E32C001F18E4AD002425AF /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DAO.swift; path = Sources/SDAO/DAO/DAO.swift; sourceTree = SOURCE_ROOT; };
+		33E32C051F18E7DF002425AF /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		48C1D4FDBF0CAC19D587A52C /* Pods-SDAO macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO macOS/Pods-SDAO macOS.release.xcconfig"; sourceTree = "<group>"; };
+		4D7E032F148CAF8120BDBCFD /* Pods_SDAO_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58A573D845869A6EDD802B0E /* Pods-SDAO macOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8187F8F01E498C4F48E8C330 /* Pods-SDAO macOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		86A396DF67A284D7ABA14880 /* Pods-SDAO iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO iOS/Pods-SDAO iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9232EBF4EBFE0664336B6C9D /* Pods_SDAO_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		986A8FB8EA1D4C4BB1EBD357 /* Pods-SDAO watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO watchOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO watchOS/Pods-SDAO watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		A09C314BE08A319D59950D0D /* Pods_SDAO_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3BC5B184009983D8B13621 /* Pods-SDAO tvOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B457C8A4AB3A05699A8FC64F /* Pods_SDAO_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED6FA7CFCB84B01DBC3D84A /* Pods-SDAO iOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CF6654D9AAA18F04D2210F95 /* Pods_SDAO_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0C9E19B881F5054E7119AC /* Pods_SDAO_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D4D04DA24B71CF05DD43C3 /* Pods-SDAO tvOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE336E7BB63E00E76F42BE74 /* Pods-SDAO watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO watchOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO watchOS/Pods-SDAO watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F861B551312F9AD86F89431F /* Pods-SDAO tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS/Pods-SDAO tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FD75BE0419327DBECE94FB57 /* Pods-SDAO macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO macOS/Pods-SDAO macOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3358B63A1F19F8B100CBD8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3358B6421F19F8B100CBD8CF /* SDAO.framework in Frameworks */,
+				87214B8DC213ACD040A5D49B /* Pods_SDAO_macOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3358B6491F19F8BB00CBD8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3358B6511F19F8BC00CBD8CF /* SDAO.framework in Frameworks */,
+				68D5AAEC19D18369B9CD74FF /* Pods_SDAO_tvOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3358B6581F19F8C900CBD8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3358B6601F19F8C900CBD8CF /* SDAO.framework in Frameworks */,
+				40894394B8E7C2C4CB7BD67E /* Pods_SDAO_iOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A0E1F17615000F4FDAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD521116862A6A03AC0CACF /* Pods_SDAO_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A291F17616F00F4FDAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79AB04702269134E8054BE2 /* Pods_SDAO_watchOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A361F17617700F4FDAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B29D7B01891EC407E3A81C /* Pods_SDAO_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A431F1763DB00F4FDAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39195A685568A6F78DD7717 /* Pods_SDAO_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23091A480C6C59C894C7CBD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86A396DF67A284D7ABA14880 /* Pods-SDAO iOS.debug.xcconfig */,
+				22DE3D52C18568A3596CA2B2 /* Pods-SDAO iOS.release.xcconfig */,
+				0E81160DF3EEF87DA970C215 /* Pods-SDAO iOS-Tests.debug.xcconfig */,
+				CED6FA7CFCB84B01DBC3D84A /* Pods-SDAO iOS-Tests.release.xcconfig */,
+				FD75BE0419327DBECE94FB57 /* Pods-SDAO macOS.debug.xcconfig */,
+				48C1D4FDBF0CAC19D587A52C /* Pods-SDAO macOS.release.xcconfig */,
+				58A573D845869A6EDD802B0E /* Pods-SDAO macOS-Tests.debug.xcconfig */,
+				8187F8F01E498C4F48E8C330 /* Pods-SDAO macOS-Tests.release.xcconfig */,
+				F861B551312F9AD86F89431F /* Pods-SDAO tvOS.debug.xcconfig */,
+				288664B95CBA0624E0E6283D /* Pods-SDAO tvOS.release.xcconfig */,
+				E2D4D04DA24B71CF05DD43C3 /* Pods-SDAO tvOS-Tests.debug.xcconfig */,
+				AF3BC5B184009983D8B13621 /* Pods-SDAO tvOS-Tests.release.xcconfig */,
+				EE336E7BB63E00E76F42BE74 /* Pods-SDAO watchOS.debug.xcconfig */,
+				986A8FB8EA1D4C4BB1EBD357 /* Pods-SDAO watchOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		33318CDD1F1BBD1F00F27BC7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3375FCC31F1C96BF00FD7106 /* Plain */,
+				33318CE11F1BBD5A00F27BC7 /* Model.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		33318CDE1F1BBD2F00F27BC7 /* ManagedModel */ = {
+			isa = PBXGroup;
+			children = (
+				33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */,
+			);
+			path = ManagedModel;
+			sourceTree = "<group>";
+		};
+		33318CF81F1BD33D00F27BC7 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				33E32C001F18E4AD002425AF /* DAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		3369A90E2000F7D6003BA78B /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				3369A90F2000F7E0003BA78B /* RealmModel */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		3369A90F2000F7E0003BA78B /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				3369A9102000F7E9003BA78B /* RealmModel.swift */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
+		336E0A6F234B89CA0026B44B /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				336E0A70234B89D40026B44B /* Factories.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		3375FCC31F1C96BF00FD7106 /* Plain */ = {
+			isa = PBXGroup;
+			children = (
+				3375FCC41F1C977600FD7106 /* Numeric.swift */,
+				3375FCC91F1C97B700FD7106 /* UniqueID.swift */,
+				3375FCCE1F1C98CC00FD7106 /* Plain.swift */,
+			);
+			path = Plain;
+			sourceTree = "<group>";
+		};
+		337B5A061F17614200F4FDAF = {
+			isa = PBXGroup;
+			children = (
+				33AB45F71F1CB1ED00A79990 /* Package.swift */,
+				337B5A4F1F17646800F4FDAF /* Sources */,
+				337B5A541F17646800F4FDAF /* Tests */,
+				337B5A131F17615000F4FDAF /* Products */,
+				23091A480C6C59C894C7CBD9 /* Pods */,
+				B8D3B585AFAE69369AB7A622 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		337B5A131F17615000F4FDAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				337B5A121F17615000F4FDAF /* SDAO.framework */,
+				337B5A2D1F17616F00F4FDAF /* SDAO.framework */,
+				337B5A3A1F17617700F4FDAF /* SDAO.framework */,
+				337B5A471F1763DB00F4FDAF /* SDAO.framework */,
+				3358B63D1F19F8B100CBD8CF /* SDAO macOS-Tests.xctest */,
+				3358B64C1F19F8BB00CBD8CF /* SDAO tvOS-Tests.xctest */,
+				3358B65B1F19F8C900CBD8CF /* SDAO iOS-Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		337B5A4F1F17646800F4FDAF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				337B5A501F17646800F4FDAF /* SDAO */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		337B5A501F17646800F4FDAF /* SDAO */ = {
+			isa = PBXGroup;
+			children = (
+				3369A90E2000F7D6003BA78B /* Realm */,
+				33318CF81F1BD33D00F27BC7 /* DAO */,
+				33E32BFD1F18DFAD002425AF /* Core */,
+				33E32BFC1F18DF46002425AF /* CoreData */,
+				337B5A511F17646800F4FDAF /* Supporting */,
+			);
+			path = SDAO;
+			sourceTree = "<group>";
+		};
+		337B5A511F17646800F4FDAF /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				3374C8DE249AB5330068FF3D /* DAO.h */,
+				337B5A521F17646800F4FDAF /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		337B5A541F17646800F4FDAF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				337EC2802132BC84006156E7 /* DAOTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		337EC2802132BC84006156E7 /* DAOTests */ = {
+			isa = PBXGroup;
+			children = (
+				337EC2862132BCA4006156E7 /* Realm */,
+				337EC2812132BC97006156E7 /* Info.plist */,
+			);
+			path = DAOTests;
+			sourceTree = "<group>";
+		};
+		337EC2862132BCA4006156E7 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				336E0A6F234B89CA0026B44B /* Factories */,
+				337EC28A2132BCE4006156E7 /* Translators */,
+				337EC2882132BCD1006156E7 /* Models */,
+				337EC2892132BCD1006156E7 /* Plains */,
+				337EC2872132BCD1006156E7 /* UnitTests */,
+				337EC2A02132C22C006156E7 /* RealmTests.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		337EC2872132BCD1006156E7 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		337EC2882132BCD1006156E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				337EC2912132BD7C006156E7 /* UserModelObject.swift */,
+				336E0A5F234B7F110026B44B /* MessageModelObject.swift */,
+				336E0A63234B80E70026B44B /* DialogModelObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		337EC2892132BCD1006156E7 /* Plains */ = {
+			isa = PBXGroup;
+			children = (
+				337EC28C2132BCF6006156E7 /* UserPlainObject.swift */,
+				336E0A53234B79EA0026B44B /* DialogPlainObject.swift */,
+				336E0A57234B7A870026B44B /* MessagePlainObject.swift */,
+			);
+			path = Plains;
+			sourceTree = "<group>";
+		};
+		337EC28A2132BCE4006156E7 /* Translators */ = {
+			isa = PBXGroup;
+			children = (
+				337EC2962132BE8C006156E7 /* UsersTranslator.swift */,
+				336E0A5B234B7EBF0026B44B /* MessagesTranslator.swift */,
+				336E0A67234B83750026B44B /* DialogsTranslator.swift */,
+			);
+			path = Translators;
+			sourceTree = "<group>";
+		};
+		33E32BFC1F18DF46002425AF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				33318CDE1F1BBD2F00F27BC7 /* ManagedModel */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		33E32BFD1F18DFAD002425AF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				33318CDD1F1BBD1F00F27BC7 /* Protocols */,
+				33E32C021F18E7D9002425AF /* Translator */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		33E32C021F18E7D9002425AF /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				33E32C041F18E7D9002425AF /* Protocols */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		33E32C041F18E7D9002425AF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				33E32C051F18E7DF002425AF /* Translator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B8D3B585AFAE69369AB7A622 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF6654D9AAA18F04D2210F95 /* Pods_SDAO_iOS.framework */,
+				4D7E032F148CAF8120BDBCFD /* Pods_SDAO_iOS_Tests.framework */,
+				17AAB22803C7A0B8BD695F9E /* Pods_SDAO_macOS.framework */,
+				DC0C9E19B881F5054E7119AC /* Pods_SDAO_macOS_Tests.framework */,
+				9232EBF4EBFE0664336B6C9D /* Pods_SDAO_tvOS.framework */,
+				A09C314BE08A319D59950D0D /* Pods_SDAO_tvOS_Tests.framework */,
+				B457C8A4AB3A05699A8FC64F /* Pods_SDAO_watchOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		337B5A0F1F17615000F4FDAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A2A1F17616F00F4FDAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A371F17617700F4FDAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A441F1763DB00F4FDAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3358B63C1F19F8B100CBD8CF /* SDAO macOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3358B6451F19F8B100CBD8CF /* Build configuration list for PBXNativeTarget "SDAO macOS-Tests" */;
+			buildPhases = (
+				5B5BF387E8B2F62580E66E3B /* [CP] Check Pods Manifest.lock */,
+				3358B6391F19F8B100CBD8CF /* Sources */,
+				3358B63A1F19F8B100CBD8CF /* Frameworks */,
+				3358B63B1F19F8B100CBD8CF /* Resources */,
+				C83BE2662FB18BA18B8C4C6B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3358B6441F19F8B100CBD8CF /* PBXTargetDependency */,
+			);
+			name = "SDAO macOS-Tests";
+			productName = "Nio macOS-Tests";
+			productReference = 3358B63D1F19F8B100CBD8CF /* SDAO macOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3358B64B1F19F8BB00CBD8CF /* SDAO tvOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3358B6541F19F8BC00CBD8CF /* Build configuration list for PBXNativeTarget "SDAO tvOS-Tests" */;
+			buildPhases = (
+				14D37715865B7390E9D2E764 /* [CP] Check Pods Manifest.lock */,
+				3358B6481F19F8BB00CBD8CF /* Sources */,
+				3358B6491F19F8BB00CBD8CF /* Frameworks */,
+				3358B64A1F19F8BB00CBD8CF /* Resources */,
+				251E5815B48C1E0F61EAB7B4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3358B6531F19F8BC00CBD8CF /* PBXTargetDependency */,
+			);
+			name = "SDAO tvOS-Tests";
+			productName = "Nio tvOS-Tests";
+			productReference = 3358B64C1F19F8BB00CBD8CF /* SDAO tvOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3358B65A1F19F8C900CBD8CF /* SDAO iOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3358B6631F19F8C900CBD8CF /* Build configuration list for PBXNativeTarget "SDAO iOS-Tests" */;
+			buildPhases = (
+				3BAF7E224AB9B153E1D3750A /* [CP] Check Pods Manifest.lock */,
+				3358B6571F19F8C900CBD8CF /* Sources */,
+				3358B6581F19F8C900CBD8CF /* Frameworks */,
+				3358B6591F19F8C900CBD8CF /* Resources */,
+				738A1BBCFC0870ED688AC718 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3358B6621F19F8C900CBD8CF /* PBXTargetDependency */,
+			);
+			name = "SDAO iOS-Tests";
+			productName = "Nio iOS-Tests";
+			productReference = 3358B65B1F19F8C900CBD8CF /* SDAO iOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		337B5A111F17615000F4FDAF /* SDAO iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 337B5A181F17615000F4FDAF /* Build configuration list for PBXNativeTarget "SDAO iOS" */;
+			buildPhases = (
+				8984C89EB814AB619CABA66A /* [CP] Check Pods Manifest.lock */,
+				337B5A0D1F17615000F4FDAF /* Sources */,
+				337B5A0E1F17615000F4FDAF /* Frameworks */,
+				337B5A0F1F17615000F4FDAF /* Headers */,
+				337B5A101F17615000F4FDAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SDAO iOS";
+			productName = "Nio iOS";
+			productReference = 337B5A121F17615000F4FDAF /* SDAO.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		337B5A2C1F17616F00F4FDAF /* SDAO watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 337B5A321F17616F00F4FDAF /* Build configuration list for PBXNativeTarget "SDAO watchOS" */;
+			buildPhases = (
+				4CC62938159C5FFA9BA1DBDE /* [CP] Check Pods Manifest.lock */,
+				337B5A281F17616F00F4FDAF /* Sources */,
+				337B5A291F17616F00F4FDAF /* Frameworks */,
+				337B5A2A1F17616F00F4FDAF /* Headers */,
+				337B5A2B1F17616F00F4FDAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SDAO watchOS";
+			productName = "Nio watchOS";
+			productReference = 337B5A2D1F17616F00F4FDAF /* SDAO.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		337B5A391F17617700F4FDAF /* SDAO tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 337B5A3F1F17617700F4FDAF /* Build configuration list for PBXNativeTarget "SDAO tvOS" */;
+			buildPhases = (
+				1E9538AF8EC479B826206066 /* [CP] Check Pods Manifest.lock */,
+				337B5A351F17617700F4FDAF /* Sources */,
+				337B5A361F17617700F4FDAF /* Frameworks */,
+				337B5A371F17617700F4FDAF /* Headers */,
+				337B5A381F17617700F4FDAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SDAO tvOS";
+			productName = "Nio tvOS";
+			productReference = 337B5A3A1F17617700F4FDAF /* SDAO.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		337B5A461F1763DB00F4FDAF /* SDAO macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 337B5A4C1F1763DB00F4FDAF /* Build configuration list for PBXNativeTarget "SDAO macOS" */;
+			buildPhases = (
+				F99B4C9DE2A008CECDF11154 /* [CP] Check Pods Manifest.lock */,
+				337B5A421F1763DB00F4FDAF /* Sources */,
+				337B5A431F1763DB00F4FDAF /* Frameworks */,
+				337B5A441F1763DB00F4FDAF /* Headers */,
+				337B5A451F1763DB00F4FDAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SDAO macOS";
+			productName = "Nio macOS";
+			productReference = 337B5A471F1763DB00F4FDAF /* SDAO.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		337B5A071F17614200F4FDAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 1150;
+				TargetAttributes = {
+					3358B63C1F19F8B100CBD8CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					3358B64B1F19F8BB00CBD8CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Manual;
+					};
+					3358B65A1F19F8C900CBD8CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 1150;
+						ProvisioningStyle = Automatic;
+					};
+					337B5A111F17615000F4FDAF = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 1150;
+						ProvisioningStyle = Automatic;
+					};
+					337B5A2C1F17616F00F4FDAF = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 1150;
+						ProvisioningStyle = Automatic;
+					};
+					337B5A391F17617700F4FDAF = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 1150;
+						ProvisioningStyle = Automatic;
+					};
+					337B5A461F1763DB00F4FDAF = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 1150;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 337B5A0A1F17614200F4FDAF /* Build configuration list for PBXProject "SDAO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 337B5A061F17614200F4FDAF;
+			productRefGroup = 337B5A131F17615000F4FDAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				337B5A111F17615000F4FDAF /* SDAO iOS */,
+				337B5A2C1F17616F00F4FDAF /* SDAO watchOS */,
+				337B5A391F17617700F4FDAF /* SDAO tvOS */,
+				337B5A461F1763DB00F4FDAF /* SDAO macOS */,
+				3358B63C1F19F8B100CBD8CF /* SDAO macOS-Tests */,
+				3358B64B1F19F8BB00CBD8CF /* SDAO tvOS-Tests */,
+				3358B65A1F19F8C900CBD8CF /* SDAO iOS-Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3358B63B1F19F8B100CBD8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3358B64A1F19F8BB00CBD8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3358B6591F19F8C900CBD8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A101F17615000F4FDAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A2B1F17616F00F4FDAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A381F17617700F4FDAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A451F1763DB00F4FDAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14D37715865B7390E9D2E764 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDAO tvOS-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E9538AF8EC479B826206066 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDAO tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		251E5815B48C1E0F61EAB7B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BAF7E224AB9B153E1D3750A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDAO iOS-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CC62938159C5FFA9BA1DBDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDAO watchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B5BF387E8B2F62580E66E3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDAO macOS-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		738A1BBCFC0870ED688AC718 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8984C89EB814AB619CABA66A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDAO iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C83BE2662FB18BA18B8C4C6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F99B4C9DE2A008CECDF11154 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDAO macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3358B6391F19F8B100CBD8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336E0A60234B7F110026B44B /* MessageModelObject.swift in Sources */,
+				33F442C0234A8AE0004745B2 /* UserPlainObject.swift in Sources */,
+				336E0A64234B80E70026B44B /* DialogModelObject.swift in Sources */,
+				336E0A71234B89D40026B44B /* Factories.swift in Sources */,
+				336E0A68234B83750026B44B /* DialogsTranslator.swift in Sources */,
+				336E0A58234B7A880026B44B /* MessagePlainObject.swift in Sources */,
+				33F442C3234A8B29004745B2 /* UserModelObject.swift in Sources */,
+				33F442C8234A8B5F004745B2 /* UsersTranslator.swift in Sources */,
+				337EC2A52132C244006156E7 /* RealmTests.swift in Sources */,
+				336E0A5C234B7EBF0026B44B /* MessagesTranslator.swift in Sources */,
+				336E0A54234B79EA0026B44B /* DialogPlainObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3358B6481F19F8BB00CBD8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336E0A61234B7F110026B44B /* MessageModelObject.swift in Sources */,
+				33F442C1234A8AE0004745B2 /* UserPlainObject.swift in Sources */,
+				336E0A65234B80E70026B44B /* DialogModelObject.swift in Sources */,
+				336E0A72234B89D40026B44B /* Factories.swift in Sources */,
+				336E0A69234B83750026B44B /* DialogsTranslator.swift in Sources */,
+				336E0A59234B7A880026B44B /* MessagePlainObject.swift in Sources */,
+				33F442C4234A8B29004745B2 /* UserModelObject.swift in Sources */,
+				33F442C7234A8B5F004745B2 /* UsersTranslator.swift in Sources */,
+				337EC2A62132C244006156E7 /* RealmTests.swift in Sources */,
+				336E0A5D234B7EBF0026B44B /* MessagesTranslator.swift in Sources */,
+				336E0A55234B79EA0026B44B /* DialogPlainObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3358B6571F19F8C900CBD8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336E0A62234B7F110026B44B /* MessageModelObject.swift in Sources */,
+				33F442C2234A8AE1004745B2 /* UserPlainObject.swift in Sources */,
+				336E0A66234B80E70026B44B /* DialogModelObject.swift in Sources */,
+				336E0A73234B89D40026B44B /* Factories.swift in Sources */,
+				336E0A6A234B83750026B44B /* DialogsTranslator.swift in Sources */,
+				336E0A5A234B7A880026B44B /* MessagePlainObject.swift in Sources */,
+				33F442C5234A8B29004745B2 /* UserModelObject.swift in Sources */,
+				33F442C6234A8B5E004745B2 /* UsersTranslator.swift in Sources */,
+				337EC2A72132C244006156E7 /* RealmTests.swift in Sources */,
+				336E0A5E234B7EBF0026B44B /* MessagesTranslator.swift in Sources */,
+				336E0A56234B79EA0026B44B /* DialogPlainObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A0D1F17615000F4FDAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33318CE41F1BBD5A00F27BC7 /* Model.swift in Sources */,
+				3369A9112000F7E9003BA78B /* RealmModel.swift in Sources */,
+				3375FCCF1F1C98CC00FD7106 /* Plain.swift in Sources */,
+				33E32C011F18E4AD002425AF /* DAO.swift in Sources */,
+				3375FCCA1F1C97B700FD7106 /* UniqueID.swift in Sources */,
+				33318CE01F1BBD4F00F27BC7 /* ManagedModel.swift in Sources */,
+				3375FCC51F1C977600FD7106 /* Numeric.swift in Sources */,
+				33E32C061F18E7DF002425AF /* Translator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A281F17616F00F4FDAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3369A9122000F7E9003BA78B /* RealmModel.swift in Sources */,
+				3375FCD01F1C98CC00FD7106 /* Plain.swift in Sources */,
+				33318CF01F1BBE5800F27BC7 /* ManagedModel.swift in Sources */,
+				3358B6381F19F7D300CBD8CF /* DAO.swift in Sources */,
+				3375FCCB1F1C980600FD7106 /* UniqueID.swift in Sources */,
+				33318CE71F1BBE5500F27BC7 /* Model.swift in Sources */,
+				3358B6341F19F7D300CBD8CF /* Translator.swift in Sources */,
+				3375FCC81F1C977900FD7106 /* Numeric.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A351F17617700F4FDAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3369A9132000F7E9003BA78B /* RealmModel.swift in Sources */,
+				3375FCD11F1C98CC00FD7106 /* Plain.swift in Sources */,
+				33318CF11F1BBE5800F27BC7 /* ManagedModel.swift in Sources */,
+				3358B6301F19F7D300CBD8CF /* DAO.swift in Sources */,
+				3375FCCC1F1C980700FD7106 /* UniqueID.swift in Sources */,
+				33318CEA1F1BBE5500F27BC7 /* Model.swift in Sources */,
+				3358B62C1F19F7D300CBD8CF /* Translator.swift in Sources */,
+				3375FCC71F1C977800FD7106 /* Numeric.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337B5A421F1763DB00F4FDAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3369A9142000F7E9003BA78B /* RealmModel.swift in Sources */,
+				3375FCD21F1C98CC00FD7106 /* Plain.swift in Sources */,
+				33318CF21F1BBE5900F27BC7 /* ManagedModel.swift in Sources */,
+				3358B6281F19F7D200CBD8CF /* DAO.swift in Sources */,
+				3375FCCD1F1C980700FD7106 /* UniqueID.swift in Sources */,
+				33318CED1F1BBE5600F27BC7 /* Model.swift in Sources */,
+				3358B6241F19F7D200CBD8CF /* Translator.swift in Sources */,
+				3375FCC61F1C977800FD7106 /* Numeric.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3358B6441F19F8B100CBD8CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 337B5A461F1763DB00F4FDAF /* SDAO macOS */;
+			targetProxy = 3358B6431F19F8B100CBD8CF /* PBXContainerItemProxy */;
+		};
+		3358B6531F19F8BC00CBD8CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 337B5A391F17617700F4FDAF /* SDAO tvOS */;
+			targetProxy = 3358B6521F19F8BC00CBD8CF /* PBXContainerItemProxy */;
+		};
+		3358B6621F19F8C900CBD8CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 337B5A111F17615000F4FDAF /* SDAO iOS */;
+			targetProxy = 3358B6611F19F8C900CBD8CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3358B6461F19F8B100CBD8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58A573D845869A6EDD802B0E /* Pods-SDAO macOS-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/DAOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.DAO-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3358B6471F19F8B100CBD8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8187F8F01E498C4F48E8C330 /* Pods-SDAO macOS-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/DAOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.DAO-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		3358B6551F19F8BC00CBD8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D4D04DA24B71CF05DD43C3 /* Pods-SDAO tvOS-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/DAOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.DAO-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		3358B6561F19F8BC00CBD8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF3BC5B184009983D8B13621 /* Pods-SDAO tvOS-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/DAOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.DAO-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3358B6641F19F8C900CBD8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E81160DF3EEF87DA970C215 /* Pods-SDAO iOS-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/DAOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.DAO-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3358B6651F19F8C900CBD8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED6FA7CFCB84B01DBC3D84A /* Pods-SDAO iOS-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/DAOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.DAO-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		337B5A0B1F17614200F4FDAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		337B5A0C1F17614200F4FDAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Release;
+		};
+		337B5A191F17615000F4FDAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A396DF67A284D7ABA14880 /* Pods-SDAO iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/SDAO/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.dao;
+				PRODUCT_NAME = SDAO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		337B5A1A1F17615000F4FDAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DE3D52C18568A3596CA2B2 /* Pods-SDAO iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/SDAO/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.dao;
+				PRODUCT_NAME = SDAO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		337B5A331F17616F00F4FDAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE336E7BB63E00E76F42BE74 /* Pods-SDAO watchOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/SDAO/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.dao;
+				PRODUCT_NAME = SDAO;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		337B5A341F17616F00F4FDAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 986A8FB8EA1D4C4BB1EBD357 /* Pods-SDAO watchOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/SDAO/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.dao;
+				PRODUCT_NAME = SDAO;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		337B5A401F17617700F4FDAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F861B551312F9AD86F89431F /* Pods-SDAO tvOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/SDAO/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.dao;
+				PRODUCT_NAME = SDAO;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		337B5A411F17617700F4FDAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 288664B95CBA0624E0E6283D /* Pods-SDAO tvOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/SDAO/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.dao;
+				PRODUCT_NAME = SDAO;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		337B5A4D1F1763DB00F4FDAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD75BE0419327DBECE94FB57 /* Pods-SDAO macOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/SDAO/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.dao;
+				PRODUCT_NAME = SDAO;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		337B5A4E1F1763DB00F4FDAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C1D4FDBF0CAC19D587A52C /* Pods-SDAO macOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q8EP54N3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/SDAO/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.incetro.dao;
+				PRODUCT_NAME = SDAO;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3358B6451F19F8B100CBD8CF /* Build configuration list for PBXNativeTarget "SDAO macOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3358B6461F19F8B100CBD8CF /* Debug */,
+				3358B6471F19F8B100CBD8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3358B6541F19F8BC00CBD8CF /* Build configuration list for PBXNativeTarget "SDAO tvOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3358B6551F19F8BC00CBD8CF /* Debug */,
+				3358B6561F19F8BC00CBD8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3358B6631F19F8C900CBD8CF /* Build configuration list for PBXNativeTarget "SDAO iOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3358B6641F19F8C900CBD8CF /* Debug */,
+				3358B6651F19F8C900CBD8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		337B5A0A1F17614200F4FDAF /* Build configuration list for PBXProject "SDAO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				337B5A0B1F17614200F4FDAF /* Debug */,
+				337B5A0C1F17614200F4FDAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		337B5A181F17615000F4FDAF /* Build configuration list for PBXNativeTarget "SDAO iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				337B5A191F17615000F4FDAF /* Debug */,
+				337B5A1A1F17615000F4FDAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		337B5A321F17616F00F4FDAF /* Build configuration list for PBXNativeTarget "SDAO watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				337B5A331F17616F00F4FDAF /* Debug */,
+				337B5A341F17616F00F4FDAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		337B5A3F1F17617700F4FDAF /* Build configuration list for PBXNativeTarget "SDAO tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				337B5A401F17617700F4FDAF /* Debug */,
+				337B5A411F17617700F4FDAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		337B5A4C1F1763DB00F4FDAF /* Build configuration list for PBXNativeTarget "SDAO macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				337B5A4D1F1763DB00F4FDAF /* Debug */,
+				337B5A4E1F1763DB00F4FDAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 337B5A071F17614200F4FDAF /* Project object */;
+}

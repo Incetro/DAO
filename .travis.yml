@@ -1,30 +1,30 @@
 osx_image: xcode9
-xcode_workspace: Nio.xcworkspace
+xcode_workspace: SDAO.xcworkspace
 matrix:
   include:
 
-    - xcode_scheme: Nio macOS
+    - xcode_scheme: SDAO macOS
       language: swift
       env:
         - XCODE_SDK=macosx10.13
         - XCODE_ACTION="test"
         - XCODE_DESTINATION="arch=x86_64"
 
-    - xcode_scheme: Nio iOS
+    - xcode_scheme: SDAO iOS
       language: swift
       env:
         - XCODE_SDK=iphonesimulator11.0
         - XCODE_ACTION="test"
         - XCODE_DESTINATION="platform=iOS Simulator,OS=9.3,name=iPhone SE"
 
-    - xcode_scheme: Nio tvOS
+    - xcode_scheme: SDAO tvOS
       language: swift
       env:
         - XCODE_SDK=appletvsimulator11.0
         - XCODE_ACTION="test"
         - XCODE_DESTINATION="platform=tvOS Simulator,OS=10.2,name=Apple TV 1080p"
 
-    - xcode_scheme: Nio watchOS
+    - xcode_scheme: SDAO watchOS
       language: swift
       env:
         - XCODE_SDK=watchsimulator4.0

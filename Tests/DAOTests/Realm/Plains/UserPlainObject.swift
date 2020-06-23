@@ -1,11 +1,11 @@
 //
 //  UserPlainObject.swift
-//  DAO
+//  SDAO
 //
 //  Created by incetro on 26/08/2018.
 //
 
-import DAO
+import SDAO
 
 // MARK: - UserPlainObject
 

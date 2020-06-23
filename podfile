@@ -4,37 +4,37 @@ def standard_pods
   pod "Monreau"
 end
 
-target "DAO iOS" do
+target "SDAO iOS" do
   platform :ios, "10.3"
   standard_pods
 end
 
-target "DAO iOS-Tests" do
+target "SDAO iOS-Tests" do
   platform :ios, "10.3"
   standard_pods
 end
 
-target "DAO watchOS" do
+target "SDAO watchOS" do
   platform :watchos, "3.0"
   standard_pods
 end
 
-target "DAO tvOS" do
+target "SDAO tvOS" do
   platform :tvos, "10.2"
   standard_pods
 end
 
-target "DAO tvOS-Tests" do
+target "SDAO tvOS-Tests" do
   platform :tvos, "10.2"
   standard_pods
 end
 
-target "DAO macOS" do
+target "SDAO macOS" do
   platform :osx, "10.12"
   standard_pods
 end
 
-target "DAO macOS-Tests" do
+target "SDAO macOS-Tests" do
   platform :osx, "10.12"
   standard_pods
 end

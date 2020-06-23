@@ -1,11 +1,11 @@
 //
 //  MessageModelObject.swift
-//  DAO
+//  SDAO
 //
 //  Created by incetro on 07/10/2019.
 //
 
-import DAO
+import SDAO
 import Foundation
 
 // MARK: - MessageModelObject

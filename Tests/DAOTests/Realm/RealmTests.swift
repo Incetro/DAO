@@ -1,6 +1,6 @@
 //
 //  RealmTests.swift
-//  DAO
+//  SDAO
 //
 //  Created by incetro on 26/08/2018.
 //
@@ -8,7 +8,7 @@
 import RealmSwift
 import Monreau
 import XCTest
-import DAO
+import SDAO
 
 // MARK: - RealmTests
 

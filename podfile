@@ -5,12 +5,12 @@ def standard_pods
 end
 
 target "SDAO iOS" do
-  platform :ios, "10.3"
+  platform :ios, "12.0"
   standard_pods
 end
 
 target "SDAO iOS-Tests" do
-  platform :ios, "10.3"
+  platform :ios, "12.0"
   standard_pods
 end
 
@@ -20,22 +20,22 @@ target "SDAO watchOS" do
 end
 
 target "SDAO tvOS" do
-  platform :tvos, "10.2"
+  platform :tvos, "12.4"
   standard_pods
 end
 
 target "SDAO tvOS-Tests" do
-  platform :tvos, "10.2"
+  platform :tvos, "12.4"
   standard_pods
 end
 
 target "SDAO macOS" do
-  platform :osx, "10.12"
+  platform :osx, "10.15"
   standard_pods
 end
 
 target "SDAO macOS-Tests" do
-  platform :osx, "10.12"
+  platform :osx, "10.15"
   standard_pods
 end
 

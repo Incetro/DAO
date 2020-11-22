@@ -9,8 +9,8 @@ Pod::Spec.new do |spec|
     spec.requires_arc   = true
     spec.swift_version  = "5.2"
 
-    spec.ios.deployment_target     = "10.3"
-    spec.osx.deployment_target     = "10.12"
+    spec.ios.deployment_target     = "12.0"
+    spec.osx.deployment_target     = "10.15"
     spec.watchos.deployment_target = "3.0"
     spec.tvos.deployment_target    = "12.4"
 

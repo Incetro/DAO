@@ -189,9 +189,6 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     ///   - plains: plain objects with all data for saving
     /// - Throws: error if any entity can not be saved
     public func persist(_ plains: [Plain]) throws {
-        let plainSet = Set(plains.map { $0.uniqueId })
-        let modelSet = Set(try read().map { $0.uniqueId })
-        try erase(byPrimaryKeys: Array(modelSet.intersection(plainSet)))
         try plains.forEach(persist)
     }
     

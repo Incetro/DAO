@@ -6,6 +6,7 @@
 //
 
 import SDAO
+import Monreau
 
 // MARK: - DialogsTranslator
 
@@ -15,6 +16,10 @@ final class DialogsTranslator {
 
     typealias PlainModel = DialogPlainObject
     typealias DatabaseModel = DialogModelObject
+
+    private lazy var dialogStorage = RealmStorage<DialogModelObject>(
+        configuration: RealmConfiguration(inMemoryIdentifier: "DAO")
+    )
 }
 
 // MARK: - Translator
@@ -32,7 +37,7 @@ extension DialogsTranslator: Translator {
     }
 
     func translate(plain: PlainModel) throws -> DatabaseModel {
-        let model = DialogModelObject()
+        let model = try dialogStorage.read(byPrimaryKey: plain.uniqueId.rawValue) ?? DialogModelObject()
         try translate(from: plain, to: model)
         return model
     }

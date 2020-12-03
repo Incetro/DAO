@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21B29D7B01891EC407E3A81C /* Pods_SDAO_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9232EBF4EBFE0664336B6C9D /* Pods_SDAO_tvOS.framework */; };
 		33318CE01F1BBD4F00F27BC7 /* ManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */; };
 		33318CE41F1BBD5A00F27BC7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE11F1BBD5A00F27BC7 /* Model.swift */; };
 		33318CE71F1BBE5500F27BC7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33318CE11F1BBD5A00F27BC7 /* Model.swift */; };
@@ -76,12 +75,13 @@
 		33F442C6234A8B5E004745B2 /* UsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2962132BE8C006156E7 /* UsersTranslator.swift */; };
 		33F442C7234A8B5F004745B2 /* UsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2962132BE8C006156E7 /* UsersTranslator.swift */; };
 		33F442C8234A8B5F004745B2 /* UsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337EC2962132BE8C006156E7 /* UsersTranslator.swift */; };
-		40894394B8E7C2C4CB7BD67E /* Pods_SDAO_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7E032F148CAF8120BDBCFD /* Pods_SDAO_iOS_Tests.framework */; };
-		68D5AAEC19D18369B9CD74FF /* Pods_SDAO_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09C314BE08A319D59950D0D /* Pods_SDAO_tvOS_Tests.framework */; };
-		87214B8DC213ACD040A5D49B /* Pods_SDAO_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0C9E19B881F5054E7119AC /* Pods_SDAO_macOS_Tests.framework */; };
-		ABD521116862A6A03AC0CACF /* Pods_SDAO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6654D9AAA18F04D2210F95 /* Pods_SDAO_iOS.framework */; };
-		D79AB04702269134E8054BE2 /* Pods_SDAO_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B457C8A4AB3A05699A8FC64F /* Pods_SDAO_watchOS.framework */; };
-		E39195A685568A6F78DD7717 /* Pods_SDAO_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AAB22803C7A0B8BD695F9E /* Pods_SDAO_macOS.framework */; };
+		5256E3C61782231FCF9FB599 /* Pods_SDAO_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA18D52FAD14D5C25BF894 /* Pods_SDAO_tvOS_Tests.framework */; };
+		67B000459AD68354FC4ACFDE /* Pods_SDAO_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B089D787508951165AEBFD /* Pods_SDAO_macOS_Tests.framework */; };
+		8C909E52F8BC7EA064B4CEEC /* Pods_SDAO_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6B891E7D0AC9E4814259C4 /* Pods_SDAO_iOS_Tests.framework */; };
+		936C9AEF3AD4CD78CF163378 /* Pods_SDAO_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B956E17396D98A29B02DE723 /* Pods_SDAO_tvOS.framework */; };
+		93A7C9583D8DD42252314218 /* Pods_SDAO_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C70CF4BAFD2204E6BD12AA /* Pods_SDAO_macOS.framework */; };
+		9446D12D3806E1F05EC4F6CE /* Pods_SDAO_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4923C2E21DF523BCB43D7FF6 /* Pods_SDAO_watchOS.framework */; };
+		D4CEE49E58482CEEA8B770AA /* Pods_SDAO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DB4EE50DE7B74D6BC4F0F5 /* Pods_SDAO_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,10 +109,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E81160DF3EEF87DA970C215 /* Pods-SDAO iOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		17AAB22803C7A0B8BD695F9E /* Pods_SDAO_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22DE3D52C18568A3596CA2B2 /* Pods-SDAO iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO iOS/Pods-SDAO iOS.release.xcconfig"; sourceTree = "<group>"; };
-		288664B95CBA0624E0E6283D /* Pods-SDAO tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS/Pods-SDAO tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		00979F69652E72DE3D81D8C9 /* Pods-SDAO watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO watchOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO watchOS/Pods-SDAO watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		01DB4EE50DE7B74D6BC4F0F5 /* Pods_SDAO_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		046402B1FB89326C49E176F8 /* Pods-SDAO iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO iOS/Pods-SDAO iOS.release.xcconfig"; sourceTree = "<group>"; };
+		04DA18D52FAD14D5C25BF894 /* Pods_SDAO_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3496A006F53E5543974206 /* Pods-SDAO tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS/Pods-SDAO tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		33318CDF1F1BBD4F00F27BC7 /* ManagedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedModel.swift; sourceTree = "<group>"; };
 		33318CE11F1BBD5A00F27BC7 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3358B63D1F19F8B100CBD8CF /* SDAO macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SDAO macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,23 +144,22 @@
 		33AB45F71F1CB1ED00A79990 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		33E32C001F18E4AD002425AF /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DAO.swift; path = Sources/SDAO/DAO/DAO.swift; sourceTree = SOURCE_ROOT; };
 		33E32C051F18E7DF002425AF /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
-		48C1D4FDBF0CAC19D587A52C /* Pods-SDAO macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO macOS/Pods-SDAO macOS.release.xcconfig"; sourceTree = "<group>"; };
-		4D7E032F148CAF8120BDBCFD /* Pods_SDAO_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58A573D845869A6EDD802B0E /* Pods-SDAO macOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8187F8F01E498C4F48E8C330 /* Pods-SDAO macOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		86A396DF67A284D7ABA14880 /* Pods-SDAO iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO iOS/Pods-SDAO iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		9232EBF4EBFE0664336B6C9D /* Pods_SDAO_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		986A8FB8EA1D4C4BB1EBD357 /* Pods-SDAO watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO watchOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO watchOS/Pods-SDAO watchOS.release.xcconfig"; sourceTree = "<group>"; };
-		A09C314BE08A319D59950D0D /* Pods_SDAO_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF3BC5B184009983D8B13621 /* Pods-SDAO tvOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B457C8A4AB3A05699A8FC64F /* Pods_SDAO_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CED6FA7CFCB84B01DBC3D84A /* Pods-SDAO iOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CF6654D9AAA18F04D2210F95 /* Pods_SDAO_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC0C9E19B881F5054E7119AC /* Pods_SDAO_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2D4D04DA24B71CF05DD43C3 /* Pods-SDAO tvOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EE336E7BB63E00E76F42BE74 /* Pods-SDAO watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO watchOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO watchOS/Pods-SDAO watchOS.debug.xcconfig"; sourceTree = "<group>"; };
-		F861B551312F9AD86F89431F /* Pods-SDAO tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS/Pods-SDAO tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		FD75BE0419327DBECE94FB57 /* Pods-SDAO macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO macOS/Pods-SDAO macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4171637EA43ABA88B82FB5A3 /* Pods-SDAO tvOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		425D6A7286D15ECE334CEF71 /* Pods-SDAO iOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4383FFD4F85D7081713021C1 /* Pods-SDAO watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO watchOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO watchOS/Pods-SDAO watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		4923C2E21DF523BCB43D7FF6 /* Pods_SDAO_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F8CCF5FB4D1F67CB43CB0A3 /* Pods-SDAO macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS.release.xcconfig"; path = "Target Support Files/Pods-SDAO macOS/Pods-SDAO macOS.release.xcconfig"; sourceTree = "<group>"; };
+		65C5BAB5B5EA5E20726F1510 /* Pods-SDAO macOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		72C70CF4BAFD2204E6BD12AA /* Pods_SDAO_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B089D787508951165AEBFD /* Pods_SDAO_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D3904F3915530F33459470 /* Pods-SDAO tvOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B7B9AAE244236E257E757B6 /* Pods-SDAO tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO tvOS/Pods-SDAO tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AC6B891E7D0AC9E4814259C4 /* Pods_SDAO_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6855DEB20F4C07C9B2C0BE1 /* Pods-SDAO macOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B956E17396D98A29B02DE723 /* Pods_SDAO_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDAO_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC8E6922214179717EF2E44 /* Pods-SDAO iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO iOS/Pods-SDAO iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E32014CFC967A7E1F126EC71 /* Pods-SDAO macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO macOS.debug.xcconfig"; path = "Target Support Files/Pods-SDAO macOS/Pods-SDAO macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0EFB8508C074370B8ED816 /* Pods-SDAO iOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDAO iOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3358B6421F19F8B100CBD8CF /* SDAO.framework in Frameworks */,
-				87214B8DC213ACD040A5D49B /* Pods_SDAO_macOS_Tests.framework in Frameworks */,
+				67B000459AD68354FC4ACFDE /* Pods_SDAO_macOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3358B6511F19F8BC00CBD8CF /* SDAO.framework in Frameworks */,
-				68D5AAEC19D18369B9CD74FF /* Pods_SDAO_tvOS_Tests.framework in Frameworks */,
+				5256E3C61782231FCF9FB599 /* Pods_SDAO_tvOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3358B6601F19F8C900CBD8CF /* SDAO.framework in Frameworks */,
-				40894394B8E7C2C4CB7BD67E /* Pods_SDAO_iOS_Tests.framework in Frameworks */,
+				8C909E52F8BC7EA064B4CEEC /* Pods_SDAO_iOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABD521116862A6A03AC0CACF /* Pods_SDAO_iOS.framework in Frameworks */,
+				D4CEE49E58482CEEA8B770AA /* Pods_SDAO_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D79AB04702269134E8054BE2 /* Pods_SDAO_watchOS.framework in Frameworks */,
+				9446D12D3806E1F05EC4F6CE /* Pods_SDAO_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +210,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21B29D7B01891EC407E3A81C /* Pods_SDAO_tvOS.framework in Frameworks */,
+				936C9AEF3AD4CD78CF163378 /* Pods_SDAO_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E39195A685568A6F78DD7717 /* Pods_SDAO_macOS.framework in Frameworks */,
+				93A7C9583D8DD42252314218 /* Pods_SDAO_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,22 +228,36 @@
 		23091A480C6C59C894C7CBD9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				86A396DF67A284D7ABA14880 /* Pods-SDAO iOS.debug.xcconfig */,
-				22DE3D52C18568A3596CA2B2 /* Pods-SDAO iOS.release.xcconfig */,
-				0E81160DF3EEF87DA970C215 /* Pods-SDAO iOS-Tests.debug.xcconfig */,
-				CED6FA7CFCB84B01DBC3D84A /* Pods-SDAO iOS-Tests.release.xcconfig */,
-				FD75BE0419327DBECE94FB57 /* Pods-SDAO macOS.debug.xcconfig */,
-				48C1D4FDBF0CAC19D587A52C /* Pods-SDAO macOS.release.xcconfig */,
-				58A573D845869A6EDD802B0E /* Pods-SDAO macOS-Tests.debug.xcconfig */,
-				8187F8F01E498C4F48E8C330 /* Pods-SDAO macOS-Tests.release.xcconfig */,
-				F861B551312F9AD86F89431F /* Pods-SDAO tvOS.debug.xcconfig */,
-				288664B95CBA0624E0E6283D /* Pods-SDAO tvOS.release.xcconfig */,
-				E2D4D04DA24B71CF05DD43C3 /* Pods-SDAO tvOS-Tests.debug.xcconfig */,
-				AF3BC5B184009983D8B13621 /* Pods-SDAO tvOS-Tests.release.xcconfig */,
-				EE336E7BB63E00E76F42BE74 /* Pods-SDAO watchOS.debug.xcconfig */,
-				986A8FB8EA1D4C4BB1EBD357 /* Pods-SDAO watchOS.release.xcconfig */,
+				BCC8E6922214179717EF2E44 /* Pods-SDAO iOS.debug.xcconfig */,
+				046402B1FB89326C49E176F8 /* Pods-SDAO iOS.release.xcconfig */,
+				FA0EFB8508C074370B8ED816 /* Pods-SDAO iOS-Tests.debug.xcconfig */,
+				425D6A7286D15ECE334CEF71 /* Pods-SDAO iOS-Tests.release.xcconfig */,
+				E32014CFC967A7E1F126EC71 /* Pods-SDAO macOS.debug.xcconfig */,
+				5F8CCF5FB4D1F67CB43CB0A3 /* Pods-SDAO macOS.release.xcconfig */,
+				65C5BAB5B5EA5E20726F1510 /* Pods-SDAO macOS-Tests.debug.xcconfig */,
+				B6855DEB20F4C07C9B2C0BE1 /* Pods-SDAO macOS-Tests.release.xcconfig */,
+				9B7B9AAE244236E257E757B6 /* Pods-SDAO tvOS.debug.xcconfig */,
+				1B3496A006F53E5543974206 /* Pods-SDAO tvOS.release.xcconfig */,
+				92D3904F3915530F33459470 /* Pods-SDAO tvOS-Tests.debug.xcconfig */,
+				4171637EA43ABA88B82FB5A3 /* Pods-SDAO tvOS-Tests.release.xcconfig */,
+				00979F69652E72DE3D81D8C9 /* Pods-SDAO watchOS.debug.xcconfig */,
+				4383FFD4F85D7081713021C1 /* Pods-SDAO watchOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2E3B47463640066E2615E895 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01DB4EE50DE7B74D6BC4F0F5 /* Pods_SDAO_iOS.framework */,
+				AC6B891E7D0AC9E4814259C4 /* Pods_SDAO_iOS_Tests.framework */,
+				72C70CF4BAFD2204E6BD12AA /* Pods_SDAO_macOS.framework */,
+				85B089D787508951165AEBFD /* Pods_SDAO_macOS_Tests.framework */,
+				B956E17396D98A29B02DE723 /* Pods_SDAO_tvOS.framework */,
+				04DA18D52FAD14D5C25BF894 /* Pods_SDAO_tvOS_Tests.framework */,
+				4923C2E21DF523BCB43D7FF6 /* Pods_SDAO_watchOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		33318CDD1F1BBD1F00F27BC7 /* Protocols */ = {
@@ -313,7 +327,7 @@
 				337B5A541F17646800F4FDAF /* Tests */,
 				337B5A131F17615000F4FDAF /* Products */,
 				23091A480C6C59C894C7CBD9 /* Pods */,
-				B8D3B585AFAE69369AB7A622 /* Frameworks */,
+				2E3B47463640066E2615E895 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -452,20 +466,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		B8D3B585AFAE69369AB7A622 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CF6654D9AAA18F04D2210F95 /* Pods_SDAO_iOS.framework */,
-				4D7E032F148CAF8120BDBCFD /* Pods_SDAO_iOS_Tests.framework */,
-				17AAB22803C7A0B8BD695F9E /* Pods_SDAO_macOS.framework */,
-				DC0C9E19B881F5054E7119AC /* Pods_SDAO_macOS_Tests.framework */,
-				9232EBF4EBFE0664336B6C9D /* Pods_SDAO_tvOS.framework */,
-				A09C314BE08A319D59950D0D /* Pods_SDAO_tvOS_Tests.framework */,
-				B457C8A4AB3A05699A8FC64F /* Pods_SDAO_watchOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -504,11 +504,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3358B6451F19F8B100CBD8CF /* Build configuration list for PBXNativeTarget "SDAO macOS-Tests" */;
 			buildPhases = (
-				5B5BF387E8B2F62580E66E3B /* [CP] Check Pods Manifest.lock */,
+				9F04276BAD6A2F00D752C8DE /* [CP] Check Pods Manifest.lock */,
 				3358B6391F19F8B100CBD8CF /* Sources */,
 				3358B63A1F19F8B100CBD8CF /* Frameworks */,
 				3358B63B1F19F8B100CBD8CF /* Resources */,
-				C83BE2662FB18BA18B8C4C6B /* [CP] Embed Pods Frameworks */,
+				40160E02BE78891670CE0B99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -524,11 +524,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3358B6541F19F8BC00CBD8CF /* Build configuration list for PBXNativeTarget "SDAO tvOS-Tests" */;
 			buildPhases = (
-				14D37715865B7390E9D2E764 /* [CP] Check Pods Manifest.lock */,
+				05C5891E81D34D9D58C7DB58 /* [CP] Check Pods Manifest.lock */,
 				3358B6481F19F8BB00CBD8CF /* Sources */,
 				3358B6491F19F8BB00CBD8CF /* Frameworks */,
 				3358B64A1F19F8BB00CBD8CF /* Resources */,
-				251E5815B48C1E0F61EAB7B4 /* [CP] Embed Pods Frameworks */,
+				BAC4B063174F2BFC56E948B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -544,11 +544,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3358B6631F19F8C900CBD8CF /* Build configuration list for PBXNativeTarget "SDAO iOS-Tests" */;
 			buildPhases = (
-				3BAF7E224AB9B153E1D3750A /* [CP] Check Pods Manifest.lock */,
+				73BC47E55BEC3F122537FED6 /* [CP] Check Pods Manifest.lock */,
 				3358B6571F19F8C900CBD8CF /* Sources */,
 				3358B6581F19F8C900CBD8CF /* Frameworks */,
 				3358B6591F19F8C900CBD8CF /* Resources */,
-				738A1BBCFC0870ED688AC718 /* [CP] Embed Pods Frameworks */,
+				8342E4BD0F1ABB3570425080 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -564,7 +564,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337B5A181F17615000F4FDAF /* Build configuration list for PBXNativeTarget "SDAO iOS" */;
 			buildPhases = (
-				8984C89EB814AB619CABA66A /* [CP] Check Pods Manifest.lock */,
+				16A9AB01A020E8F2463A6B0B /* [CP] Check Pods Manifest.lock */,
 				337B5A0D1F17615000F4FDAF /* Sources */,
 				337B5A0E1F17615000F4FDAF /* Frameworks */,
 				337B5A0F1F17615000F4FDAF /* Headers */,
@@ -583,7 +583,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337B5A321F17616F00F4FDAF /* Build configuration list for PBXNativeTarget "SDAO watchOS" */;
 			buildPhases = (
-				4CC62938159C5FFA9BA1DBDE /* [CP] Check Pods Manifest.lock */,
+				7ADBD5E45F4839C722778C22 /* [CP] Check Pods Manifest.lock */,
 				337B5A281F17616F00F4FDAF /* Sources */,
 				337B5A291F17616F00F4FDAF /* Frameworks */,
 				337B5A2A1F17616F00F4FDAF /* Headers */,
@@ -602,7 +602,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337B5A3F1F17617700F4FDAF /* Build configuration list for PBXNativeTarget "SDAO tvOS" */;
 			buildPhases = (
-				1E9538AF8EC479B826206066 /* [CP] Check Pods Manifest.lock */,
+				74CF20D1A67DED2C68602343 /* [CP] Check Pods Manifest.lock */,
 				337B5A351F17617700F4FDAF /* Sources */,
 				337B5A361F17617700F4FDAF /* Frameworks */,
 				337B5A371F17617700F4FDAF /* Headers */,
@@ -621,7 +621,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337B5A4C1F1763DB00F4FDAF /* Build configuration list for PBXNativeTarget "SDAO macOS" */;
 			buildPhases = (
-				F99B4C9DE2A008CECDF11154 /* [CP] Check Pods Manifest.lock */,
+				B158693D6328EAAD64E86A8F /* [CP] Check Pods Manifest.lock */,
 				337B5A421F1763DB00F4FDAF /* Sources */,
 				337B5A431F1763DB00F4FDAF /* Frameworks */,
 				337B5A441F1763DB00F4FDAF /* Headers */,
@@ -759,7 +759,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14D37715865B7390E9D2E764 /* [CP] Check Pods Manifest.lock */ = {
+		05C5891E81D34D9D58C7DB58 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -781,129 +781,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1E9538AF8EC479B826206066 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SDAO tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		251E5815B48C1E0F61EAB7B4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3BAF7E224AB9B153E1D3750A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SDAO iOS-Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4CC62938159C5FFA9BA1DBDE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SDAO watchOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5B5BF387E8B2F62580E66E3B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SDAO macOS-Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		738A1BBCFC0870ED688AC718 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8984C89EB814AB619CABA66A /* [CP] Check Pods Manifest.lock */ = {
+		16A9AB01A020E8F2463A6B0B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -925,24 +803,139 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C83BE2662FB18BA18B8C4C6B /* [CP] Embed Pods Frameworks */ = {
+		40160E02BE78891670CE0B99 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Monreau-macOS/Monreau.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-macOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-macOS/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Monreau.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDAO macOS-Tests/Pods-SDAO macOS-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F99B4C9DE2A008CECDF11154 /* [CP] Check Pods Manifest.lock */ = {
+		73BC47E55BEC3F122537FED6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDAO iOS-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74CF20D1A67DED2C68602343 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDAO tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ADBD5E45F4839C722778C22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDAO watchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8342E4BD0F1ABB3570425080 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Monreau-iOS/Monreau.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-iOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-iOS/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Monreau.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDAO iOS-Tests/Pods-SDAO iOS-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F04276BAD6A2F00D752C8DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDAO macOS-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B158693D6328EAAD64E86A8F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -962,6 +955,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC4B063174F2BFC56E948B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Monreau-tvOS/Monreau.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-tvOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-tvOS/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Monreau.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDAO tvOS-Tests/Pods-SDAO tvOS-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1104,7 +1119,7 @@
 /* Begin XCBuildConfiguration section */
 		3358B6461F19F8B100CBD8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58A573D845869A6EDD802B0E /* Pods-SDAO macOS-Tests.debug.xcconfig */;
+			baseConfigurationReference = 65C5BAB5B5EA5E20726F1510 /* Pods-SDAO macOS-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1161,13 +1176,13 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		3358B6471F19F8B100CBD8CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8187F8F01E498C4F48E8C330 /* Pods-SDAO macOS-Tests.release.xcconfig */;
+			baseConfigurationReference = B6855DEB20F4C07C9B2C0BE1 /* Pods-SDAO macOS-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1217,13 +1232,13 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		3358B6551F19F8BC00CBD8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2D4D04DA24B71CF05DD43C3 /* Pods-SDAO tvOS-Tests.debug.xcconfig */;
+			baseConfigurationReference = 92D3904F3915530F33459470 /* Pods-SDAO tvOS-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1278,14 +1293,14 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
 		3358B6561F19F8BC00CBD8CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF3BC5B184009983D8B13621 /* Pods-SDAO tvOS-Tests.release.xcconfig */;
+			baseConfigurationReference = 4171637EA43ABA88B82FB5A3 /* Pods-SDAO tvOS-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1333,7 +1348,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1341,7 +1356,7 @@
 		};
 		3358B6641F19F8C900CBD8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E81160DF3EEF87DA970C215 /* Pods-SDAO iOS-Tests.debug.xcconfig */;
+			baseConfigurationReference = FA0EFB8508C074370B8ED816 /* Pods-SDAO iOS-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1403,7 +1418,7 @@
 		};
 		3358B6651F19F8C900CBD8CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CED6FA7CFCB84B01DBC3D84A /* Pods-SDAO iOS-Tests.release.xcconfig */;
+			baseConfigurationReference = 425D6A7286D15ECE334CEF71 /* Pods-SDAO iOS-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1531,7 +1546,7 @@
 		};
 		337B5A191F17615000F4FDAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86A396DF67A284D7ABA14880 /* Pods-SDAO iOS.debug.xcconfig */;
+			baseConfigurationReference = BCC8E6922214179717EF2E44 /* Pods-SDAO iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1604,7 +1619,7 @@
 		};
 		337B5A1A1F17615000F4FDAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22DE3D52C18568A3596CA2B2 /* Pods-SDAO iOS.release.xcconfig */;
+			baseConfigurationReference = 046402B1FB89326C49E176F8 /* Pods-SDAO iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1671,7 +1686,7 @@
 		};
 		337B5A331F17616F00F4FDAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE336E7BB63E00E76F42BE74 /* Pods-SDAO watchOS.debug.xcconfig */;
+			baseConfigurationReference = 00979F69652E72DE3D81D8C9 /* Pods-SDAO watchOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -1744,7 +1759,7 @@
 		};
 		337B5A341F17616F00F4FDAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 986A8FB8EA1D4C4BB1EBD357 /* Pods-SDAO watchOS.release.xcconfig */;
+			baseConfigurationReference = 4383FFD4F85D7081713021C1 /* Pods-SDAO watchOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -1811,7 +1826,7 @@
 		};
 		337B5A401F17617700F4FDAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F861B551312F9AD86F89431F /* Pods-SDAO tvOS.debug.xcconfig */;
+			baseConfigurationReference = 9B7B9AAE244236E257E757B6 /* Pods-SDAO tvOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1883,7 +1898,7 @@
 		};
 		337B5A411F17617700F4FDAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 288664B95CBA0624E0E6283D /* Pods-SDAO tvOS.release.xcconfig */;
+			baseConfigurationReference = 1B3496A006F53E5543974206 /* Pods-SDAO tvOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1949,7 +1964,7 @@
 		};
 		337B5A4D1F1763DB00F4FDAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD75BE0419327DBECE94FB57 /* Pods-SDAO macOS.debug.xcconfig */;
+			baseConfigurationReference = E32014CFC967A7E1F126EC71 /* Pods-SDAO macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2022,7 +2037,7 @@
 		};
 		337B5A4E1F1763DB00F4FDAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48C1D4FDBF0CAC19D587A52C /* Pods-SDAO macOS.release.xcconfig */;
+			baseConfigurationReference = 5F8CCF5FB4D1F67CB43CB0A3 /* Pods-SDAO macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

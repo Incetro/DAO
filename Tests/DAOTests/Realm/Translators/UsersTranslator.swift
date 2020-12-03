@@ -6,6 +6,7 @@
 //
 
 import SDAO
+import Monreau
 
 // MARK: - UsersTranslator
 
@@ -15,6 +16,10 @@ final class UsersTranslator {
 
     typealias PlainModel = UserPlainObject
     typealias DatabaseModel = UserModelObject
+
+    private lazy var userStorage = RealmStorage<UserModelObject>(
+        configuration: RealmConfiguration(inMemoryIdentifier: "DAO")
+    )
 }
 
 // MARK: - Translator
@@ -33,7 +38,7 @@ extension UsersTranslator: Translator {
     }
 
     func translate(plain: PlainModel) throws -> DatabaseModel {
-        let model = UserModelObject()
+        let model = try userStorage.read(byPrimaryKey: plain.uniqueId.rawValue) ?? UserModelObject()
         try translate(from: plain, to: model)
         return model
     }

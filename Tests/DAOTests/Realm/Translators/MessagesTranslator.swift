@@ -6,6 +6,7 @@
 //
 
 import SDAO
+import Monreau
 
 // MARK: - MessagesTranslator
 
@@ -15,6 +16,10 @@ final class MessagesTranslator {
 
     typealias PlainModel = MessagePlainObject
     typealias DatabaseModel = MessageModelObject
+
+    private lazy var messageStorage = RealmStorage<MessageModelObject>(
+        configuration: RealmConfiguration(inMemoryIdentifier: "DAO")
+    )
 }
 
 // MARK: - Translator
@@ -35,7 +40,7 @@ extension MessagesTranslator: Translator {
     }
     
     func translate(plain: PlainModel) throws -> DatabaseModel {
-        let model = MessageModelObject()
+        let model = try messageStorage.read(byPrimaryKey: plain.uniqueId.rawValue) ?? MessageModelObject()
         try translate(from: plain, to: model)
         return model
     }

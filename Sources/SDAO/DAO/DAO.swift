@@ -68,13 +68,13 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     /// Returns the number of objects which fits the predicate
     /// - Parameter predicate: some predicate
     public func count(predicatedBy predicate: Predicate? = nil) throws -> Int {
-        return try storage.count(predicatedBy: predicate)
+        try storage.count(predicatedBy: predicate)
     }
 
     /// Returns the number of objects which fits the predicate
     /// - Parameter predicate: some predicate
     public func count(predicatedBy predicate: NSPredicate) throws -> Int {
-        return try storage.count(predicatedBy: predicate)
+        try storage.count(predicatedBy: predicate)
     }
     
     /// Read all entities from database of `Plain` type
@@ -86,8 +86,8 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
         let plains = try translator.translate(models: models)
         return plains
     }
-    
-    /// Read entity from database of `Plain` type
+
+    /// Read an entity from database of `Plain` type
     ///
     /// - Parameter primaryKey: entity identifier
     /// - Returns: instance of existant entity or nil
@@ -100,7 +100,25 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
         return plain
     }
 
-    /// Read entity from database of `Plain` filtered by predicate
+    /// Read an entity from database of `Plain` type
+    ///
+    /// - Parameter primaryKey: entity identifier
+    /// - Returns: instance of existant entity or nil
+    /// - Throws: error if entity cannot be read
+    public func read(byPrimaryKey primaryKey: String) throws -> Plain? {
+        try read(byPrimaryKey: UniqueID(rawValue: primaryKey))
+    }
+
+    /// Read an entity from database of `Plain` type
+    ///
+    /// - Parameter primaryKey: entity identifier
+    /// - Returns: instance of existant entity or nil
+    /// - Throws: error if entity cannot be read
+    public func read<T: Numeric>(byPrimaryKey primaryKey: T) throws -> Plain? {
+        try read(byPrimaryKey: UniqueID(value: primaryKey))
+    }
+
+    /// Read entities from database of `Plain` filtered by predicate
     ///
     /// - Parameters:
     ///   - predicate: some filter
@@ -111,7 +129,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
         return try read(predicatedBy: predicate)
     }
 
-    /// Read entity from database of `Plain` filtered by predicate
+    /// Read entities from database of `Plain` filtered by predicate
     ///
     /// - Parameters:
     ///   - predicate: some filter
@@ -203,10 +221,42 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     
     /// Delete an entity of `Plain` type by given identifier
     ///
-    /// - Parameter primaryKeys: identifier
+    /// - Parameter primaryKey: identifier
     /// - Throws: error if entity cannot be deleted
     public func erase(byPrimaryKey primaryKey: UniqueID) throws {
         try storage.erase(byPrimaryKey: primaryKey.rawValue)
+    }
+
+    /// Delete an entity of `Plain` type by given identifier
+    ///
+    /// - Parameter primaryKey: identifier
+    /// - Throws: error if entity cannot be deleted
+    public func erase<K: Numeric>(byPrimaryKey primaryKey: K) throws {
+        try erase(byPrimaryKey: UniqueID(value: primaryKey))
+    }
+
+    /// Delete an entity of `Plain` type by given identifier
+    ///
+    /// - Parameter primaryKeys: identifiers
+    /// - Throws: error if entity cannot be deleted
+    public func erase<K: Numeric>(byPrimaryKeys primaryKeys: [K]) throws {
+        try erase(byPrimaryKeys: primaryKeys.map(UniqueID.init))
+    }
+
+    /// Delete an entity of `Plain` type by given identifier
+    ///
+    /// - Parameter primaryKey: identifier
+    /// - Throws: error if entity cannot be deleted
+    public func erase(byPrimaryKey primaryKey: String) throws {
+        try erase(byPrimaryKey: UniqueID(rawValue: primaryKey))
+    }
+
+    /// Delete an entity of `Plain` type by given identifier
+    ///
+    /// - Parameter primaryKeys: identifiers
+    /// - Throws: error if entity cannot be deleted
+    public func erase(byPrimaryKeys primaryKeys: [String]) throws {
+        try erase(byPrimaryKeys: primaryKeys.map(UniqueID.init))
     }
 
     /// Delete the given entities

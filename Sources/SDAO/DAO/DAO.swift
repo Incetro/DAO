@@ -90,7 +90,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     /// Read an entity from database of `Plain` type
     ///
     /// - Parameter primaryKey: entity identifier
-    /// - Returns: instance of existant entity or nil
+    /// - Returns: instance of existing entity or nil
     /// - Throws: error if entity cannot be read
     public func read(byPrimaryKey primaryKey: UniqueID) throws -> Plain? {
         guard let model = try storage.read(byPrimaryKey: primaryKey.rawValue) else {
@@ -100,22 +100,52 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
         return plain
     }
 
-    /// Read an entity from database of `Plain` type
+    /// Read entities from database of `Plain` type
     ///
-    /// - Parameter primaryKey: entity identifier
-    /// - Returns: instance of existant entity or nil
-    /// - Throws: error if entity cannot be read
-    public func read(byPrimaryKey primaryKey: String) throws -> Plain? {
-        try read(byPrimaryKey: UniqueID(rawValue: primaryKey))
+    /// - Parameter primaryKeys: entities identifiers
+    /// - Returns: instances of existing entities
+    /// - Throws: error if entities cannot be read
+    public func read(byPrimaryKeys primaryKeys: [UniqueID]) throws -> [Plain] {
+        let predicate = NSPredicate(format: "uniqueId IN %@", primaryKeys.map(\.rawValue))
+        let models = try storage.read(predicatedBy: predicate)
+        let plains = try translator.translate(models: models)
+        return plains
     }
 
     /// Read an entity from database of `Plain` type
     ///
     /// - Parameter primaryKey: entity identifier
-    /// - Returns: instance of existant entity or nil
+    /// - Returns: instance of existing entity or nil
+    /// - Throws: error if entity cannot be read
+    public func read(byPrimaryKey primaryKey: String) throws -> Plain? {
+        try read(byPrimaryKey: UniqueID(rawValue: primaryKey))
+    }
+
+    /// Read entities from database of `Plain` type
+    ///
+    /// - Parameter primaryKeys: entities identifiers
+    /// - Returns: instances of existing entities
+    /// - Throws: error if entities cannot be read
+    public func read(byPrimaryKeys primaryKeys: [String]) throws -> [Plain] {
+        try read(byPrimaryKeys: primaryKeys.map(UniqueID.init))
+    }
+
+    /// Read an entity from database of `Plain` type
+    ///
+    /// - Parameter primaryKey: entity identifier
+    /// - Returns: instance of existing entity or nil
     /// - Throws: error if entity cannot be read
     public func read<T: Numeric>(byPrimaryKey primaryKey: T) throws -> Plain? {
         try read(byPrimaryKey: UniqueID(value: primaryKey))
+    }
+
+    /// Read entities from database of `Plain` type
+    ///
+    /// - Parameter primaryKeys: entities identifiers
+    /// - Returns: instances of existing entities
+    /// - Throws: error if entities cannot be read
+    public func read<T: Numeric>(byPrimaryKeys primaryKeys: [T]) throws -> [Plain] {
+        try read(byPrimaryKeys: primaryKeys.map(UniqueID.init))
     }
 
     /// Read entities from database of `Plain` filtered by predicate
@@ -264,7 +294,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     /// - Parameter plains: some plain objects for deletion
     /// - Throws: error if any entity cannot be deleted
     public func erase(_ plains: [Plain]) throws {
-        try erase(byPrimaryKeys: plains.map { $0.uniqueId })
+        try erase(byPrimaryKeys: plains.map(\.uniqueId))
     }
 
     /// Delete entity of `Plain` type by given identifiers
@@ -272,7 +302,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     /// - Parameter primaryKeys: the given identifiers
     /// - Throws: error if any entity cannot be deleted
     public func erase(byPrimaryKeys primaryKeys: [UniqueID]) throws {
-        let predicate = NSPredicate(format: "uniqueId IN %@", primaryKeys.map { $0.rawValue })
+        let predicate = NSPredicate(format: "uniqueId IN %@", primaryKeys.map(\.rawValue))
         try erase(predicatedBy: predicate)
     }
 

@@ -1,5 +1,7 @@
 ![](dao.png)
 
+<center> <h1>DAO</h1> </center>
+
 <div align = "center">
   <a href="https://cocoapods.org/pods/SwiftyDAO">
     <img src="https://img.shields.io/cocoapods/v/NIO.svg?style=flat" />

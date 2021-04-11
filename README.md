@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/13930558/28665145-5cae7d82-72cb-11e7-9db3-059fd95b547d.png"/>
-</p>
+![](dao.png)
 
 <div align = "center">
   <a href="https://cocoapods.org/pods/SwiftyDAO">

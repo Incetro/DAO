@@ -1,6 +1,6 @@
 ![](dao.png)
 
-<center> <h1>DAO</h1> </center>
+<h1 align="center" style="margin-top: 0px;">DAO</h1>
 
 <div align = "center">
   <a href="https://cocoapods.org/pods/SwiftyDAO">

@@ -18,4 +18,6 @@ Pod::Spec.new do |spec|
     spec.source_files           = "Sources/SDAO/**/*.{h,swift}"
 
     spec.dependency "Monreau" 
+    spec.dependency "Realm" 
+    spec.dependency "RealmSwift" 
 end

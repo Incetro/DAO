@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name           = "SDAO"
-    spec.version        = "2.4.0"
+    spec.version        = "2.5.3"
     spec.summary        = "Elegant DAO implementation written in Swift"
 
     spec.homepage       = "https://github.com/incetro/DAO.git"

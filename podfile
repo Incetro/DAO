@@ -1,7 +1,7 @@
 use_frameworks!
 
 def standard_pods
-  pod "Monreau", :git => 'https://github.com/Incetro/Monreau'
+  pod "Monreau", "~> 2.1.4"
 end
 
 target "SDAO iOS" do

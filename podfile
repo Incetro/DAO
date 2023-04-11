@@ -1,21 +1,21 @@
 use_frameworks!
 
 def standard_pods
-  pod "Monreau", "~> 2.1.4"
+  pod 'Monreau', :git => 'https://github.com/Incetro/Monreau.git', :branch => 'fix/arm_target'
 end
 
 target "SDAO iOS" do
-  platform :ios, "12.0"
+  platform :ios, "13.0"
   standard_pods
 end
 
 target "SDAO iOS-Tests" do
-  platform :ios, "12.0"
+  platform :ios, "13.0"
   standard_pods
 end
 
 target "SDAO watchOS" do
-  platform :watchos, "3.0"
+  platform :watchos, "7.0"
   standard_pods
 end
 
@@ -49,7 +49,4 @@ post_install do |installer|
             end
         end
     end
-  installer.pods_project.build_configurations.each do |config|
-      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
-  end
 end 

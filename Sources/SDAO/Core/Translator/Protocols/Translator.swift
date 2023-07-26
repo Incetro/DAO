@@ -7,6 +7,7 @@
 //
 
 import Monreau
+import Foundation
 
 // MARK: - Translator
 

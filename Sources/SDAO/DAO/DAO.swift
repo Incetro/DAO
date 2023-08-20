@@ -289,6 +289,14 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
         try erase(byPrimaryKeys: primaryKeys.map(UniqueID.init))
     }
 
+    /// Delete the given entity
+    ///
+    /// - Parameter plain: some plain object for deletion
+    /// - Throws: error if an entity cannot be deleted
+    public func erase(_ plains: Plain) throws {
+        try erase(byPrimaryKey: plains.uniqueId)
+    }
+    
     /// Delete the given entities
     ///
     /// - Parameter plains: some plain objects for deletion

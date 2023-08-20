@@ -7,6 +7,7 @@
 //
 
 import Monreau
+import Foundation
 
 // MARK: - DAO
 
@@ -293,8 +294,8 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     ///
     /// - Parameter plain: some plain object for deletion
     /// - Throws: error if an entity cannot be deleted
-    public func erase(_ plains: Plain) throws {
-        try erase(byPrimaryKey: plains.uniqueId)
+    public func erase(_ plain: Plain) throws {
+        try erase(byPrimaryKey: plain.uniqueId)
     }
     
     /// Delete the given entities

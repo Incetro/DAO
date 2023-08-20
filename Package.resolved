@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Monreau",
+        "repositoryURL": "https://github.com/Incetro/Monreau.git",
+        "state": {
+          "branch": "master",
+          "revision": "0e0eb77d1cfaf808659b4be9df0e90577916e14e",
+          "version": null
+        }
+      },
+      {
+        "package": "RealmDatabase",
+        "repositoryURL": "https://github.com/realm/realm-core.git",
+        "state": {
+          "branch": null,
+          "revision": "f1e962cd447f8b69f8f7cf46a188b1c6246923c5",
+          "version": "13.17.0"
+        }
+      },
+      {
+        "package": "Realm",
+        "repositoryURL": "https://github.com/realm/realm-swift.git",
+        "state": {
+          "branch": null,
+          "revision": "0155caac1a0830a9fbaaffe5866b909fad3a6fc4",
+          "version": "10.41.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

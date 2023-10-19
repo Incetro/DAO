@@ -68,7 +68,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     
     /// Returns the number of objects which fits the predicate
     /// - Parameter predicate: some predicate
-    public func count(predicatedBy predicate: Predicate? = nil) throws -> Int {
+    public func count(predicatedBy predicate: MPredicate? = nil) throws -> Int {
         try storage.count(predicatedBy: predicate)
     }
 
@@ -136,7 +136,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     /// - Parameter primaryKey: entity identifier
     /// - Returns: instance of existing entity or nil
     /// - Throws: error if entity cannot be read
-    public func read<T: Numeric>(byPrimaryKey primaryKey: T) throws -> Plain? {
+    public func read(byPrimaryKey primaryKey: Numeric) throws -> Plain? {
         try read(byPrimaryKey: UniqueID(value: primaryKey))
     }
 
@@ -145,7 +145,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     /// - Parameter primaryKeys: entities identifiers
     /// - Returns: instances of existing entities
     /// - Throws: error if entities cannot be read
-    public func read<T: Numeric>(byPrimaryKeys primaryKeys: [T]) throws -> [Plain] {
+    public func read(byPrimaryKeys primaryKeys: [Numeric]) throws -> [Plain] {
         try read(byPrimaryKeys: primaryKeys.map(UniqueID.init))
     }
 
@@ -155,7 +155,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     ///   - predicate: some filter
     /// - Returns: ordered array of entities
     /// - Throws: error if any entity cannot be read
-    public func read(predicatedBy predicate: Predicate) throws -> [Plain] {
+    public func read(predicatedBy predicate: MPredicate) throws -> [Plain] {
         let predicate = NSPredicate(format: predicate.filter)
         return try read(predicatedBy: predicate)
     }
@@ -192,7 +192,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     ///   - ascending: ascending flag (descending otherwise)
     /// - Returns: ordered array of entities
     /// - Throws: error if any entity cannot be read
-    public func read(predicatedBy predicate: Predicate, orderedBy name: String, ascending: Bool) throws -> [Plain] {
+    public func read(predicatedBy predicate: MPredicate, orderedBy name: String, ascending: Bool) throws -> [Plain] {
         let predicate = NSPredicate(format: predicate.filter)
         return try read(predicatedBy: predicate, orderedBy: name, ascending: ascending)
     }
@@ -319,7 +319,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     ///
     /// - Parameter predicate: the given filter
     /// - Throws: error if any entity cannot be deleted
-    public func erase(predicatedBy predicate: Predicate) throws {
+    public func erase(predicatedBy predicate: MPredicate) throws {
         try storage.erase(predicatedBy: predicate)
     }
 

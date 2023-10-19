@@ -31,7 +31,7 @@ public struct UniqueID: RawRepresentable, Hashable {
     /// Generic initializer (when id is not string)
     ///
     /// - Parameter value: some numeric value
-    public init<T>(value: T) where T: Numeric {
+    public init(value: Numeric) {
         self.rawValue = String(describing: value)
     }
 }

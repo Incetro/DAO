@@ -18,8 +18,8 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/realm/realm-swift.git", from: "10.31.0"),
-        .package(url: "https://github.com/Incetro/Monreau.git", .branch("master"))
+        .package(url: "https://github.com/realm/realm-swift.git", from: "10.53.0"),
+        .package(url: "https://github.com/Incetro/Monreau.git", .branch("feature/new_realm_version"))
     ],
     targets: [
         .target(

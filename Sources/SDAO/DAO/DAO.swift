@@ -68,7 +68,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     
     /// Returns the number of objects which fits the predicate
     /// - Parameter predicate: some predicate
-    public func count(predicatedBy predicate: Predicate? = nil) throws -> Int {
+    public func count(predicatedBy predicate: Monreau.Predicate? = nil) throws -> Int {
         try storage.count(predicatedBy: predicate)
     }
 
@@ -155,7 +155,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     ///   - predicate: some filter
     /// - Returns: ordered array of entities
     /// - Throws: error if any entity cannot be read
-    public func read(predicatedBy predicate: Predicate) throws -> [Plain] {
+    public func read(predicatedBy predicate: Monreau.Predicate) throws -> [Plain] {
         let predicate = NSPredicate(format: predicate.filter)
         return try read(predicatedBy: predicate)
     }
@@ -192,7 +192,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     ///   - ascending: ascending flag (descending otherwise)
     /// - Returns: ordered array of entities
     /// - Throws: error if any entity cannot be read
-    public func read(predicatedBy predicate: Predicate, orderedBy name: String, ascending: Bool) throws -> [Plain] {
+    public func read(predicatedBy predicate: Monreau.Predicate, orderedBy name: String, ascending: Bool) throws -> [Plain] {
         let predicate = NSPredicate(format: predicate.filter)
         return try read(predicatedBy: predicate, orderedBy: name, ascending: ascending)
     }
@@ -311,7 +311,7 @@ public class DAO<S: Storage, T: Translator> where S.Model == T.DatabaseModel, S.
     ///
     /// - Parameter predicate: the given filter
     /// - Throws: error if any entity cannot be deleted
-    public func erase(predicatedBy predicate: Predicate) throws {
+    public func erase(predicatedBy predicate: Monreau.Predicate) throws {
         try storage.erase(predicatedBy: predicate)
     }
 

@@ -5,9 +5,9 @@
         "package": "Monreau",
         "repositoryURL": "https://github.com/Incetro/Monreau.git",
         "state": {
-          "branch": "feature/new_realm_version",
-          "revision": "4353d3d5a6f4ddaf5b5a4736c0742fa2760d68d2",
-          "version": null
+          "branch": null,
+          "revision": "acb63f1c10131cfcc32b49998b3b21596d32160b",
+          "version": "3.0.0"
         }
       },
       {

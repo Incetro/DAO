@@ -24,16 +24,14 @@ let package = Package(
         .target(
             name: "SDAO",
             dependencies: [
-                "Monreau",
-                .product(name: "RealmSwift", package: "realm-swift")
+                "Monreau"
             ]
         ),
         .testTarget(
             name: "DAOTests",
             dependencies: [
                 "SDAO",
-                "Monreau",
-                .product(name: "RealmSwift", package: "realm-swift")
+                "Monreau"
             ]
         ),
     ]
